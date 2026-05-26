@@ -606,7 +606,7 @@
     .metrics span + span { border-left: 0; border-top: 1px solid var(--line); }
     .project-card { grid-template-columns: 1fr; }
     .site-mock,
-    .commerce-demo { min-height: 360px; }
+    .commerce-demo { min-height: 300px; }
     .commerce-demo { grid-template-columns: 1fr; }
     .demo-cart { align-self: stretch; }
   }
