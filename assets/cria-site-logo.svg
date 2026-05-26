@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 100" role="img" aria-labelledby="title">
+  <title id="title">Cria Site</title>
+  <rect width="320" height="100" rx="14" fill="#111"/>
+  <text x="26" y="63" fill="#fff" font-family="Arial Black, Arial, sans-serif" font-size="38" font-weight="900">Cria</text>
+  <text x="128" y="63" fill="#b9ff66" font-family="Arial Black, Arial, sans-serif" font-size="38" font-weight="900">Site</text>
+  <path d="M235 31h50v38h-50z" fill="none" stroke="#fff" stroke-width="5"/>
+  <path d="M247 45h26M247 56h18" stroke="#b9ff66" stroke-width="5" stroke-linecap="round"/>
+</svg>

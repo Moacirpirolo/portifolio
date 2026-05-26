@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <script>
+      window.location.replace("cria-site-vitrine.html");
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Portfólio de Sites | Projetos para clientes</title>
+    <meta
+      name="description"
+      content="Portfólio com sites demonstrativos para clínica estética, construtora, hamburgueria e loja artesanal de cambuci."
+    />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header" data-elevated="false">
+      <a class="brand" href="#top" aria-label="Portfólio de Sites">
+        <img src="assets/logo.svg" alt="Portfólio de Sites" />
+      </a>
+      <nav class="main-nav" aria-label="Principal">
+        <a href="#projetos">Projetos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#processo">Processo</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a class="header-cta" href="#projetos">Ver portfólio</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Projetos selecionados</p>
+          <h1 id="hero-title">Alguns dos nossos projetos digitais.</h1>
+          <p>
+            Criamos experiências digitais para negócios que precisam se apresentar melhor, vender com clareza e receber pedidos direto pelo WhatsApp.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projetos">Explorar projetos</a>
+            <a class="button secondary" href="#servicos">O que entrego</a>
+          </div>
+        </div>
+        <div class="hero-board" aria-label="Resumo do portfólio" data-reveal>
+          <div class="board-card dark">
+            <span>04</span>
+            <p>projetos completos</p>
+          </div>
+          <div class="board-card">
+            <span>100%</span>
+            <p>responsivos</p>
+          </div>
+          <div class="board-card accent">
+            <span>WhatsApp</span>
+            <p>pedidos e contatos</p>
+          </div>
+          <div class="board-card">
+            <span>HTML</span>
+            <p>CSS e JavaScript</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="metrics" aria-label="Diferenciais" data-reveal>
+        <span><strong>Landing pages</strong> para serviços e marcas</span>
+        <span><strong>Cardápios</strong> com carrinho funcional</span>
+        <span><strong>Visual premium</strong> adaptado ao nicho</span>
+        <span><strong>Sem framework</strong> fácil de publicar</span>
+      </section>
+
+      <section id="projetos" class="section projects" aria-labelledby="projetos-title">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Projetos</p>
+          <h2 id="projetos-title">Alguns dos nossos projetos</h2>
+          <p>Uma amostra de interfaces, fluxos de pedido, vitrines comerciais e experiências responsivas criadas para diferentes segmentos.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card clinic" data-reveal>
+            <div class="site-mock clinic-mock" aria-label="Prévia do site Clínica Bella Face">
+              <div class="mock-bar"><span></span><span></span><span></span></div>
+              <div class="mock-hero">
+                <small>Estética facial avançada</small>
+                <strong>Beleza natural. Presença elegante.</strong>
+                <p>Protocolos, tratamentos e agendamento.</p>
+              </div>
+              <div class="mock-row">
+                <span>Limpeza</span>
+                <span>Harmonização</span>
+                <span>Cuidados</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-type">Clínica estética</p>
+              <h3>Clínica Bella Face</h3>
+              <p>Landing page com estética premium, tratamentos, depoimentos e agendamento por WhatsApp.</p>
+              <div class="tags">
+                <span>Landing page</span>
+                <span>Agendamento</span>
+                <span>Premium</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card builder" data-reveal>
+            <div class="site-mock builder-mock" aria-label="Prévia do site Construtora Ribeiro e Martins">
+              <div class="mock-bar"><span></span><span></span><span></span></div>
+              <div class="mock-hero">
+                <small>Engenharia e construção</small>
+                <strong>Obras precisas. Resultado permanente.</strong>
+              </div>
+              <div class="mock-gallery">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-type">Construção civil</p>
+              <h3>Construtora Ribeiro & Martins</h3>
+              <p>Site institucional preto e branco com obras, história, áreas de atuação e carrossel de portfólio.</p>
+              <div class="tags">
+                <span>Institucional</span>
+                <span>Carrossel</span>
+                <span>Obras</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card burger" data-reveal>
+            <div class="commerce-demo burger-demo" aria-label="Demonstração de cardápio com carrinho">
+              <div class="demo-menu">
+                <div class="demo-product">
+                  <span></span>
+                  <div>
+                    <strong>Smash Duplo</strong>
+                    <p>2x carne, cheddar e molho</p>
+                    <em>R$ 34,90</em>
+                  </div>
+                  <b>+</b>
+                </div>
+                <div class="demo-product">
+                  <span></span>
+                  <div>
+                    <strong>Combo Gael</strong>
+                    <p>Burger, batata e refri</p>
+                    <em>R$ 49,90</em>
+                  </div>
+                  <b>+</b>
+                </div>
+              </div>
+              <div class="demo-cart">
+                <small>Carrinho</small>
+                <p>1x Smash Duplo</p>
+                <p>1x Batata Rústica</p>
+                <strong>Total: R$ 53,80</strong>
+                <span>Enviar para WhatsApp</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-type">Hamburgueria</p>
+              <h3>Gael Burger</h3>
+              <p>Site de hamburgueria artesanal com cardápio digital, filtros, carrinho e envio do pedido para WhatsApp.</p>
+              <div class="tags">
+                <span>Cardápio</span>
+                <span>Carrinho</span>
+                <span>Delivery</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card cambuci" data-reveal>
+            <div class="commerce-demo cambuci-demo" aria-label="Demonstração de loja artesanal com cestinha">
+              <div class="demo-menu">
+                <div class="demo-product">
+                  <span></span>
+                  <div>
+                    <strong>Bolo de cambuci</strong>
+                    <p>Receita artesanal</p>
+                    <em>R$ 42,90</em>
+                  </div>
+                  <b>+</b>
+                </div>
+                <div class="demo-product">
+                  <span></span>
+                  <div>
+                    <strong>Licor de cambuci</strong>
+                    <p>Garrafa 375ml</p>
+                    <em>R$ 49,90</em>
+                  </div>
+                  <b>+</b>
+                </div>
+              </div>
+              <div class="demo-cart">
+                <small>Cestinha</small>
+                <p>1x Bolo de cambuci</p>
+                <p>1x Cambuci congelado kg</p>
+                <strong>Total: R$ 77,80</strong>
+                <span>Enviar para WhatsApp</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <p class="project-type">Produto artesanal</p>
+              <h3>Lili do Cambuci</h3>
+              <p>Loja afetiva com história da fruta, produtos artesanais, cestinha e pedido direto pelo WhatsApp.</p>
+              <div class="tags">
+                <span>Loja simples</span>
+                <span>Cestinha</span>
+                <span>Artesanal</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="servicos" class="section services" aria-labelledby="servicos-title">
+        <div class="section-heading compact" data-reveal>
+          <p class="eyebrow">Entrega</p>
+          <h2 id="servicos-title">Soluções que entregamos</h2>
+        </div>
+        <div class="service-grid">
+          <article data-reveal>
+            <span>01</span>
+            <h3>Site institucional</h3>
+            <p>Página profissional com apresentação, serviços, diferenciais, obras ou portfólio.</p>
+          </article>
+          <article data-reveal>
+            <span>02</span>
+            <h3>Landing page</h3>
+            <p>Estrutura focada em conversão, chamada para ação e contato rápido.</p>
+          </article>
+          <article data-reveal>
+            <span>03</span>
+            <h3>Cardápio digital</h3>
+            <p>Produtos, filtros, carrinho, total automático e pedido enviado para WhatsApp.</p>
+          </article>
+          <article data-reveal>
+            <span>04</span>
+            <h3>Identidade visual</h3>
+            <p>Logo simples, paleta, tipografia, imagens e linguagem visual conforme o nicho.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="processo" class="section process" aria-labelledby="processo-title">
+        <div class="process-copy" data-reveal>
+          <p class="eyebrow">Processo</p>
+          <h2 id="processo-title">Como conduzimos um projeto</h2>
+          <p>
+            Partimos do segmento, entendemos o objetivo comercial e criamos uma experiência com identidade, conteúdo, fluxo de contato e, quando necessário, pedidos pelo WhatsApp.
+          </p>
+        </div>
+        <div class="steps">
+          <article data-reveal>
+            <span>01</span>
+            <h3>Diagnóstico</h3>
+            <p>Entendimento do negócio, público, ofertas e objetivo principal do site.</p>
+          </article>
+          <article data-reveal>
+            <span>02</span>
+            <h3>Design e conteúdo</h3>
+            <p>Identidade visual, seções, textos, fotos, cardápio, vitrine ou portfólio.</p>
+          </article>
+          <article data-reveal>
+            <span>03</span>
+            <h3>Publicação</h3>
+            <p>Entrega final pronta para divulgar, receber contatos e gerar pedidos.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contato" class="section cta" aria-labelledby="contato-title">
+        <div data-reveal>
+          <p class="eyebrow">Apresentação</p>
+          <h2 id="contato-title">Portfólio pronto para mostrar em reunião.</h2>
+        </div>
+        <a class="button primary" href="#projetos">Ver projetos</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <img src="assets/logo.svg" alt="Portfólio de Sites" />
+      <p>Projetos demonstrativos para prospecção de clientes.</p>
+      <a href="#top">Voltar ao topo</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
