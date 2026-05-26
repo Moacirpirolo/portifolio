@@ -658,98 +658,23 @@ h1 {
 
   .section-heading,
   .features,
-  .project,
-  .project.reverse {
+  .project {
     grid-template-columns: 1fr;
-  }
-
-  .hero-showroom {
-    min-height: calc(100svh - 69px);
-  }
-
-  .hero-intro {
-    grid-template-columns: 1fr;
-  }
-
-  .showroom-frame {
-    width: 100%;
-    min-height: 520px;
-    transform: none;
-  }
-
-  .project.reverse .project-copy {
-    order: 0;
-  }
-
-  .process ol,
-  .feature-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 620px) {
-  .topbar {
-    padding: 14px 16px;
-  }
-
-  .top-cta {
-    display: none;
-  }
-
-  h1 {
-    font-size: clamp(54px, 18vw, 82px);
-  }
-
-  .hero-showroom {
-    gap: 18px;
-    padding: 28px 16px 0;
-  }
-
-  .hero-intro h1 {
-    font-size: clamp(38px, 11vw, 48px);
-    line-height: 0.98;
-  }
-
-  .mobile-break {
-    display: block;
-  }
-
-  .hero-intro p:not(.kicker) {
-    font-size: 16px;
-    max-width: 32ch;
-  }
-
-  .showroom-frame {
-    min-height: 420px;
-    box-shadow:
-      0 20px 60px rgba(0, 0, 0, 0.42),
-      0 0 0 6px rgba(143, 29, 51, 0.14);
-  }
-
-  .showroom-slide figcaption {
-    left: 12px;
-    bottom: 12px;
-    max-width: calc(100% - 24px);
-    font-size: 10px;
-  }
-
-  .project-ticker span {
-    min-height: 46px;
-    padding: 0 22px;
-    font-size: 11px;
-  }
-
-  .section-heading h2,
-  .features h2,
-  .process h2,
-  .cta-section h2 {
-    font-size: clamp(38px, 12vw, 52px);
-    line-height: 0.98;
+    gap: 24px;
+    padding: 40px 0;
   }
 
   .browser-frame {
-    height: 480px;
-    min-height: 480px;
-    box-shadow: 10px 10px 0 rgba(143, 29, 51, 0.26);
+    height: auto;
+    min-height: auto;
+    max-height: none;
+    aspect-ratio: 4 / 3;
+    box-shadow: 8px 8px 0 rgba(143, 29, 51, 0.26);
+  }
+
+  .browser-frame img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
   }
 }
