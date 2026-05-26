@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680" role="img" aria-labelledby="title desc">
+  <title id="title">Produtos artesanais de cambuci</title>
+  <desc id="desc">Mesa de cozinha com bolo verde, garrafa, sorvete, musse e cambuci.</desc>
+  <rect width="900" height="680" fill="#fff5dd"/>
+  <path d="M0 500c148-78 300-96 456-55 153 40 278 72 444 14v221H0V500Z" fill="#f1d7a8"/>
+  <rect x="115" y="434" width="670" height="62" rx="18" fill="#6c452b"/>
+  <rect x="96" y="478" width="708" height="58" rx="10" fill="#d9893d"/>
+  <path d="M194 310h178v123H194z" fill="#dce8a4"/>
+  <path d="M170 285h226v48H170z" fill="#8da84d"/>
+  <path d="M185 258h196c12 0 22 10 22 22v9H163v-9c0-12 10-22 22-22Z" fill="#b9cf6a"/>
+  <path d="M209 344c42 23 103 23 146 0" stroke="#fff5dd" stroke-width="14" stroke-linecap="round"/>
+  <path d="M510 195h66v229h-66z" fill="#eef3c2" stroke="#6c452b" stroke-width="6"/>
+  <path d="M523 129h40v66h-40z" fill="#6c452b"/>
+  <path d="M516 108h54v28h-54z" fill="#d9893d"/>
+  <path d="M526 242h34v118h-34z" fill="#b9cf6a" opacity=".7"/>
+  <g transform="translate(605 292)">
+    <ellipse cx="62" cy="108" rx="76" ry="28" fill="#6c452b" opacity=".25"/>
+    <path d="M22 48h80l-14 88H36L22 48Z" fill="#fff5dd" stroke="#6c452b" stroke-width="6"/>
+    <path d="M31 58h62l-8 50H39l-8-50Z" fill="#b9cf6a"/>
+    <path d="M42 35c12-26 50-26 62 0 8 17-4 34-31 34S34 52 42 35Z" fill="#dce8a4"/>
+  </g>
+  <g transform="translate(390 315)">
+    <path d="M40 98h118l-13 54H53L40 98Z" fill="#fff5dd" stroke="#6c452b" stroke-width="6"/>
+    <circle cx="99" cy="76" r="50" fill="#b9cf6a"/>
+    <circle cx="75" cy="90" r="33" fill="#dce8a4"/>
+    <circle cx="123" cy="90" r="33" fill="#8da84d"/>
+  </g>
+  <g transform="translate(93 94)">
+    <path d="M120 92c32-24 76-11 89 25 13 34-9 72-47 82-39 10-75-13-83-50-5-24 9-44 41-57Z" fill="#7fa246"/>
+    <path d="M132 91c-9-20-3-39 20-54" fill="none" stroke="#5f7f36" stroke-width="8" stroke-linecap="round"/>
+    <path d="M138 104c21 19 34 43 39 75" fill="none" stroke="#eef3c2" stroke-width="5" stroke-linecap="round" opacity=".65"/>
+  </g>
+</svg>

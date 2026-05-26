@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" role="img" aria-labelledby="title desc">
+  <title id="title">Construtora Ribeiro &amp; Martins</title>
+  <desc id="desc">Logotipo com monograma geométrico RM e assinatura Construtora Ribeiro &amp; Martins.</desc>
+  <defs>
+    <linearGradient id="mark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c27a43"/>
+      <stop offset="1" stop-color="#143c45"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="100" height="100" rx="8" fill="#f4f1ec"/>
+  <path d="M30 92V32h24c16 0 27 9 27 23 0 10-5 17-14 21l18 16H70L54 78H44v14H30Zm14-27h10c8 0 13-4 13-10s-5-10-13-10H44v20Z" fill="#143c45"/>
+  <path d="M64 92V32h14l18 29 18-29h14v60h-14V55L98 80h-5L78 55v37H64Z" fill="url(#mark)" opacity=".92"/>
+  <path d="M144 36h12v48h26v10h-38V36Zm50 0h12v58h-12V36Zm28 0h13l31 39V36h12v58h-13l-31-39v39h-12V36Zm74 0h43v10h-31v13h28v10h-28v15h32v10h-44V36Z" fill="#143c45"/>
+  <text x="144" y="108" fill="#8d5a34" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2.8">RIBEIRO &amp; MARTINS</text>
+</svg>

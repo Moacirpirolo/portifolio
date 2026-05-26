@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" role="img" aria-labelledby="title">
+  <title id="title">Limpeza de pele profissional</title>
+  <rect width="520" height="360" rx="28" fill="#fff7f3"/>
+  <circle cx="258" cy="178" r="104" fill="#f2c6bb"/>
+  <path d="M188 174c42 31 93 31 145 0" stroke="#8b545c" stroke-width="11" stroke-linecap="round" fill="none"/>
+  <path d="M210 141c14 6 30 6 45 0M285 141c14 6 30 6 45 0" stroke="#7e5960" stroke-width="8" stroke-linecap="round"/>
+  <path d="M178 87c39-45 111-58 168-23 31 19 51 48 60 82-43-21-81-22-117-4-39-27-77-38-111-55Z" fill="#5a4141"/>
+  <path d="M117 251c56-22 98-11 126 35M401 251c-56-22-98-11-126 35" stroke="#d98b93" stroke-width="13" stroke-linecap="round" fill="none"/>
+  <circle cx="147" cy="74" r="20" fill="#d98b93" opacity=".42"/>
+  <circle cx="415" cy="91" r="12" fill="#8b545c" opacity=".2"/>
+</svg>

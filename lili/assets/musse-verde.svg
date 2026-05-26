@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title">
+  <title id="title">Musse verde de cambuci</title>
+  <rect width="720" height="520" fill="#fff5dd"/>
+  <path d="M0 386c120-55 239-67 356-36 135 36 226 51 364 9v161H0V386Z" fill="#f1d7a8"/>
+  <ellipse cx="360" cy="395" rx="170" ry="42" fill="#6c452b" opacity=".2"/>
+  <path d="M238 190h244l-42 205H280l-42-205Z" fill="#fffaf0" stroke="#6c452b" stroke-width="8"/>
+  <path d="M258 218h204l-27 126H285l-27-126Z" fill="#b9cf6a"/>
+  <path d="M285 151c38-64 150-64 188 0 26 45-13 86-94 86s-120-41-94-86Z" fill="#dce8a4"/>
+  <path d="M315 177c35 19 79 19 113 0" stroke="#fff5dd" stroke-width="11" stroke-linecap="round"/>
+</svg>

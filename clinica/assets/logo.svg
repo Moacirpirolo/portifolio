@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 140" role="img" aria-labelledby="title desc">
+  <title id="title">Clínica Bella Face</title>
+  <desc id="desc">Logotipo elegante com monograma BF e assinatura Clínica Bella Face.</desc>
+  <defs>
+    <linearGradient id="tone" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c98b91"/>
+      <stop offset="1" stop-color="#5e4245"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(26 20)">
+    <circle cx="50" cy="50" r="48" fill="none" stroke="url(#tone)" stroke-width="1.8"/>
+    <circle cx="50" cy="50" r="38" fill="none" stroke="#d9b1ad" stroke-width="0.9" opacity=".65"/>
+    <path d="M37 78V26h15.5c10.4 0 17.2 5.4 17.2 13.8 0 5.9-3.2 10.1-8.5 12.3 7 1.8 11.2 6.5 11.2 13.1C72.4 73.1 65.2 78 54 78H37Zm8.5-29.2h7.1c5.5 0 8.6-2.8 8.6-7.4 0-4.7-3.3-7.4-8.9-7.4h-6.8v14.8Zm0 21.2h8.7c6 0 9.5-2.9 9.5-7.8 0-4.8-3.7-7.6-9.9-7.6h-8.3V70Z" fill="#5e4245"/>
+    <path d="M74 78V26h30v7.9H82.8v15.3h18.5V57H82.8v21H74Z" fill="#8d5f63"/>
+    <path d="M28 86c16.5-8 27.2-20.9 32.2-38.5" fill="none" stroke="#c98b91" stroke-width="2.4" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(150 42)">
+    <text x="0" y="25" fill="#332827" font-family="Georgia, 'Times New Roman', serif" font-size="35" font-weight="400" letter-spacing=".5">Bella Face</text>
+    <path d="M2 43h220" stroke="#c98b91" stroke-width="1"/>
+    <text x="0" y="66" fill="#6f5d5a" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="4.4">CLINICA DE ESTETICA</text>
+  </g>
+</svg>

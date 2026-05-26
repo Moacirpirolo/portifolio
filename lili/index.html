@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Lili do Cambuci | Geleias, doces e polpas artesanais</title>
+    <meta
+      name="description"
+      content="Lili do Cambuci: loja artesanal de cambuci com geleias, polpas, compotas, licores e cesta presente com pedido pelo WhatsApp."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Manrope:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="cambuci-0.jpg" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header" data-elevated="false">
+      <a class="brand" href="#top" aria-label="Lili do Cambuci">
+        <img src="assets/logo.svg" alt="Lili do Cambuci" />
+      </a>
+      <nav class="main-nav" aria-label="Principal">
+        <a href="#fruta">O cambuci</a>
+        <a href="#loja">Loja</a>
+        <a href="#cozinha">Cozinha</a>
+        <a href="#pedido">Pedido</a>
+      </nav>
+      <button class="cart-open" type="button" data-cart-open>
+        Cestinha <span data-cart-count>0</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Receitas de vó com fruta da Mata Atlântica</p>
+          <h1 id="hero-title">Cambuci em receitas de vó, do bolo ao licor.</h1>
+          <p>
+            A Lili do Cambuci transforma a fruta azedinha e perfumada em bolo, musse, sorvete, licor, cachaça artesanal e cambuci congelado para sua cozinha.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#loja">Comprar cambuci</a>
+            <button class="button secondary" type="button" data-cart-open>Ver cestinha</button>
+          </div>
+        </div>
+        <div class="hero-media" data-reveal>
+          <img src="cambuci-0.jpg" alt="Cambuci fresco" />
+        </div>
+      </section>
+
+      <section class="info-strip" aria-label="Informações rápidas" data-reveal>
+        <span><strong>Artesanal</strong> feito em pequenas levas</span>
+        <span><strong>Cambuci</strong> fruta brasileira aromática</span>
+        <span><strong>Entrega</strong> Grande São Paulo</span>
+        <span><strong>Retirada</strong> cozinha da Lili</span>
+      </section>
+
+      <section id="fruta" class="section fruit" aria-labelledby="fruta-title">
+        <div class="fruit-image" data-reveal>
+          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Webysther_20190219230655_-_Fruta_do_cambuci_(Campomanesia_phaea)-_na_esquerda_%C3%A9_o_fruto_maduro_e_na_direita_%C3%A9_o_fruto_verde.jpg" alt="Cambuci maduro e cambuci verde" />
+        </div>
+        <div class="fruit-copy" data-reveal>
+          <p class="eyebrow">Sobre a fruta</p>
+          <h2 id="fruta-title">O cambuci é azedinho, perfumado e cheio de história.</h2>
+          <p>
+            Parente da goiaba e da pitanga, o cambuci é uma fruta nativa da Mata Atlântica. Tem formato achatado, aroma marcante e acidez gostosa, perfeita para geleias, sucos, molhos, doces e licores.
+          </p>
+          <p>
+            Na cozinha da Lili, ele aparece em receitas simples, bem apuradas, com sabor de fruta de verdade e aquele cuidado que lembra mesa posta no domingo.
+          </p>
+        </div>
+      </section>
+
+      <section id="loja" class="section shop-section" aria-labelledby="loja-title">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Loja artesanal</p>
+          <h2 id="loja-title">Escolha sua leva favorita</h2>
+          <p>Adicione na cestinha, informe entrega ou retirada e envie o pedido para o WhatsApp.</p>
+        </div>
+
+        <div class="shop-filters" aria-label="Filtros da loja" data-reveal>
+          <button type="button" class="is-active" data-filter="all">Tudo</button>
+          <button type="button" data-filter="doce">Doces</button>
+          <button type="button" data-filter="gelado">Gelados</button>
+          <button type="button" data-filter="bebida">Bebidas</button>
+          <button type="button" data-filter="fruta">Fruta</button>
+        </div>
+
+        <div class="product-grid" data-product-grid></div>
+      </section>
+
+      <section id="cozinha" class="section kitchen" aria-labelledby="cozinha-title">
+        <div class="kitchen-copy" data-reveal>
+          <p class="eyebrow">Cozinha da Lili</p>
+          <h2 id="cozinha-title">Panela baixa, colher de pau e tempo certo.</h2>
+          <p>
+            As receitas são hipotéticas, mas seguem um cuidado bem brasileiro: fruta selecionada, açúcar na medida, cozimento lento e potes preparados para chegar bonitos na sua mesa.
+          </p>
+        </div>
+        <div class="kitchen-cards">
+          <article data-reveal>
+            <span>01</span>
+            <h3>Fruta selecionada</h3>
+            <p>Cambuci limpo, maduro e separado por receita.</p>
+          </article>
+          <article data-reveal>
+            <span>02</span>
+            <h3>Pequenas levas</h3>
+            <p>Produção controlada para manter aroma e textura.</p>
+          </article>
+          <article data-reveal>
+            <span>03</span>
+            <h3>Embalagem afetiva</h3>
+            <p>Pote, etiqueta e laço com cara de presente de vó.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="pedido" class="section order-cta" aria-labelledby="pedido-title">
+        <div data-reveal>
+          <p class="eyebrow">Pedido pelo WhatsApp</p>
+          <h2 id="pedido-title">Monte sua cestinha de cambuci.</h2>
+        </div>
+        <button class="button primary" type="button" data-cart-open>Finalizar pedido</button>
+      </section>
+    </main>
+
+    <aside class="cart-panel" data-cart-panel aria-label="Cestinha de compras" aria-hidden="true">
+      <div class="cart-header">
+        <div>
+          <p class="eyebrow">Sua cestinha</p>
+          <h2>Pedido</h2>
+        </div>
+        <button type="button" class="icon-button" data-cart-close aria-label="Fechar cestinha">×</button>
+      </div>
+
+      <div class="cart-items" data-cart-items></div>
+
+      <form class="checkout-form" data-checkout-form>
+        <label>
+          Nome
+          <input name="customer" type="text" placeholder="Seu nome" required />
+        </label>
+        <label>
+          Entrega ou retirada
+          <select name="delivery" required>
+            <option>Entrega</option>
+            <option>Retirada na cozinha da Lili</option>
+          </select>
+        </label>
+        <label>
+          Endereço
+          <input name="address" type="text" placeholder="Rua, número e bairro" />
+        </label>
+        <label>
+          Recado
+          <input name="notes" type="text" placeholder="Ex: embrulhar para presente" />
+        </label>
+        <div class="cart-summary">
+          <span>Total</span>
+          <strong data-cart-total>R$ 0,00</strong>
+        </div>
+        <button class="button primary full" type="submit">Enviar para WhatsApp</button>
+        <p class="cart-status" data-cart-status role="status" aria-live="polite"></p>
+      </form>
+    </aside>
+    <button class="cart-fab" type="button" data-cart-open aria-label="Abrir cestinha">
+      <span data-cart-count>0</span>
+    </button>
+
+    <footer class="site-footer">
+      <img src="assets/logo.svg" alt="Lili do Cambuci" />
+      <p>Geleias, doces, polpas e lembranças artesanais.</p>
+      <button type="button" data-cart-open>Fazer pedido</button>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

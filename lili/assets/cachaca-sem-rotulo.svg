@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title">
+  <title id="title">Garrafa sem rótulo</title>
+  <rect width="720" height="520" fill="#fff5dd"/>
+  <path d="M0 402c120-65 238-72 355-35 132 42 232 52 365 9v144H0V402Z" fill="#f1d7a8"/>
+  <ellipse cx="360" cy="436" rx="130" ry="32" fill="#6c452b" opacity=".18"/>
+  <path d="M316 159h88v270h-88z" fill="#eef3c2" stroke="#6c452b" stroke-width="8"/>
+  <path d="M330 72h60v87h-60z" fill="#6c452b"/>
+  <path d="M322 45h76v35h-76z" fill="#d9893d"/>
+  <path d="M337 220h46v145h-46z" fill="#b9cf6a" opacity=".55"/>
+  <path d="M332 185c18 9 39 9 57 0" stroke="#fffaf0" stroke-width="8" stroke-linecap="round" opacity=".8"/>
+</svg>

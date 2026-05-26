@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 780" role="img" aria-labelledby="title desc">
+  <title id="title">Edifício residencial contemporâneo</title>
+  <desc id="desc">Ilustração de empreendimento urbano com fachada moderna, céu claro e paisagismo.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dce8e8"/>
+      <stop offset="1" stop-color="#f7f3ed"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9cb5bb"/>
+      <stop offset="1" stop-color="#143c45"/>
+    </linearGradient>
+  </defs>
+  <rect width="1100" height="780" fill="url(#sky)"/>
+  <circle cx="910" cy="138" r="56" fill="#f1c188" opacity=".7"/>
+  <path d="M0 612c156-86 327-112 514-75 215 43 348 115 586 22v221H0V612Z" fill="#e7e2d8"/>
+  <path d="M225 169h180v454H225V169Z" fill="#f4f1ec"/>
+  <path d="M421 97h250v526H421V97Z" fill="#d9d3c8"/>
+  <path d="M690 228h195v395H690V228Z" fill="#f4f1ec"/>
+  <path d="M455 135h50v448h-50V135Zm75 0h50v448h-50V135Zm75 0h50v448h-50V135Z" fill="url(#glass)" opacity=".86"/>
+  <path d="M253 205h44v71h-44v-71Zm72 0h44v71h-44v-71Zm-72 105h44v71h-44v-71Zm72 0h44v71h-44v-71Zm-72 105h44v71h-44v-71Zm72 0h44v71h-44v-71Z" fill="#86a2a8"/>
+  <path d="M720 260h42v66h-42v-66Zm66 0h42v66h-42v-66Zm-66 98h42v66h-42v-66Zm66 0h42v66h-42v-66Zm-66 98h42v66h-42v-66Zm66 0h42v66h-42v-66Z" fill="#6b8990"/>
+  <rect x="171" y="604" width="761" height="38" rx="8" fill="#143c45"/>
+  <path d="M157 642h790v42H157z" fill="#c27a43"/>
+  <path d="M91 648h918" stroke="#143c45" stroke-width="10" stroke-linecap="round" opacity=".22"/>
+  <path d="M109 626c38-54 87-70 146-45-48 2-87 23-116 64l-30-19Zm837 16c-50-71-114-91-193-58 64 3 116 31 155 85l38-27Z" fill="#55705c"/>
+  <path d="M156 601c-6-66 18-110 71-133 12 62-10 106-71 133Zm768 4c-4-70 25-116 86-138 9 66-17 112-86 138Z" fill="#708b73"/>
+</svg>

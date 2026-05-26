@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 430" role="img" aria-labelledby="title">
+  <title id="title">Centro Corporativo Alameda</title>
+  <rect width="640" height="430" rx="10" fill="#e8eeee"/>
+  <path d="M93 329h455v43H93z" fill="#143c45"/>
+  <path d="M158 78h323v251H158V78Z" fill="#d9d3c8"/>
+  <path d="M196 112h51v180h-51V112Zm71 0h51v180h-51V112Zm71 0h51v180h-51V112Zm71 0h51v180h-51V112Z" fill="#143c45" opacity=".76"/>
+  <path d="M170 301h300" stroke="#c27a43" stroke-width="16" stroke-linecap="round"/>
+  <path d="M0 358c113-33 213-41 302-25 135 25 211 47 338 10v87H0v-72Z" fill="#d9d3c8"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title">
+  <title id="title">Sorvete verde de cambuci</title>
+  <rect width="720" height="520" fill="#fff5dd"/>
+  <path d="M0 382c120-56 238-64 354-33 132 35 235 51 366 7v164H0V382Z" fill="#f1d7a8"/>
+  <ellipse cx="360" cy="398" rx="190" ry="44" fill="#6c452b" opacity=".2"/>
+  <path d="M230 325h260l-40 98H270l-40-98Z" fill="#fffaf0" stroke="#6c452b" stroke-width="8"/>
+  <circle cx="308" cy="272" r="70" fill="#b9cf6a"/>
+  <circle cx="395" cy="272" r="70" fill="#dce8a4"/>
+  <circle cx="355" cy="218" r="72" fill="#8da84d"/>
+  <path d="M286 319c50 18 108 18 158 0" stroke="#fff5dd" stroke-width="12" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,528 @@
+:root {
+  --ink: #332b2b;
+  --muted: #705f5f;
+  --soft: #fbf2ef;
+  --surface: #fffaf7;
+  --line: #ead7d1;
+  --rose: #b96d76;
+  --rose-dark: #7e5960;
+  --sage: #7d8b73;
+  --clay: #c9838d;
+  --white: #ffffff;
+  --shadow: 0 22px 60px rgba(126, 89, 96, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--surface);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 28px;
+  min-height: 78px;
+  padding: 14px clamp(18px, 4vw, 56px);
+  background: rgba(255, 250, 247, 0.88);
+  border-bottom: 1px solid transparent;
+  backdrop-filter: blur(18px);
+}
+
+.site-header[data-elevated="true"] {
+  border-bottom-color: var(--line);
+  box-shadow: 0 10px 24px rgba(126, 89, 96, 0.08);
+}
+
+.brand img {
+  width: 210px;
+  height: auto;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: clamp(14px, 2vw, 30px);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.main-nav a,
+.header-cta,
+.button {
+  transition: transform 180ms ease, color 180ms ease, background 180ms ease, border-color 180ms ease;
+}
+
+.main-nav a:hover {
+  color: var(--rose-dark);
+}
+
+.header-cta,
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-weight: 700;
+}
+
+.header-cta {
+  padding: 0 18px;
+  color: var(--white);
+  background: var(--rose-dark);
+}
+
+.button {
+  padding: 0 22px;
+}
+
+.button:hover,
+.header-cta:hover {
+  transform: translateY(-1px);
+}
+
+.button.primary {
+  color: var(--white);
+  background: var(--rose-dark);
+  box-shadow: 0 14px 34px rgba(126, 89, 96, 0.24);
+}
+
+.button.secondary {
+  color: var(--rose-dark);
+  background: var(--white);
+  border-color: var(--line);
+}
+
+.button.full {
+  width: 100%;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(360px, 1.08fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: center;
+  min-height: calc(100vh - 78px);
+  padding: clamp(34px, 6vw, 80px) clamp(18px, 5vw, 76px) 34px;
+  overflow: hidden;
+}
+
+.hero-copy {
+  max-width: 650px;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: var(--rose-dark);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  line-height: 1.04;
+}
+
+h1 {
+  max-width: 10ch;
+  margin-bottom: 22px;
+  font-size: clamp(3.3rem, 8vw, 7.8rem);
+}
+
+h2 {
+  max-width: 780px;
+  margin-bottom: 16px;
+  font-size: clamp(2.15rem, 4.6vw, 4.8rem);
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.hero-text,
+.section-heading p,
+.experience-copy p,
+.booking-copy p {
+  color: var(--muted);
+  font-size: clamp(1rem, 1.7vw, 1.2rem);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 32px 0;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  max-width: 620px;
+}
+
+.hero-stats span {
+  min-height: 86px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.68);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.hero-stats strong {
+  display: block;
+  color: var(--ink);
+  font-size: 1.35rem;
+}
+
+.hero-media {
+  position: relative;
+  min-height: 520px;
+}
+
+.hero-media img {
+  width: min(720px, 58vw);
+  min-width: 420px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.trust-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border-block: 1px solid var(--line);
+}
+
+.trust-strip span {
+  min-height: 72px;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: #fff6f2;
+  color: var(--muted);
+  text-align: center;
+  font-weight: 700;
+}
+
+.section {
+  padding: clamp(64px, 9vw, 120px) clamp(18px, 5vw, 76px);
+}
+
+.section-heading {
+  max-width: 860px;
+  margin-bottom: 36px;
+}
+
+.section-heading.compact {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.treatment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.treatment-card,
+.steps article,
+.testimonial-grid figure,
+.booking-form {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 12px 36px rgba(126, 89, 96, 0.08);
+}
+
+.treatment-card {
+  overflow: hidden;
+}
+
+.treatment-card img {
+  width: 100%;
+  aspect-ratio: 1.45;
+  object-fit: cover;
+}
+
+.treatment-card div {
+  padding: 24px;
+}
+
+.treatment-card p,
+.steps p,
+.testimonial-grid blockquote {
+  color: var(--muted);
+}
+
+.treatment-card span {
+  display: inline-flex;
+  margin-top: 12px;
+  color: var(--rose-dark);
+  font-weight: 800;
+}
+
+.experience {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(360px, 1.15fr);
+  gap: clamp(26px, 5vw, 72px);
+  align-items: start;
+  background: #f5e8e2;
+}
+
+.experience-copy {
+  position: sticky;
+  top: 112px;
+}
+
+.steps {
+  display: grid;
+  gap: 16px;
+}
+
+.steps article {
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  column-gap: 20px;
+  padding: 24px;
+}
+
+.steps span {
+  grid-row: span 2;
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  color: var(--white);
+  background: var(--sage);
+  font-weight: 800;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.testimonial-grid figure {
+  margin: 0;
+  padding: 26px;
+}
+
+.testimonial-grid blockquote {
+  margin: 0 0 20px;
+  font-size: 1.02rem;
+}
+
+.testimonial-grid figcaption {
+  color: var(--rose-dark);
+  font-weight: 800;
+}
+
+.booking {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(340px, 0.75fr);
+  gap: clamp(28px, 6vw, 88px);
+  align-items: start;
+  background: var(--soft);
+}
+
+address {
+  margin-top: 30px;
+  color: var(--muted);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.booking-form {
+  display: grid;
+  gap: 16px;
+  padding: clamp(22px, 4vw, 34px);
+}
+
+label {
+  display: grid;
+  gap: 8px;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+input,
+select {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid #dbc6c0;
+  border-radius: 8px;
+  padding: 0 14px;
+  color: var(--ink);
+  background: var(--surface);
+  font: inherit;
+}
+
+input:focus,
+select:focus {
+  outline: 3px solid rgba(185, 109, 118, 0.2);
+  border-color: var(--rose);
+}
+
+.form-status {
+  min-height: 24px;
+  margin: 0;
+  color: var(--rose-dark);
+  font-weight: 800;
+}
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 28px clamp(18px, 5vw, 76px);
+  color: var(--muted);
+  background: #fffaf7;
+  border-top: 1px solid var(--line);
+}
+
+.site-footer img {
+  width: 180px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer a {
+  color: var(--rose-dark);
+  font-weight: 800;
+}
+
+@media (max-width: 920px) {
+  .site-header {
+    grid-template-columns: 1fr auto;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .hero,
+  .experience,
+  .booking {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-media {
+    min-height: 0;
+  }
+
+  .hero-media img {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .trust-strip,
+  .treatment-grid,
+  .testimonial-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .experience-copy {
+    position: static;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    min-height: 68px;
+    gap: 12px;
+  }
+
+  .brand img {
+    width: 156px;
+  }
+
+  .header-cta {
+    min-height: 42px;
+    padding-inline: 13px;
+  }
+
+  .hero {
+    padding-top: 28px;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero-actions,
+  .site-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .hero-stats,
+  .trust-strip,
+  .treatment-grid,
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps article {
+    grid-template-columns: 1fr;
+  }
+
+  .steps span {
+    margin-bottom: 16px;
+  }
+}

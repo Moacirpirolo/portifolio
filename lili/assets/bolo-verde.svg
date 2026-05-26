@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 520" role="img" aria-labelledby="title">
+  <title id="title">Bolo verde de cambuci</title>
+  <rect width="720" height="520" fill="#fff5dd"/>
+  <path d="M0 390c115-55 237-68 366-38 125 29 210 50 354 10v158H0V390Z" fill="#f1d7a8"/>
+  <ellipse cx="360" cy="398" rx="230" ry="52" fill="#6c452b" opacity=".18"/>
+  <path d="M170 220h380v162H170z" fill="#dce8a4"/>
+  <path d="M137 180h446v75H137z" fill="#86a64a"/>
+  <path d="M167 142h386c26 0 48 21 48 48H119c0-27 22-48 48-48Z" fill="#b9cf6a"/>
+  <path d="M194 278c82 42 248 42 330 0" stroke="#fff5dd" stroke-width="24" stroke-linecap="round"/>
+  <path d="M205 333h310" stroke="#8da84d" stroke-width="14" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 620" role="img" aria-labelledby="title desc">
+  <title id="title">Cambuci fresco</title>
+  <desc id="desc">Ilustração de cambucis frescos sobre tecido de cozinha.</desc>
+  <defs>
+    <linearGradient id="fruit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c4d979"/>
+      <stop offset="1" stop-color="#5d7b35"/>
+    </linearGradient>
+  </defs>
+  <rect width="820" height="620" fill="#fff5dd"/>
+  <path d="M0 470c120-62 251-80 394-53 164 31 265 76 426 20v183H0V470Z" fill="#f1d7a8"/>
+  <path d="M127 115h565v355H127z" fill="#f8e7c2"/>
+  <path d="M127 166h565M127 217h565M127 268h565M127 319h565M127 370h565M127 421h565" stroke="#d9893d" stroke-width="2" opacity=".35"/>
+  <path d="M182 115v355M237 115v355M292 115v355M347 115v355M402 115v355M457 115v355M512 115v355M567 115v355M622 115v355M677 115v355" stroke="#d9893d" stroke-width="2" opacity=".25"/>
+  <g>
+    <path d="M303 201c60-45 141-20 166 47 23 62-17 134-88 153-72 19-139-24-153-92-9-44 16-82 75-108Z" fill="url(#fruit)"/>
+    <path d="M326 205c-17-35-4-68 37-94" fill="none" stroke="#5f7f36" stroke-width="14" stroke-linecap="round"/>
+    <path d="M333 224c38 34 62 80 72 137" fill="none" stroke="#edf4bd" stroke-width="9" stroke-linecap="round" opacity=".55"/>
+  </g>
+  <g transform="translate(300 120) scale(.72)">
+    <path d="M303 201c60-45 141-20 166 47 23 62-17 134-88 153-72 19-139-24-153-92-9-44 16-82 75-108Z" fill="url(#fruit)"/>
+    <path d="M326 205c-17-35-4-68 37-94" fill="none" stroke="#5f7f36" stroke-width="14" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(-110 150) scale(.62)">
+    <path d="M303 201c60-45 141-20 166 47 23 62-17 134-88 153-72 19-139-24-153-92-9-44 16-82 75-108Z" fill="url(#fruit)"/>
+    <path d="M326 205c-17-35-4-68 37-94" fill="none" stroke="#5f7f36" stroke-width="14" stroke-linecap="round"/>
+  </g>
+</svg>

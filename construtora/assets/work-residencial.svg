@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 430" role="img" aria-labelledby="title">
+  <title id="title">Residencial Horizonte</title>
+  <rect width="640" height="430" rx="10" fill="#eef1ef"/>
+  <path d="M0 311c96-53 205-66 327-40 122 26 204 60 313 19v140H0V311Z" fill="#d9d3c8"/>
+  <path d="M134 103h168v233H134V103Z" fill="#f7f3ed"/>
+  <path d="M322 70h185v266H322V70Z" fill="#d7d1c7"/>
+  <path d="M162 133h33v51h-33v-51Zm57 0h33v51h-33v-51Zm57 0h33v51h-33v-51Zm-114 75h33v51h-33v-51Zm57 0h33v51h-33v-51Zm57 0h33v51h-33v-51Zm75-100h43v205h-43V108Zm62 0h43v205h-43V108Z" fill="#6b8990"/>
+  <rect x="100" y="329" width="444" height="30" rx="7" fill="#143c45"/>
+  <path d="M76 360h498v36H76z" fill="#c27a43"/>
+</svg>

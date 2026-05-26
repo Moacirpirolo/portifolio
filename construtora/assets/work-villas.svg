@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 430" role="img" aria-labelledby="title">
+  <title id="title">Villas do Lago</title>
+  <rect width="640" height="430" rx="10" fill="#f4f1ec"/>
+  <path d="M0 310c97-52 188-61 274-29 120 44 229 47 366 6v143H0V310Z" fill="#d7d1c7"/>
+  <path d="M85 252l105-85 105 85v91H85v-91Z" fill="#f7f3ed"/>
+  <path d="M345 242l87-70 87 70v101H345V242Z" fill="#e5dfd5"/>
+  <path d="M64 260l126-102 126 102" stroke="#143c45" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M324 250l108-87 108 87" stroke="#c27a43" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M128 274h54v69h-54v-69Zm101 0h38v50h-38v-50Zm151-5h43v74h-43v-74Zm82 0h32v48h-32v-48Z" fill="#6b8990"/>
+  <path d="M73 357h488" stroke="#143c45" stroke-width="10" stroke-linecap="round" opacity=".22"/>
+</svg>
