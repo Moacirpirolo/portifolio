@@ -167,8 +167,8 @@ def bloco_numeros(estacoes, dados):
          f'Estação de Mogi das Cruzes, {esc(mogi.get("data") or "—")}. A 60 km dali o mesmo rio '
          f'atende à classe 1 da CONAMA.'),
         ("bom", "500 km depois", f'{num(bb.get("v"))}<small> mg/L</small>',
-         f'Barra Bonita, {esc(bb.get("data") or "—")}. Sem nenhuma estação de tratamento no meio '
-         f'do caminho: quem despoluiu foi o próprio rio.'),
+         f'Barra Bonita, {esc(bb.get("data") or "—")}. Nenhuma obra fez isso no meio do caminho: '
+         f'o rio se recupera por diluição e autodepuração, ao longo de centenas de quilômetros.'),
         ("atencao", "Estações transmitindo", f'{len(vivas)}<small> de {len(estacoes)}</small>',
          'Medição nas últimas 48 horas. O resto da rede está parada, em manutenção ou atrasada.'),
     ]
