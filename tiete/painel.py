@@ -26,11 +26,11 @@ PARAMETROS = [
         "unidade": "mg/L", "casas": 2, "limite": 5, "limite_texto": "5 mg/L, mínimo da classe 2",
         "fonte_regra": "Resolução CONAMA 357, água doce classe 2",
         "faixas": [
-            {"ate": 2, "cor": "critico", "rotulo": "Sem vida aeróbica"},
-            {"ate": 4, "cor": "ruim", "rotulo": "Ruim"},
-            {"ate": 5, "cor": "atencao", "rotulo": "Abaixo da classe 2"},
-            {"ate": 12, "cor": "bom", "rotulo": "Dentro do padrão"},
-            {"ate": None, "cor": "excesso", "rotulo": "Supersaturado por algas"},
+            {"ate": 2, "cor": "critico", "rotulo": "Rio morto"},
+            {"ate": 4, "cor": "ruim", "rotulo": "Rio sufocando"},
+            {"ate": 5, "cor": "atencao", "rotulo": "Abaixo do mínimo da lei"},
+            {"ate": 12, "cor": "bom", "rotulo": "Rio saudável"},
+            {"ate": None, "cor": "excesso", "rotulo": "Excesso de algas"},
         ],
     },
     {
@@ -38,10 +38,10 @@ PARAMETROS = [
         "unidade": "NTU", "casas": 1, "limite": 100, "limite_texto": "100 NTU, limite da classe 2",
         "fonte_regra": "Resolução CONAMA 357, água doce classe 2",
         "faixas": [
-            {"ate": 40, "cor": "bom", "rotulo": "Água clara"},
-            {"ate": 100, "cor": "atencao", "rotulo": "No limite"},
-            {"ate": 200, "cor": "ruim", "rotulo": "Acima do padrão"},
-            {"ate": None, "cor": "critico", "rotulo": "Muito acima"},
+            {"ate": 40, "cor": "bom", "rotulo": "Água limpa"},
+            {"ate": 100, "cor": "atencao", "rotulo": "Água turva"},
+            {"ate": 200, "cor": "ruim", "rotulo": "Água barrenta"},
+            {"ate": None, "cor": "critico", "rotulo": "Barro puro"},
         ],
     },
     {
@@ -49,10 +49,10 @@ PARAMETROS = [
         "unidade": "", "casas": 2, "limite": None, "limite_texto": "faixa de 6 a 9 na classe 2",
         "fonte_regra": "Resolução CONAMA 357, água doce classe 2",
         "faixas": [
-            {"ate": 5, "cor": "critico", "rotulo": "Muito ácido"},
-            {"ate": 6, "cor": "ruim", "rotulo": "Ácido demais"},
-            {"ate": 9, "cor": "bom", "rotulo": "Dentro da faixa"},
-            {"ate": None, "cor": "ruim", "rotulo": "Alcalino demais"},
+            {"ate": 5, "cor": "critico", "rotulo": "Água ácida demais"},
+            {"ate": 6, "cor": "ruim", "rotulo": "Água meio ácida"},
+            {"ate": 9, "cor": "bom", "rotulo": "pH normal"},
+            {"ate": None, "cor": "ruim", "rotulo": "Água alcalina demais"},
         ],
     },
     {
@@ -61,17 +61,17 @@ PARAMETROS = [
         "limite_texto": "sem padrão legal; acima de 500 costuma indicar esgoto",
         "fonte_regra": "referência técnica, não há limite na CONAMA 357",
         "faixas": [
-            {"ate": 100, "cor": "bom", "rotulo": "Baixa"},
-            {"ate": 300, "cor": "atencao", "rotulo": "Moderada"},
-            {"ate": 600, "cor": "ruim", "rotulo": "Alta"},
-            {"ate": None, "cor": "critico", "rotulo": "Muito alta"},
+            {"ate": 100, "cor": "bom", "rotulo": "Água limpa de sais"},
+            {"ate": 300, "cor": "atencao", "rotulo": "Começa a sujar"},
+            {"ate": 600, "cor": "ruim", "rotulo": "Sinal de esgoto"},
+            {"ate": None, "cor": "critico", "rotulo": "Sinal forte de esgoto"},
         ],
     },
     {
         "id": "temperatura", "rotulo": "Temperatura da água", "curto": "Temperatura",
         "unidade": "°C", "casas": 1, "limite": None, "limite_texto": "sem classificação, valor de contexto",
         "fonte_regra": "informativo",
-        "faixas": [{"ate": None, "cor": "neutro", "rotulo": "Medição"}],
+        "faixas": [{"ate": None, "cor": "neutro", "rotulo": "Temperatura medida"}],
     },
 ]
 
@@ -161,8 +161,8 @@ def bloco_numeros(estacoes, dados):
     penha, mogi, bb = leitura("EF29"), leitura("EF01"), leitura("EF35")
     cartoes = [
         ("critico", "Dentro da capital", f'{num(penha.get("v"))}<small> mg/L</small>',
-         f'Estação da Penha, em {esc(penha.get("data") or "—")}. Abaixo de 2 mg/L a água não '
-         f'sustenta vida aeróbica: é esgoto diluído correndo a céu aberto.'),
+         f'Estação da Penha, em {esc(penha.get("data") or "—")}. Abaixo de 2 mg/L nenhum peixe '
+         f'sobrevive: é esgoto diluído correndo a céu aberto.'),
         ("bom", "Antes da capital", f'{num(mogi.get("v"))}<small> mg/L</small>',
          f'Estação de Mogi das Cruzes, {esc(mogi.get("data") or "—")}. A 60 km dali o mesmo rio '
          f'atende à classe 1 da CONAMA.'),
