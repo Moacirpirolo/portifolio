@@ -25,7 +25,7 @@ AFLUENTES = [
     ("Rio Pinheiros", "NORIOCOMP='Rio Pinheiros'"),
     ("Rio Piracicaba", "NORIOCOMP='Rio Piracicaba'"),
     ("Rio Sorocaba", "NORIOCOMP='Rio Sorocaba'"),
-    ("Rio Jundiai", "NORIOCOMP='Rio Jundiaí'"),
+    ("Rio Jundiaí", "NORIOCOMP='Rio Jundiaí'"),
 ]
 
 _CTX = ssl.create_default_context()
