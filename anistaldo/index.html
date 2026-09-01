@@ -291,9 +291,9 @@ footer code{font-family:"IBM Plex Mono",monospace;font-size:12.5px;background:va
 }
 
 /* ======== fundo animado ======== */
-:root{--op-fundo:.14}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--op-fundo:.20}}
-:root[data-theme="dark"]{--op-fundo:.20}
+:root{--op-fundo:.34}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--op-fundo:.42}}
+:root[data-theme="dark"]{--op-fundo:.42}
 .fundo{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
 .fundo .cam{position:absolute;inset:-4%;background-size:cover;background-position:center;
   opacity:0;transition:opacity 2.2s ease;will-change:opacity,transform}
@@ -301,7 +301,7 @@ footer code{font-family:"IBM Plex Mono",monospace;font-size:12.5px;background:va
 @keyframes kenburns{from{transform:scale(1.01) translate3d(0,0,0)}
                     to{transform:scale(1.16) translate3d(-1.5%,-1%,0)}}
 .fundo .veu{position:absolute;inset:0;
-  background:linear-gradient(180deg,transparent 0 52%,var(--fundo) 100%)}
+  background:linear-gradient(180deg,transparent 0 78%,var(--fundo) 100%)}
 .fundo-leg{position:fixed;left:18px;bottom:16px;z-index:2;pointer-events:none;
   font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;
   color:var(--tinta-3);background:color-mix(in srgb,var(--sup) 76%,transparent);
