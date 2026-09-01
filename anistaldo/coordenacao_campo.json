@@ -1,0 +1,202 @@
+[
+ {
+  "m": "SUZANO",
+  "piso": 2890,
+  "teto": 3930,
+  "pes": 48,
+  "reg": "Alto Tietê",
+  "a": 144
+ },
+ {
+  "m": "MOGI DAS CRUZES",
+  "piso": 1000,
+  "teto": 1500,
+  "pes": 39,
+  "reg": "Alto Tietê",
+  "a": 99
+ },
+ {
+  "m": "ITAQUAQUECETUBA",
+  "piso": 490,
+  "teto": 490,
+  "pes": 5,
+  "reg": "Alto Tietê",
+  "a": 402
+ },
+ {
+  "m": "POÁ",
+  "piso": 200,
+  "teto": 200,
+  "pes": 5,
+  "reg": "Alto Tietê",
+  "a": 173
+ },
+ {
+  "m": "FERRAZ DE VASCONCELOS",
+  "piso": 150,
+  "teto": 150,
+  "pes": 5,
+  "reg": "Alto Tietê",
+  "a": 141
+ },
+ {
+  "m": "ARUJÁ",
+  "piso": 150,
+  "teto": 150,
+  "pes": 5,
+  "reg": "Alto Tietê",
+  "a": 142
+ },
+ {
+  "m": "SANTA ISABEL",
+  "piso": 150,
+  "teto": 150,
+  "pes": 5,
+  "reg": "Alto Tietê",
+  "a": 23
+ },
+ {
+  "m": "GUARAREMA",
+  "piso": 100,
+  "teto": 100,
+  "pes": 5,
+  "reg": "Alto Tietê",
+  "a": 3
+ },
+ {
+  "m": "PINDAMONHANGABA",
+  "piso": 400,
+  "teto": 400,
+  "pes": 4,
+  "reg": "Vale do Paraíba",
+  "a": 49
+ },
+ {
+  "m": "TAUBATÉ",
+  "piso": 200,
+  "teto": 200,
+  "pes": 5,
+  "reg": "Vale do Paraíba",
+  "a": 18
+ },
+ {
+  "m": "CAÇAPAVA",
+  "piso": 200,
+  "teto": 200,
+  "pes": 1,
+  "reg": "Vale do Paraíba",
+  "a": 24
+ },
+ {
+  "m": "SÃO JOSÉ DOS CAMPOS",
+  "piso": 200,
+  "teto": 200,
+  "pes": 2,
+  "reg": "Vale do Paraíba",
+  "a": 172
+ },
+ {
+  "m": "ROSEIRA",
+  "piso": 50,
+  "teto": 50,
+  "pes": 1,
+  "reg": "Vale do Paraíba",
+  "a": 0
+ },
+ {
+  "m": "CRUZEIRO",
+  "piso": 50,
+  "teto": 50,
+  "pes": 1,
+  "reg": "Vale do Paraíba",
+  "a": 21
+ },
+ {
+  "m": "LORENA",
+  "piso": 50,
+  "teto": 50,
+  "pes": 1,
+  "reg": "Vale do Paraíba",
+  "a": 26
+ },
+ {
+  "m": "JACAREÍ",
+  "piso": 100,
+  "teto": 100,
+  "pes": 2,
+  "reg": "Vale do Paraíba",
+  "a": 47
+ },
+ {
+  "m": "TREMEMBÉ",
+  "piso": 100,
+  "teto": 100,
+  "pes": 2,
+  "reg": "Vale do Paraíba",
+  "a": 6
+ },
+ {
+  "m": "JAMBEIRO",
+  "piso": 50,
+  "teto": 50,
+  "pes": 1,
+  "reg": "Vale do Paraíba",
+  "a": 0
+ },
+ {
+  "m": "MAIRIPORÃ",
+  "piso": 650,
+  "teto": 1000,
+  "pes": 33,
+  "reg": "Demais regiões",
+  "a": 78
+ },
+ {
+  "m": "SÃO CARLOS",
+  "piso": 150,
+  "teto": 150,
+  "pes": 10,
+  "reg": "Demais regiões",
+  "a": 11
+ },
+ {
+  "m": "ARARAQUARA",
+  "piso": 150,
+  "teto": 150,
+  "pes": 12,
+  "reg": "Demais regiões",
+  "a": 15
+ },
+ {
+  "m": "FRANCO DA ROCHA",
+  "piso": 100,
+  "teto": 100,
+  "pes": 7,
+  "reg": "Demais regiões",
+  "a": 54
+ },
+ {
+  "m": "TUPI PAULISTA",
+  "piso": 50,
+  "teto": 50,
+  "pes": 2,
+  "reg": "Demais regiões",
+  "a": 0
+ },
+ {
+  "m": "GUARARAPES",
+  "piso": 50,
+  "teto": 50,
+  "pes": 2,
+  "reg": "Demais regiões",
+  "a": 0
+ },
+ {
+  "m": "DIADEMA",
+  "piso": 50,
+  "teto": 50,
+  "pes": 6,
+  "reg": "Demais regiões",
+  "a": 111
+ }
+]
