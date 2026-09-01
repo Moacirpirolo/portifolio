@@ -260,11 +260,6 @@ tr.coord td:first-child{box-shadow:inset 3px 0 0 var(--roxo-3)}
 .vazio{padding:32px 16px;color:var(--tinta-3);font-family:"Barlow",sans-serif;font-size:14.5px;text-align:left}
 .nota-fonte{margin-top:20px;font-size:13.5px;color:var(--tinta-3);max-width:82ch;line-height:1.6}
 
-footer{margin-top:80px;border-top:1px solid var(--borda);padding-top:28px;
-  display:flex;flex-direction:column;gap:14px;color:var(--tinta-3);font-size:14px;max-width:78ch;line-height:1.62}
-footer strong{color:var(--tinta-2)}
-footer code{font-family:"IBM Plex Mono",monospace;font-size:12.5px;background:var(--sup-2);
-  border:1px solid var(--borda);padding:2px 6px;border-radius:5px;color:var(--tinta-2)}
 
 #dica{position:fixed;pointer-events:none;z-index:60;background:var(--roxo-1);color:#fff;
   border-radius:9px;padding:10px 13px;font-family:"IBM Plex Mono",monospace;font-size:11.5px;
@@ -308,7 +303,7 @@ footer code{font-family:"IBM Plex Mono",monospace;font-size:12.5px;background:va
   border:1px solid var(--borda);border-radius:999px;padding:5px 12px;
   opacity:0;transition:opacity .8s ease;backdrop-filter:blur(8px)}
 .fundo-leg.on{opacity:.85}
-.topo,.nav,.env,footer{position:relative;z-index:1}
+.topo,.nav,.env{position:relative;z-index:1}
 
 /* ======== entrada do topo ======== */
 .anim .hero-el{opacity:0;transform:translateY(20px);
@@ -454,12 +449,6 @@ footer code{font-family:"IBM Plex Mono",monospace;font-size:12.5px;background:va
 </section>
 
 
-<footer>
-  <p><strong>Fonte de 2022:</strong> API pública de divulgação de resultados do TSE, eleição 546 (Ordinária Estadual 2022, 1º turno), cargo Deputado Estadual, SP. Total conferido: 40.718 votos em 318 municípios.</p>
-  <p><strong>Fonte da operação de campo:</strong> Mapa de Números · Podemos 20 · documento de campo da campanha, com 25 cidades em 3 regionais, 209 pessoas em campo e 1 coordenador estadual. O cabeçalho do documento fala em 22 cidades e teto de 9.670, mas as páginas por regional somam 26 cidades e 9.620 de teto (aqui são 25, sem Potim, que ainda está a levantar); esta página usa os números das regionais.</p>
-  <p><strong>Sobre a meta:</strong> os 80.000 votos são objetivo definido pela campanha. A divisão por município é cálculo desta página, não projeção eleitoral, e não considera migração de eleitorado, novos municípios ou concorrência.</p>
-  <p><strong>Para trocar pela apuração real de 2026:</strong> substitua o vetor <code>DADOS</code> no início do script, mantendo os campos <code>m</code>, <code>a</code> (votos 2022), <code>p</code> (% válidos 2022), <code>b</code> (meta proporcional) e <code>c</code> (meta expansão).</p>
-</footer>
 </div>
 
 <div id="dica" role="status" aria-live="polite"></div>
