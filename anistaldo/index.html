@@ -396,7 +396,7 @@ tr.coord td:first-child{box-shadow:inset 3px 0 0 var(--roxo-3)}
 
 
 <section id="operacao">
-  <div class="cab"><span class="olho">Estrutura própria</span><h2>Operação Alto Tietê, Vale do Paraíba e demais cidades</h2>
+  <div class="cab"><span class="olho">Estrutura própria</span><h2>Coordenação Alto Tietê, Vale do Paraíba e demais cidades</h2>
     <p>As cidades com coordenação regional, equipe montada e meta fechada por bairro. Números do mapa de campo do Podemos 20.</p></div>
   <div class="resumo" id="opnums"></div>
   <div class="faixa-piso">
@@ -512,7 +512,7 @@ function pintaOperacao(){
   const cx = document.getElementById('opnums'); cx.replaceChildren();
   [
     ['Cidades na coordenação regional','',cidades,'em 3 regionais de São Paulo'],
-    ['Pessoas na operação','',pes,nf(pes-1)+' em campo + 1 coordenador estadual'],
+    ['Pessoas na coordenação','',pes,nf(pes-1)+' em campo + 1 coordenador estadual'],
     ['Piso de votos','nmeta',piso,'já mapeado por bairro e por frente'],
     ['Teto de votos','nmeta',teto,'se todas as frentes entregarem']
   ].forEach(([rot,cor,val,nota])=>{
