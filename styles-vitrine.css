@@ -104,6 +104,30 @@ a {
   font-weight: 800;
 }
 
+.top-actions {
+  display: flex;
+  justify-self: end;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-portal {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 16px;
+  border: 1px solid rgba(255, 247, 243, 0.28);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.top-portal:hover {
+  color: var(--white);
+  border-color: var(--accent);
+}
+
 .hero {
   position: relative;
   min-height: calc(100svh - 77px);
@@ -724,6 +748,16 @@ h1 {
 }
 
 @media (max-width: 600px) {
+  .top-actions {
+    gap: 6px;
+  }
+
+  .top-portal,
+  .top-cta {
+    padding: 0 11px;
+    font-size: 13px;
+  }
+
   .hero-showroom {
     padding: 32px 16px 0;
     grid-template-rows: auto auto auto;
