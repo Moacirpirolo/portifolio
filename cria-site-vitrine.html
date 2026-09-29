@@ -10,7 +10,7 @@
       content="Conheça alguns projetos criados pela Cria Site: landing pages, sites institucionais, cardápios digitais, lojas com carrinho e pedido pelo WhatsApp."
     />
     <link rel="icon" href="cria-site-logo.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles-vitrine.css?v=1.5" />
+    <link rel="stylesheet" href="styles-vitrine.css?v=1.6" />
   </head>
   <body>
     <header class="topbar">
@@ -104,7 +104,7 @@
             <p class="plan-for">Restaurante, pizzaria, hamburgueria, lanchonete</p>
             <div class="plan-price">
               <s>De R$ 1.500</s>
-              <strong>R$ 750</strong>
+              <strong>R$ 900</strong>
               <span>Pronto em 4 dias</span>
             </div>
             <ul>
@@ -123,9 +123,14 @@
             <h3>Delivery Completo</h3>
             <p class="plan-for">Pizzaria, hamburgueria, açaí e restaurante que querem vender sem pagar comissão</p>
             <div class="plan-price">
-              <s>De R$ 3.000</s>
-              <strong>R$ 2.000</strong>
-              <span>Pronto em 7 dias</span>
+              <s>De R$ 3.600</s>
+              <strong>R$ 2.300</strong>
+              <span>Pronto em até 7 dias</span>
+              <span class="plan-split">
+                <span class="split-part"><s>R$ 1.500</s><b>Site R$ 900</b></span>
+                <span class="split-mais" aria-hidden="true">+</span>
+                <span class="split-part"><s>R$ 2.100</s><b>Sistema R$ 1.400</b></span>
+              </span>
             </div>
             <ul>
               <li>Tudo do Cardápio Digital</li>
@@ -180,7 +185,7 @@
         <div class="maintenance">
           <div>
             <h3>Manutenção do Delivery</h3>
-            <p class="plan-for">Obrigatória no plano Delivery Completo, sem fidelidade</p>
+            <p class="plan-for">Obrigatória no plano Delivery Completo, com 1 ano de fidelidade</p>
             <div class="plan-price">
               <strong>R$ 79,90 <small>/mês</small></strong>
               <span class="plan-gift">Primeiro mês grátis</span>
@@ -195,11 +200,66 @@
         </div>
 
         <dl class="terms">
-          <div><dt>Pagamento</dt><dd><b>Metade para começar</b> e metade na entrega, depois de aprovar.</dd></div>
-          <div><dt>Se não gostar</dt><dd>Você só paga o restante depois de aprovar. <b>Não aprovou, não paga.</b></dd></div>
-          <div><dt>Prazo</dt><dd>Começa a contar quando você mandar fotos, textos e contatos.</dd></div>
-          <div><dt>Fidelidade</dt><dd>Nenhuma. <b>O site é seu</b>, mesmo se cancelar a manutenção. No Delivery, o sistema de pedidos funciona enquanto a manutenção estiver ativa.</dd></div>
+          <div><dt>Pagamento</dt><dd><b>50% para começar</b> e 50% na entrega, depois de aprovar.</dd></div>
+          <div><dt>Prazo</dt><dd><b>Entrega em até 7 dias.</b></dd></div>
+          <div><dt>Fidelidade</dt><dd><b>O site é seu</b>, mesmo se cancelar a manutenção. No Delivery Completo, a manutenção tem <b>1 ano de fidelidade</b> e depois renova automaticamente, podendo ser cancelada quando quiser. Cancelando, <b>o sistema continua funcionando</b>, mas sem nossa responsabilidade por falhas, e a manutenção pode ser contratada de novo a qualquer momento.</dd></div>
         </dl>
+      </section>
+
+      <section class="cmp" id="comparativo" aria-labelledby="cmp-title">
+        <div class="cmp-area">
+
+          <div>
+            <p class="kicker">Alugar ou ser seu</p>
+            <h2 id="cmp-title">Você não tem um sistema. Você aluga um.</h2>
+            <p class="cmp-lede">
+              No dia que atrasar, some o cardápio, some o link, some o painel.
+              Você volta para o papel do mesmo jeito que entrou, só que anos mais pobre.
+              <b>Aqui você cancela quando quiser e continua com tudo: o sistema, o endereço e os seus clientes.</b>
+            </p>
+            <a class="cmp-cta" href="https://wa.me/5511994516869?text=Vi%20a%20compara%C3%A7%C3%A3o%20no%20site%20e%20quero%20um%20sistema%20que%20seja%20meu."
+               target="_blank" rel="noreferrer">Quero um que seja meu</a>
+            <p class="cmp-nota">
+              Valores de Cliente Fiel e Wabiz informados pelas próprias empresas em consulta comercial, setembro de 2026.
+              Cria Site: Delivery Completo de R$ 2.300, mais manutenção de R$ 79,90 por mês, obrigatória no
+              primeiro ano. Depois ela renova sozinha e você cancela quando quiser, sem perder o sistema.
+              Mais R$ 50 por ano de endereço a partir do segundo ano. A conta ao lado considera a manutenção
+              cancelada no fim do primeiro ano.
+            </p>
+          </div>
+
+          <div class="cmp-painel">
+            <div class="cmp-tempo">
+              <p class="cmp-instrucao">Arraste e compare</p>
+              <div class="cmp-anos" id="cmpAnos">Em 3 anos</div>
+              <input type="range" id="cmpRange" min="3" max="5" step="1" value="3" aria-label="Quantidade de anos">
+              <div class="cmp-extremos"><span>3 anos</span><span>5 anos</span></div>
+            </div>
+
+            <div class="cmp-item" data-mes="127" data-setup="0">
+              <div class="cmp-topo"><span class="cmp-nome">Cliente Fiel, entrada</span><span class="cmp-valor"></span></div>
+              <div class="cmp-trilho"><div class="cmp-barra"></div></div>
+            </div>
+
+            <div class="cmp-item" data-mes="327" data-setup="0">
+              <div class="cmp-topo"><span class="cmp-nome">Cliente Fiel, completo</span><span class="cmp-valor"></span></div>
+              <div class="cmp-trilho"><div class="cmp-barra"></div></div>
+            </div>
+
+            <div class="cmp-item" data-mes="175" data-setup="325">
+              <div class="cmp-topo"><span class="cmp-nome">Wabiz</span><span class="cmp-valor"></span></div>
+              <div class="cmp-trilho"><div class="cmp-barra"></div></div>
+            </div>
+
+            <div class="cmp-item cmp-nosso" data-nosso="1">
+              <div class="cmp-topo"><span class="cmp-nome">Cria Site</span><span class="cmp-valor"></span></div>
+              <div class="cmp-trilho"><div class="cmp-barra"></div></div>
+            </div>
+
+            <p class="cmp-fecha" id="cmpFecha"></p>
+          </div>
+
+        </div>
       </section>
 
       <section id="projetos" class="projects" aria-labelledby="projects-title">
@@ -318,6 +378,46 @@
         </p>
       </section>
     </main>
+
+    <script>
+      (function () {
+        var UNICO = 2300, DOMINIO = 50, MANUT = 79.9, MESES_OBRIG = 12;
+        var range = document.getElementById("cmpRange");
+        if (!range) return;
+        var anosTexto = document.getElementById("cmpAnos");
+        var fecha = document.getElementById("cmpFecha");
+        var itens = Array.prototype.slice.call(document.querySelectorAll(".cmp-item"));
+
+        function reais(n) {
+          return "R$ " + Math.round(n).toLocaleString("pt-BR");
+        }
+
+        function calcula() {
+          var anos = Number(range.value), meses = anos * 12;
+          anosTexto.textContent = "Em " + anos + " anos";
+
+          var nosso = UNICO + MANUT * MESES_OBRIG + DOMINIO * (anos - 1);
+          var valores = itens.map(function (it) {
+            return it.dataset.nosso ? nosso : Number(it.dataset.setup) + Number(it.dataset.mes) * meses;
+          });
+          var maior = Math.max.apply(null, valores);
+
+          itens.forEach(function (it, i) {
+            it.querySelector(".cmp-valor").textContent = reais(valores[i]);
+            it.querySelector(".cmp-barra").style.width = (valores[i] / maior * 100) + "%";
+          });
+
+          var barato = Math.min.apply(null, valores.filter(function (v, i) {
+            return !itens[i].dataset.nosso;
+          }));
+          fecha.innerHTML = "No mais em conta deles você já pagou " + reais(barato) +
+            ". E se parar, perde tudo. Aqui você para quando quiser e <b>continua com o sistema.</b>";
+        }
+
+        range.addEventListener("input", calcula);
+        calcula();
+      })();
+    </script>
   </body>
 </html>
  
