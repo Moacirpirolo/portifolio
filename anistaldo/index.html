@@ -359,7 +359,7 @@ tr.coord td:first-child{box-shadow:inset 3px 0 0 var(--roxo-3)}
           <span class="l3">Deputado Estadual</span>
         </span>
       </div>
-      <p class="chamada hero-el" style="--d:70ms">Nossa coordenação regional em 29 cidades de São Paulo: 3 regionais, 222 pessoas em campo e 8.030 votos já mapeados por bairro e por frente.</p>
+      <p class="chamada hero-el" style="--d:70ms">Nossa coordenação regional em 29 cidades de São Paulo: 3 regionais, 222 pessoas em campo e 5.621 votos já mapeados por bairro e por frente.</p>
     </div>
     <div class="vote hero-el" style="--d:140ms">
       <span class="tag">VOTE</span>
@@ -400,8 +400,8 @@ tr.coord td:first-child{box-shadow:inset 3px 0 0 var(--roxo-3)}
     <p>As cidades com coordenação regional, equipe montada e meta fechada por bairro. Números do mapa de campo do Podemos 20.</p></div>
   <div class="resumo" id="opnums"></div>
   <div class="faixa-piso">
-    <strong>8.030 votos já mapeados</strong>
-    <span>É mais de um quinto de tudo o que falta para os 80 mil, saindo de cidades que juntas deram 2.099 votos em 2022.</span>
+    <strong>5.621 votos já mapeados</strong>
+    <span>É 14% de tudo o que falta para os 80 mil, saindo de cidades que juntas deram 2.099 votos em 2022.</span>
   </div>
   <div class="regionais" id="regionais"></div>
 </section>
@@ -417,7 +417,7 @@ tr.coord td:first-child{box-shadow:inset 3px 0 0 var(--roxo-3)}
     <span><i style="background:var(--smeta)"></i>Piso mapeado</span>
     <span><i style="background:repeating-linear-gradient(135deg,var(--smeta) 0 3px,transparent 3px 7px)"></i>Até o teto</span>
   </div></div>
-  <p class="nota-fonte">No Vale do Paraíba o documento de campo traz só o valor mapeado por cidade, 1.500 no total, e adota 1.200 como piso na consolidação regional. Por isso a soma dos pisos por cidade fica acima do piso geral. Cinco cidades da coordenação regional não tiveram nenhum voto em 2022: Roseira, Jambeiro, São Luiz do Paraitinga, Tupi Paulista e Guararapes.</p>
+  <p class="nota-fonte">No Vale do Paraíba o documento de campo traz só o valor mapeado por cidade, 1.050 no total, e adota 840 como piso na consolidação regional. Por isso a soma dos pisos por cidade fica acima do piso geral. Cinco cidades da coordenação regional não tiveram nenhum voto em 2022: Roseira, Jambeiro, São Luiz do Paraitinga, Tupi Paulista e Guararapes.</p>
 </section>
 
 
@@ -463,7 +463,7 @@ const DADOS = [{"m":"GUARULHOS","a":23224,"p":3.5981,"b":45601,"c":39360},{"m":"
 /* ==== COORDENAÇÃO DE CAMPO ====
    Mapa de Números · Podemos 20 · coordenação regional: 29 cidades, 221 em campo + 1 coordenador regional.
    m = município · piso · teto · pes = pessoas na cidade · reg = regional · a = votos 2022 */
-const COORD = [{"m":"SUZANO","piso":2890,"teto":3930,"pes":48,"reg":"Alto Tietê","a":144},{"m":"MOGI DAS CRUZES","piso":1000,"teto":1500,"pes":39,"reg":"Alto Tietê","a":99},{"m":"ITAQUAQUECETUBA","piso":490,"teto":490,"pes":5,"reg":"Alto Tietê","a":402},{"m":"POÁ","piso":200,"teto":200,"pes":5,"reg":"Alto Tietê","a":173},{"m":"FERRAZ DE VASCONCELOS","piso":150,"teto":150,"pes":5,"reg":"Alto Tietê","a":141},{"m":"ARUJÁ","piso":150,"teto":150,"pes":5,"reg":"Alto Tietê","a":142},{"m":"SANTA ISABEL","piso":150,"teto":150,"pes":5,"reg":"Alto Tietê","a":23},{"m":"GUARAREMA","piso":100,"teto":100,"pes":5,"reg":"Alto Tietê","a":3},{"m":"PINDAMONHANGABA","piso":400,"teto":400,"pes":4,"reg":"Vale do Paraíba","a":49},{"m":"TAUBATÉ","piso":200,"teto":200,"pes":5,"reg":"Vale do Paraíba","a":18},{"m":"CAÇAPAVA","piso":200,"teto":200,"pes":1,"reg":"Vale do Paraíba","a":24},{"m":"SÃO JOSÉ DOS CAMPOS","piso":200,"teto":200,"pes":2,"reg":"Vale do Paraíba","a":172},{"m":"ROSEIRA","piso":50,"teto":50,"pes":1,"reg":"Vale do Paraíba","a":0},{"m":"CRUZEIRO","piso":50,"teto":50,"pes":1,"reg":"Vale do Paraíba","a":21},{"m":"LORENA","piso":50,"teto":50,"pes":1,"reg":"Vale do Paraíba","a":26},{"m":"JACAREÍ","piso":100,"teto":100,"pes":2,"reg":"Vale do Paraíba","a":47},{"m":"TREMEMBÉ","piso":100,"teto":100,"pes":2,"reg":"Vale do Paraíba","a":6},{"m":"JAMBEIRO","piso":50,"teto":50,"pes":1,"reg":"Vale do Paraíba","a":0},{"m":"MAIRIPORÃ","piso":650,"teto":1000,"pes":33,"reg":"Demais regiões","a":78},{"m":"SÃO CARLOS","piso":150,"teto":150,"pes":10,"reg":"Demais regiões","a":11},{"m":"ARARAQUARA","piso":150,"teto":150,"pes":12,"reg":"Demais regiões","a":15},{"m":"FRANCO DA ROCHA","piso":100,"teto":100,"pes":7,"reg":"Demais regiões","a":54},{"m":"TUPI PAULISTA","piso":50,"teto":50,"pes":2,"reg":"Demais regiões","a":0},{"m":"GUARARAPES","piso":50,"teto":50,"pes":2,"reg":"Demais regiões","a":0},{"m":"DIADEMA","piso":50,"teto":50,"pes":6,"reg":"Demais regiões","a":111},{"m":"PRAIA GRANDE","piso":400,"teto":400,"pes":5,"reg":"Demais regiões","a":322},{"m":"BIRITIBA MIRIM","piso":100,"teto":100,"pes":5,"reg":"Alto Tietê","a":13},{"m":"IGARATÁ","piso":50,"teto":50,"pes":1,"reg":"Vale do Paraíba","a":5},{"m":"SÃO LUIZ DO PARAITINGA","piso":50,"teto":50,"pes":1,"reg":"Vale do Paraíba","a":0}];
+const COORD = [{"m":"SUZANO","piso":2023,"teto":2751,"pes":48,"reg":"Alto Tietê","a":144},{"m":"MOGI DAS CRUZES","piso":700,"teto":1050,"pes":39,"reg":"Alto Tietê","a":99},{"m":"ITAQUAQUECETUBA","piso":343,"teto":343,"pes":5,"reg":"Alto Tietê","a":402},{"m":"POÁ","piso":140,"teto":140,"pes":5,"reg":"Alto Tietê","a":173},{"m":"FERRAZ DE VASCONCELOS","piso":105,"teto":105,"pes":5,"reg":"Alto Tietê","a":141},{"m":"ARUJÁ","piso":105,"teto":105,"pes":5,"reg":"Alto Tietê","a":142},{"m":"SANTA ISABEL","piso":105,"teto":105,"pes":5,"reg":"Alto Tietê","a":23},{"m":"GUARAREMA","piso":70,"teto":70,"pes":5,"reg":"Alto Tietê","a":3},{"m":"PINDAMONHANGABA","piso":280,"teto":280,"pes":4,"reg":"Vale do Paraíba","a":49},{"m":"TAUBATÉ","piso":140,"teto":140,"pes":5,"reg":"Vale do Paraíba","a":18},{"m":"CAÇAPAVA","piso":140,"teto":140,"pes":1,"reg":"Vale do Paraíba","a":24},{"m":"SÃO JOSÉ DOS CAMPOS","piso":140,"teto":140,"pes":2,"reg":"Vale do Paraíba","a":172},{"m":"ROSEIRA","piso":35,"teto":35,"pes":1,"reg":"Vale do Paraíba","a":0},{"m":"CRUZEIRO","piso":35,"teto":35,"pes":1,"reg":"Vale do Paraíba","a":21},{"m":"LORENA","piso":35,"teto":35,"pes":1,"reg":"Vale do Paraíba","a":26},{"m":"JACAREÍ","piso":70,"teto":70,"pes":2,"reg":"Vale do Paraíba","a":47},{"m":"TREMEMBÉ","piso":70,"teto":70,"pes":2,"reg":"Vale do Paraíba","a":6},{"m":"JAMBEIRO","piso":35,"teto":35,"pes":1,"reg":"Vale do Paraíba","a":0},{"m":"MAIRIPORÃ","piso":455,"teto":700,"pes":33,"reg":"Demais regiões","a":78},{"m":"SÃO CARLOS","piso":105,"teto":105,"pes":10,"reg":"Demais regiões","a":11},{"m":"ARARAQUARA","piso":105,"teto":105,"pes":12,"reg":"Demais regiões","a":15},{"m":"FRANCO DA ROCHA","piso":70,"teto":70,"pes":7,"reg":"Demais regiões","a":54},{"m":"TUPI PAULISTA","piso":35,"teto":35,"pes":2,"reg":"Demais regiões","a":0},{"m":"GUARARAPES","piso":35,"teto":35,"pes":2,"reg":"Demais regiões","a":0},{"m":"DIADEMA","piso":35,"teto":35,"pes":6,"reg":"Demais regiões","a":111},{"m":"PRAIA GRANDE","piso":280,"teto":280,"pes":5,"reg":"Demais regiões","a":322},{"m":"BIRITIBA MIRIM","piso":70,"teto":70,"pes":5,"reg":"Alto Tietê","a":13},{"m":"IGARATÁ","piso":35,"teto":35,"pes":1,"reg":"Vale do Paraíba","a":5},{"m":"SÃO LUIZ DO PARAITINGA","piso":35,"teto":35,"pes":1,"reg":"Vale do Paraíba","a":0}];
 const NA_COORD = new Set(COORD.map(c=>c.m));
 const porM = {}; COORD.forEach(c=>porM[c.m]=c);
 
@@ -508,7 +508,7 @@ function pintaResumo(){
 function pintaOperacao(){
   const cidades = COORD.length;
   const pes = COORD.reduce((s,c)=>s+c.pes,0)+1;
-  const piso = 5230+1200+1600, teto = 6770+1500+1950;
+  const piso = 3661+840+1120, teto = 4739+1050+1365;
   const cx = document.getElementById('opnums'); cx.replaceChildren();
   [
     ['Cidades na coordenação regional','',cidades,'em 3 regionais de São Paulo'],
@@ -523,9 +523,9 @@ function pintaOperacao(){
   });
 
   const REG = [
-    ['Alto Tietê','Polo principal',9,122,5230,6770],
-    ['Vale do Paraíba','Supervisão própria',12,22,1200,1500],
-    ['Demais regiões','Grande SP e interior',8,77,1600,1950]
+    ['Alto Tietê','Polo principal',9,122,3661,4739],
+    ['Vale do Paraíba','Supervisão própria',12,22,840,1050],
+    ['Demais regiões','Grande SP e interior',8,77,1120,1365]
   ];
   const cxr = document.getElementById('regionais'); cxr.replaceChildren();
   REG.forEach(([nome,linha,nc,np,pi,te])=>{
@@ -550,7 +550,7 @@ function pintaOperacao(){
 
 function pintaCoord(){
   const lista = COORD.slice().sort((x,y)=>y.teto-x.teto || y.a-x.a);
-  const escala = 4000;
+  const escala = 3000;
   const eixo = document.getElementById('eixoc'); eixo.replaceChildren();
   [0,.25,.5,.75,1].forEach(f=>eixo.append(el('span',null,nf(escala*f))));
   const cx = document.getElementById('coordrank'); cx.replaceChildren();
