@@ -198,5 +198,37 @@
   "pes": 6,
   "reg": "Demais regiões",
   "a": 111
+ },
+ {
+  "m": "PRAIA GRANDE",
+  "piso": 400,
+  "teto": 400,
+  "pes": 5,
+  "reg": "Demais regiões",
+  "a": 322
+ },
+ {
+  "m": "BIRITIBA MIRIM",
+  "piso": 100,
+  "teto": 100,
+  "pes": 5,
+  "reg": "Alto Tietê",
+  "a": 13
+ },
+ {
+  "m": "IGARATÁ",
+  "piso": 50,
+  "teto": 50,
+  "pes": 1,
+  "reg": "Vale do Paraíba",
+  "a": 5
+ },
+ {
+  "m": "SÃO LUIZ DO PARAITINGA",
+  "piso": 50,
+  "teto": 50,
+  "pes": 1,
+  "reg": "Vale do Paraíba",
+  "a": 0
  }
 ]
