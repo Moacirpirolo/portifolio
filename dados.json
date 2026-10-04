@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-04T19:34:09-03:00",
+ "atualizado_em": "2026-10-04T19:34:22-03:00",
  "fonte": "TSE - resultados.tse.jus.br",
  "erros": [],
  "diagnostico": {
@@ -613,6 +613,12 @@
       "pst": 70.73
      },
      {
+      "m": "INDAIATUBA",
+      "v": 13,
+      "p": 0.02,
+      "pst": 62.0
+     },
+     {
       "m": "LARANJAL PAULISTA",
       "v": 13,
       "p": 0.09,
@@ -707,12 +713,6 @@
       "v": 8,
       "p": 0.21,
       "pst": 100.0
-     },
-     {
-      "m": "INDAIATUBA",
-      "v": 8,
-      "p": 0.02,
-      "pst": 32.57
      },
      {
       "m": "PARAIBUNA",
@@ -887,6 +887,12 @@
       "v": 4,
       "p": 0.0,
       "pst": 53.88
+     },
+     {
+      "m": "IBIÚNA",
+      "v": 4,
+      "p": 0.02,
+      "pst": 62.5
      },
      {
       "m": "ITARARÉ",
@@ -1069,12 +1075,6 @@
       "pst": 88.46
      },
      {
-      "m": "IBIÚNA",
-      "v": 2,
-      "p": 0.02,
-      "pst": 31.25
-     },
-     {
       "m": "ILHA COMPRIDA",
       "v": 2,
       "p": 0.02,
@@ -1237,6 +1237,12 @@
       "pst": 100.0
      },
      {
+      "m": "IGUAPE",
+      "v": 1,
+      "p": 0.01,
+      "pst": 100.0
+     },
+     {
       "m": "ITAPUÍ",
       "v": 1,
       "p": 0.02,
@@ -1365,7 +1371,7 @@
     ],
     "falhas": 0,
     "total_municipios": 645,
-    "com_voto": 169
+    "com_voto": 170
    }
   },
   "davi": {
