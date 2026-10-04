@@ -86,6 +86,20 @@ h2::after{content:"";flex:1;height:1px;background:rgba(217,201,240,.28)}
 dl{display:grid;grid-template-columns:auto 1fr;gap:7px 16px;margin:0;font-size:.92rem;padding:14px 16px;background:var(--sup-2);border-radius:12px}
 dt{color:var(--tinta-3)}
 dd{margin:0;font-family:var(--mono);font-size:.86rem;font-variant-numeric:tabular-nums;min-width:0;overflow-wrap:anywhere;color:var(--tinta)}
+.cidades{display:grid;gap:8px}
+.cidades-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.cidades-top h3{font-family:var(--display);font-weight:800;font-size:1rem;margin:0;color:var(--roxo-1)}
+.cidades-top span{font-family:var(--mono);font-size:.8rem;color:var(--tinta-3)}
+.tabela{max-height:380px;overflow:auto;border:1px solid var(--borda);border-radius:12px}
+.tabela table{width:100%;border-collapse:collapse;font-size:.9rem}
+.tabela th{position:sticky;top:0;background:var(--roxo-1);color:#fff;font-family:var(--mono);font-weight:500;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;text-align:right;padding:9px 12px;white-space:nowrap}
+.tabela th:first-child,.tabela td:first-child{text-align:left}
+.tabela td{padding:7px 12px;border-top:1px solid var(--borda);text-align:right;font-family:var(--mono);font-size:.84rem;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tabela td:first-child{font-family:var(--body);font-size:.92rem;white-space:normal}
+.tabela tr:nth-child(even) td{background:var(--sup-2)}
+.tabela .dif.sobe{color:var(--sobe)}
+.tabela .dif.desce{color:var(--desce)}
+.tabela .zero{color:var(--tinta-3)}
 footer{font-size:.84rem;color:var(--lilas);display:grid;gap:6px;max-width:80ch}
 @media (max-width:620px){
   .topo{grid-template-columns:1fr;justify-items:start}
@@ -151,7 +165,7 @@ const FOTO_ANIS = document.querySelector('.foto').src;
 
 const FIXOS = {
   anistaldo:{nome:'Pastor Anistaldo', numero:'20147', cargo:'Deputado estadual', partido:'Podemos', vagas:94, foto:FOTO_ANIS,
-    extra:'<dt>2022</dt><dd>40.718 votos · suplente</dd><dt>Base</dt><dd>Guarulhos</dd>'},
+    extra:'<dt>Base</dt><dd>Guarulhos</dd>'},
   davi:{nome:'Davi Sacer', numero:'1122', cargo:'Deputado federal', partido:'PP', vagas:70, foto:null,
     extra:'<dt>Nome completo</dt><dd>Davi Amorim de Oliveira</dd>'},
   marangoni:{nome:'Fernando Marangoni', numero:'', cargo:'Deputado federal', partido:'Podemos', vagas:70, foto:null,
@@ -187,8 +201,23 @@ function cartaoAcomp(chave, d){
       ${partido ? `<dt>No partido</dt><dd>${partido}</dd>` : ''}
       ${f.extra}
     </dl>
+    ${chave === 'anistaldo' ? tabelaCidades(d.por_cidade) : ''}
     ${medidor(d.pst, 'em SP')}
   </article>`;
+}
+
+function tabelaCidades(pc){
+  if (!pc || !pc.cidades) return `<div class="cidades"><div class="cidades-top"><h3>Votos por cidade</h3><span>aguardando a coleta por município</span></div></div>`;
+  const linhas = pc.cidades.map(c => {
+    return `<tr><td>${titulo(c.m)}</td><td>${fmt(c.v)}</td><td>${pct(c.p)}%</td></tr>`;
+  }).join('');
+  return `<div class="cidades">
+    <div class="cidades-top"><h3>Votos por cidade</h3><span>${fmt(pc.com_voto)} cidades com voto</span></div>
+    <div class="tabela"><table>
+      <thead><tr><th>Cidade</th><th>Votos</th><th>% válidos na cidade</th></tr></thead>
+      <tbody>${linhas}</tbody>
+    </table></div>
+  </div>`;
 }
 
 function cartaoMajor(d, onde){

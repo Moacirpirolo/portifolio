@@ -12,7 +12,8 @@ Estrutura: raiz (dg, hg, s.pst, v.vv...) -> carg[] -> agr[] (agremiação) -> pa
 (n, nmu/nm, vap, pvap, st, e). Se o -u.json falhar, tenta o formato simplificado de 2022 (-r.json).
 6257 = Eleição Ordinária Federal 2026, 6259 = Eleição Ordinária Estadual 2026 (config/ele-c.json).
 """
-import json, os, sys, time, urllib.request
+import json, os, sys, time, unicodedata, urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone, timedelta
 
 BASE = "https://resultados.tse.jus.br/oficial/ele2026"
@@ -47,6 +48,8 @@ def num(v):
     """'12.915.526' / '12915526' / '51,07' -> número."""
     if v is None or v == "":
         return 0
+    if isinstance(v, (int, float)):
+        return v
     s = str(v).strip()
     if "," in s:
         return float(s.replace(".", "").replace(",", "."))
@@ -116,6 +119,60 @@ def cabecalho(j):
         "vb": num(_campo(j, "v", "vb")), "vn": num(_campo(j, "v", "tvn", "vn")),
         "vv": num(_campo(j, "v", "vv")), "a": num(_campo(j, "e", "a")),
     }
+
+
+# --- votação do Anistaldo por município (um arquivo -u.json por cidade no TSE) ---
+CONFIG_MUN = [f"{BASE}/6259/config/mun-e006259-cm.json",
+              "https://resultados.tse.jus.br/oficial/ele2026/6259/config/mun-e006259-cm.json"]
+
+
+def _sem_acento(t):
+    return "".join(ch for ch in unicodedata.normalize("NFD", str(t).upper()) if unicodedata.category(ch) != "Mn")
+
+
+def municipios_sp():
+    for url in CONFIG_MUN:
+        try:
+            j = baixa(url)
+        except Exception:  # noqa: BLE001
+            continue
+        for b in j.get("abr", []):
+            if str(b.get("cd", "")).upper() == "SP":
+                return [(m["cd"], m["nm"]) for m in b.get("mu", [])]
+    return []
+
+
+def anistaldo_por_cidade(numero="20147"):
+    muns = municipios_sp()
+    if not muns:
+        return None, "lista de municípios do TSE indisponível"
+    def um(item):
+        cod, nome = item
+        url = f"{BASE}/6259/dados/sp/sp{cod}-c0007-e006259-u.json"
+        for _ in range(2):
+            try:
+                j = baixa(url)
+                vv = num(cabecalho(j).get("vv"))
+                pst = num(cabecalho(j).get("pst"))
+                for c in cands(j):
+                    if c["n"] == numero:
+                        return nome, c["vap"], vv, pst
+                return nome, 0, vv, pst
+            except Exception:  # noqa: BLE001
+                time.sleep(1)
+        return nome, None, None, None
+    with ThreadPoolExecutor(max_workers=24) as ex:
+        res = list(ex.map(um, muns))
+    linhas, falhas = [], 0
+    for nome, v, vv, pst in res:
+        if v is None:
+            falhas += 1
+            continue
+        if v:
+            linhas.append({"m": nome, "v": v, "p": round(100 * v / vv, 2) if vv else 0, "pst": pst})
+    linhas.sort(key=lambda x: x["v"], reverse=True)
+    return {"cidades": linhas, "falhas": falhas, "total_municipios": len(muns),
+            "com_voto": sum(1 for x in linhas if x["v"])}, None
 
 
 def main():
@@ -195,6 +252,19 @@ def main():
                 for i, c in enumerate(lista) if c["cc"] and alvo and c["cc"] == alvo["cc"]
             ][:5],
         }
+
+    if "anistaldo" in saida["acompanhados"]:
+        try:
+            cid, erro = anistaldo_por_cidade()
+        except Exception as e:  # noqa: BLE001
+            cid, erro = None, str(e)
+        anterior_cid = (anterior.get("acompanhados", {}).get("anistaldo") or {}).get("por_cidade")
+        if cid:
+            saida["acompanhados"]["anistaldo"]["por_cidade"] = cid
+        else:
+            erros.append(f"anistaldo por cidade: {erro}")
+            if anterior_cid:
+                saida["acompanhados"]["anistaldo"]["por_cidade"] = anterior_cid
 
     with open(SAIDA, "w", encoding="utf-8") as f:
         json.dump(saida, f, ensure_ascii=False, indent=1)
