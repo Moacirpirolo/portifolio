@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-04T19:11:09-03:00",
+ "atualizado_em": "2026-10-04T19:13:12-03:00",
  "fonte": "TSE - resultados.tse.jus.br",
  "erros": [],
  "diagnostico": {
@@ -219,20 +219,20 @@
    ]
   },
   "governador": {
-   "pst": 66.9,
+   "pst": 70.98,
    "dg": "04/10/2026",
-   "hg": "19:07:44",
-   "vb": 872068,
-   "vn": 1249177,
-   "vv": 15297808,
-   "a": 5032086,
+   "hg": "19:10:50",
+   "vb": 928735,
+   "vn": 1329891,
+   "vv": 16262150,
+   "a": 5357404,
    "cand": [
     {
      "n": "10",
      "nm": "TARCÍSIO",
      "cc": "REPUBLICANOS",
-     "vap": 9718414,
-     "pvap": 63.53,
+     "vap": 10312172,
+     "pvap": 63.41,
      "st": "",
      "e": "n"
     },
@@ -240,8 +240,8 @@
      "n": "13",
      "nm": "FERNANDO HADDAD",
      "cc": "PT",
-     "vap": 5439774,
-     "pvap": 35.56,
+     "vap": 5801217,
+     "pvap": 35.67,
      "st": "",
      "e": "n"
     },
@@ -249,7 +249,7 @@
      "n": "80",
      "nm": "VIVIAN MENDES",
      "cc": "UP",
-     "vap": 52286,
+     "vap": 55708,
      "pvap": 0.34,
      "st": "",
      "e": "n"
@@ -258,7 +258,7 @@
      "n": "16",
      "nm": "VERA LÚCIA",
      "cc": "PSTU",
-     "vap": 48808,
+     "vap": 52012,
      "pvap": 0.32,
      "st": "",
      "e": "n"
@@ -267,7 +267,7 @@
      "n": "21",
      "nm": "CARLOS MACHADO",
      "cc": "PCB",
-     "vap": 38526,
+     "vap": 41041,
      "pvap": 0.25,
      "st": "",
      "e": "n"
@@ -282,50 +282,50 @@
    "cargo": "Deputado estadual",
    "partido": "Podemos",
    "vagas": 94,
-   "pst": 55.57,
+   "pst": 65.59,
    "dg": "04/10/2026",
-   "hg": "19:02:49",
-   "vb": 1003753,
-   "vn": 661579,
-   "vv": 12717533,
-   "a": 4151431,
+   "hg": "19:09:13",
+   "vb": 1185542,
+   "vn": 786524,
+   "vv": 15079256,
+   "a": 4928666,
    "encontrado": true,
-   "vap": 5844,
+   "vap": 7305,
    "pvap": 0.05,
    "st": "",
-   "posicao": 313,
+   "posicao": 310,
    "total_candidatos": 1346,
-   "corte_vap": 35659,
+   "corte_vap": 42566,
    "lider": {
     "nm": "EDUARDA CAMPOPIANO",
     "cc": "PL",
-    "vap": 1082892
+    "vap": 1275506
    },
    "partido_top": [
     {
      "nm": "ROGERIO LINS",
-     "vap": 90437,
-     "pos": 12
+     "vap": 106003,
+     "pos": 15
     },
     {
      "nm": "DR. EDSON DA PAIOL",
-     "vap": 65921,
+     "vap": 78564,
      "pos": 31
     },
     {
      "nm": "LEANDRO BASSON",
-     "vap": 54706,
+     "vap": 63306,
      "pos": 49
     },
     {
      "nm": "KAKA DO AUTISMO",
-     "vap": 47182,
-     "pos": 60
+     "vap": 57113,
+     "pos": 61
     },
     {
      "nm": "FABIO FARIA DE SÁ",
-     "vap": 38157,
-     "pos": 85
+     "vap": 48281,
+     "pos": 79
     }
    ]
   },
@@ -335,49 +335,49 @@
    "cargo": "Deputado federal",
    "partido": "PP",
    "vagas": 70,
-   "pst": 58.57,
+   "pst": 65.59,
    "dg": "04/10/2026",
-   "hg": "19:04:15",
-   "vb": 891315,
-   "vn": 645403,
-   "vv": 13650377,
-   "a": 4389559,
+   "hg": "19:08:49",
+   "vb": 997847,
+   "vn": 725173,
+   "vv": 15329941,
+   "a": 4928666,
    "encontrado": true,
-   "vap": 22366,
+   "vap": 24880,
    "pvap": 0.16,
    "st": "",
-   "posicao": 129,
+   "posicao": 130,
    "total_candidatos": 1045,
-   "corte_vap": 46748,
+   "corte_vap": 53804,
    "lider": {
     "nm": "LUCAS PAVANATO",
     "cc": "PL",
-    "vap": 1795531
+    "vap": 2001119
    },
    "partido_top": [
     {
      "nm": "SARGENTO NANTES",
-     "vap": 184675,
+     "vap": 207111,
      "pos": 7
     },
     {
      "nm": "MAURICIO NEVES",
-     "vap": 154824,
+     "vap": 171677,
      "pos": 11
     },
     {
      "nm": "CORONEL TELHADA",
-     "vap": 58025,
-     "pos": 55
+     "vap": 65645,
+     "pos": 54
     },
     {
      "nm": "VICTOR RUIZ",
-     "vap": 26796,
+     "vap": 30090,
      "pos": 110
     },
     {
      "nm": "JANAINA PASCHOAL",
-     "vap": 26660,
+     "vap": 29987,
      "pos": 111
     }
    ]
