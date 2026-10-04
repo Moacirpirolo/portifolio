@@ -55,12 +55,3 @@ Trocar os valores recalcula a página inteira.
   abaixo do mínimo de 8. Por isso os gráficos usam roxo e dourado, e o azul fica só na identidade.
 - Fontes carregam sem bloquear a renderização; a página aparece com as fontes do sistema e troca depois.
 - Todo movimento respeita `prefers-reduced-motion`.
-
-## Painel de apuração 2026 (`apuracao/`)
-
-Painel ao vivo com o Pastor Anistaldo (20147), Davi Sacer (1122), governador de SP e presidente.
-
-- `apuracao/index.html`: a página. Lê `dados.json` e se recarrega a cada 2 minutos.
-- `apuracao/coleta_apuracao.py`: puxa os quatro arquivos da API do TSE (pleitos 6257 e 6259) e grava `dados.json`.
-- `.github/workflows/apuracao-2026.yml`: roda o coletor em laço, a cada 2 minutos, e faz commit do `dados.json`.
-  Para sozinho quando a apuração chega a 100% ou depois de ~5h40. Dá para disparar de novo em Actions → "Run workflow".
