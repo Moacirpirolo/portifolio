@@ -1,0 +1,48 @@
+name: Apuração 2026 (a cada 2 min)
+
+# O agendamento do GitHub não roda em intervalos menores que 5 min, então o job fica
+# em laço: coleta no TSE, grava anistaldo/apuracao/dados.json, faz commit e espera 2 min.
+# Para sozinho quando todos os cargos chegam a 100% das seções ou depois de ~5h40.
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/apuracao-2026.yml", "anistaldo/apuracao/coleta_apuracao.py"]
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 21-23,0-4 4,5 10 *"   # backup: 4 e 5/out, 18h-01h59 (Brasília)
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apuracao-2026
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Coletar a cada 2 minutos
+        run: |
+          git config user.name "apuracao-bot"
+          git config user.email "apuracao-bot@users.noreply.github.com"
+          fim=$(( $(date +%s) + 340*60 ))
+          while [ "$(date +%s)" -lt "$fim" ]; do
+            set +e
+            python3 anistaldo/apuracao/coleta_apuracao.py
+            rc=$?
+            set -e
+            if ! git diff --quiet -- anistaldo/apuracao/dados.json; then
+              git add anistaldo/apuracao/dados.json
+              git commit -q -m "Apuração 2026: dados $(TZ=America/Sao_Paulo date +%H:%M)"
+              git pull -q --rebase origin main || true
+              git push -q origin HEAD:main || echo "push falhou, tenta no próximo ciclo"
+            fi
+            if [ "$rc" = "2" ]; then echo "Apuração 100% concluída."; break; fi
+            sleep 120
+          done

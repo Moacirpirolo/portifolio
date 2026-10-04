@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Painel Apuração 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* Layout: cabeçalho com horário da coleta → acompanhados (Anistaldo, Davi Sacer) → Governador SP → Presidente. Cores da urna: CONFIRMA verde, CORRIGE laranja. */
+:root{
+  --bg:#efede6; --panel:#fbfaf6; --ink:#1d211d; --muted:#5f655c; --line:#d9d6cb;
+  --confirma:#17834f; --corrige:#d3681c; --rival:#8a8f86; --track:#e4e1d6; --key:#2a2e2a; --keyfg:#f4f2ea; --erro:#b3261e;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"Source Sans 3",ui-sans-serif,system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#141714; --panel:#1c201c; --ink:#ecebe4; --muted:#a2a89e; --line:#2f342e;
+  --confirma:#3cbf7e; --corrige:#f08a3e; --rival:#7d837a; --track:#2a2f29; --key:#e9e7de; --keyfg:#161a16; --erro:#f2867d; color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:16px;padding-block:28px 48px;display:grid;gap:28px}
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:12px 24px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.05;margin:0;text-wrap:balance}
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+.stamp{font-family:var(--mono);font-size:.8rem;color:var(--muted);text-align:right}
+.stamp b{color:var(--corrige);font-weight:700}
+.stamp .err{color:var(--erro)}
+section{display:grid;gap:12px}
+h2{font-family:var(--display);font-weight:600;font-size:1rem;letter-spacing:.02em;margin:0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px;display:grid;gap:16px;min-width:0;align-content:start}
+.top{display:flex;justify-content:space-between;align-items:start;gap:12px;flex-wrap:wrap}
+.who{display:grid;gap:2px;min-width:0}
+.name{font-family:var(--display);font-weight:800;font-size:1.45rem;line-height:1.1}
+.role{color:var(--muted);font-size:.9rem}
+.keys{display:flex;gap:4px}
+.keys span{font-family:var(--mono);font-weight:700;font-size:1.05rem;width:1.7em;height:2.05em;display:grid;place-items:center;background:var(--key);color:var(--keyfg);border-radius:4px}
+.pill{font-family:var(--mono);font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:4px 9px;border-radius:999px;border:1.5px solid currentColor;white-space:nowrap;justify-self:start}
+.pill.ok{color:var(--confirma)}
+.pill.wait{color:var(--corrige)}
+.pill.off{color:var(--muted)}
+.big{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.big .pct{font-family:var(--mono);font-weight:700;font-size:2.6rem;line-height:1;font-variant-numeric:tabular-nums}
+.big .sub{font-family:var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.race{display:grid;gap:8px}
+.row{display:grid;grid-template-columns:9rem 1fr 4.4rem;align-items:center;gap:10px;font-size:.9rem}
+.row .lbl{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row .val{font-family:var(--mono);text-align:right;font-variant-numeric:tabular-nums}
+.bar{height:12px;background:var(--track);border-radius:3px;position:relative;overflow:hidden}
+.bar i{position:absolute;inset:0 auto 0 0;border-radius:3px;transition:width .6s ease}
+.bar .half{position:absolute;left:50%;top:-3px;bottom:-3px;width:2px;background:var(--ink);opacity:.45}
+.meter{display:grid;gap:5px;font-size:.82rem;color:var(--muted)}
+.meter .bar{height:6px}
+.meter .bar i{background:var(--corrige)}
+.note{font-size:.88rem;color:var(--muted);margin:0;max-width:62ch}
+dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0;font-size:.9rem}
+dt{color:var(--muted)}
+dd{margin:0;font-family:var(--mono);font-variant-numeric:tabular-nums;min-width:0;overflow-wrap:anywhere}
+footer{font-size:.82rem;color:var(--muted);display:grid;gap:6px}
+footer a{color:var(--ink)}
+@media (max-width:420px){.row{grid-template-columns:6.5rem 1fr 3.8rem}.big .pct{font-size:2.2rem}}
+@media (prefers-reduced-motion:reduce){.bar i{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <p class="eyebrow">Eleições 2026 · 1º turno · 4 de outubro</p>
+      <h1>Painel de apuração</h1>
+    </div>
+    <div class="stamp" id="stamp">Carregando…</div>
+  </header>
+
+  <section>
+    <h2>Candidatos acompanhados · São Paulo</h2>
+    <div class="grid" id="acomp"></div>
+  </section>
+
+  <section>
+    <h2>Governador de São Paulo</h2>
+    <div class="grid" id="gov"></div>
+  </section>
+
+  <section>
+    <h2>Presidente</h2>
+    <div class="grid" id="pres"></div>
+  </section>
+
+  <footer>
+    <span>Dados da API pública de resultados do TSE, coletados a cada 2 minutos por automação no GitHub. A página se atualiza sozinha.</span>
+    <span>A posição no ranking é só pela votação nominal. Quem entra de fato depende do quociente partidário de cada partido ou federação.</span>
+  </footer>
+</div>
+
+<script>
+const INTERVALO = 120000;
+const $ = id => document.getElementById(id);
+const fmt = n => (n ?? 0).toLocaleString('pt-BR');
+const pct = n => (n ?? 0).toLocaleString('pt-BR', {minimumFractionDigits:2, maximumFractionDigits:2});
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const titulo = s => esc(String(s||'').toLowerCase().replace(/(^|[\s.-])(\p{L})/gu, (m,a,b) => a + b.toUpperCase()).replace(/\b(Da|De|Do|Das|Dos|E)\b/g, w => w.toLowerCase()));
+const teclas = n => `<div class="keys" aria-label="Número ${esc(n)}">${String(n).split('').map(d=>`<span>${esc(d)}</span>`).join('')}</div>`;
+const medidor = (p, onde) => `<div class="meter"><span>${pct(p)}% das seções totalizadas ${onde}</span><div class="bar"><i style="width:${Math.min(p||0,100)}%"></i></div></div>`;
+
+const FIXOS = {
+  anistaldo:{nome:'Pastor Anistaldo', numero:'20147', cargo:'Deputado estadual', partido:'Podemos', vagas:94,
+    extra:'<dt>2022</dt><dd>40.718 votos · suplente</dd><dt>Base</dt><dd>Guarulhos</dd>'},
+  davi:{nome:'Davi Sacer', numero:'1122', cargo:'Deputado federal', partido:'PP', vagas:70,
+    extra:'<dt>Nome completo</dt><dd>Davi Amorim de Oliveira</dd>'}
+};
+
+function cartaoAcomp(chave, d){
+  const f = FIXOS[chave];
+  const cab = `<div class="top"><div class="who"><span class="name">${f.nome}</span><span class="role">${f.cargo} · ${f.partido}</span></div>${teclas(f.numero)}</div>`;
+  if (!d) return `<article class="card">${cab}<span class="pill off">Aguardando a primeira coleta do TSE</span><dl>${f.extra}<dt>Vagas</dt><dd>${f.vagas}</dd></dl></article>`;
+  const st = (d.st||'').toLowerCase();
+  let pill;
+  if (st.includes('eleito') && !st.includes('não')) pill = `<span class="pill ok">${esc(d.st)}</span>`;
+  else if (st) pill = `<span class="pill wait">${esc(d.st)}</span>`;
+  else if (d.posicao && d.posicao <= d.vagas) pill = `<span class="pill ok">Dentro das ${d.vagas} primeiras posições</span>`;
+  else pill = `<span class="pill wait">Fora das ${d.vagas} primeiras posições</span>`;
+  const falta = d.corte_vap != null && d.posicao > d.vagas ? `<dt>Falta p/ ${d.vagas}º</dt><dd>${fmt(d.corte_vap - d.vap)} votos</dd>` : '';
+  const partido = (d.partido_top||[]).map(c => `${titulo(c.nm)} (${c.pos}º · ${fmt(c.vap)})`).join(', ');
+  return `<article class="card">${cab}
+    <div class="big"><span class="pct">${fmt(d.vap)}</span><span class="sub">votos · ${pct(d.pvap)}% dos válidos</span></div>
+    ${pill}
+    <dl>
+      <dt>Posição</dt><dd>${d.posicao ? d.posicao + 'º de ' + fmt(d.total_candidatos) : 'não encontrado'}</dd>
+      <dt>${d.vagas}º colocado</dt><dd>${d.corte_vap != null ? fmt(d.corte_vap) + ' votos' : '—'}</dd>
+      ${falta}
+      <dt>Mais votado</dt><dd>${d.lider ? titulo(d.lider.nm) + ' · ' + fmt(d.lider.vap) : '—'}</dd>
+      ${partido ? `<dt>No partido</dt><dd>${partido}</dd>` : ''}
+      ${f.extra}
+    </dl>
+    ${medidor(d.pst, 'em SP')}
+  </article>`;
+}
+
+function cartaoMajor(d, onde){
+  if (!d || !d.cand || !d.cand.length) return `<article class="card"><span class="pill off">Aguardando dados</span></article>`;
+  const c = d.cand, lider = c[0];
+  const linhas = c.slice(0, 6).map((x,i) => `<div class="row"><span class="lbl">${titulo(x.nm)}</span><div class="bar"><i style="width:${Math.min(x.pvap,100)}%;background:var(${i===0?'--confirma':'--rival'})"></i><span class="half"></span></div><span class="val">${pct(x.pvap)}</span></div>`).join('');
+  const st = (lider.st||'');
+  let pill;
+  if (/eleito/i.test(st) && !/não/i.test(st)) pill = `<span class="pill ok">${esc(st)}</span>`;
+  else if (/2º turno/i.test(st)) pill = `<span class="pill wait">2º turno</span>`;
+  else pill = lider.pvap > 50 ? `<span class="pill ok">Lidera · acima de 50%</span>` : `<span class="pill wait">Lidera · abaixo de 50%</span>`;
+  const dif = c[1] ? `Vantagem de ${pct(lider.pvap - c[1].pvap)} pontos sobre ${titulo(c[1].nm)}.` : '';
+  return `<article class="card">
+    <div class="top"><div class="who"><span class="name">${titulo(lider.nm)}</span><span class="role">${esc(lider.cc)} · na liderança</span></div>${teclas(lider.n)}</div>
+    <div class="big"><span class="pct">${pct(lider.pvap)}%</span><span class="sub">${lider.vap ? fmt(lider.vap) + ' votos válidos' : ''}</span></div>
+    <div class="race">${linhas}</div>
+    ${medidor(d.pst, onde)}
+    ${pill}
+    <p class="note">${dif} A linha no meio das barras marca 50% dos válidos, o que decide no 1º turno.</p>
+  </article>`;
+}
+
+let ultimo = null;
+async function carrega(){
+  try {
+    const r = await fetch('dados.json?t=' + Date.now(), {cache:'no-store'});
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const d = await r.json();
+    ultimo = d;
+    const a = d.acompanhados || {}, m = d.majoritarios || {};
+    $('acomp').innerHTML = cartaoAcomp('anistaldo', a.anistaldo) + cartaoAcomp('davi', a.davi);
+    $('gov').innerHTML = cartaoMajor(m.governador, 'em SP');
+    $('pres').innerHTML = cartaoMajor(m.presidente, 'no país');
+    desenhaCarimbo();
+  } catch (e) {
+    $('stamp').innerHTML = `<span class="err">Não consegui atualizar agora (${esc(e.message)}). Tento de novo em 2 min.</span>`;
+  }
+}
+let proxima = Date.now() + INTERVALO;
+function desenhaCarimbo(){
+  if (!ultimo) return;
+  const t = new Date(ultimo.atualizado_em);
+  const h = isNaN(t) ? '' : t.toLocaleTimeString('pt-BR', {hour:'2-digit', minute:'2-digit', timeZone:'America/Sao_Paulo'});
+  const s = Math.max(0, Math.round((proxima - Date.now())/1000));
+  const err = (ultimo.erros||[]).length ? `<br><span class="err">Falha em ${ultimo.erros.length} fonte(s) na última coleta</span>` : '';
+  $('stamp').innerHTML = `Última coleta às <b>${h}</b><br>Recarrega em ${Math.floor(s/60)}:${String(s%60).padStart(2,'0')}${err}`;
+}
+carrega();
+setInterval(() => { proxima = Date.now() + INTERVALO; carrega(); }, INTERVALO);
+setInterval(desenhaCarimbo, 1000);
+</script>
+</body>
+</html>

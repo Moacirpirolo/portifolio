@@ -1,0 +1,19 @@
+{
+ "atualizado_em": "2026-10-04T18:33:00-03:00",
+ "fonte": "Parcial inicial da imprensa (BNews/Metrópoles), substituída na primeira coleta do TSE",
+ "erros": [],
+ "majoritarios": {
+  "presidente": {"pst": 21.96, "dg": "04/10/2026", "hg": "18:26:00", "cand": [
+   {"n": "22", "nm": "FLÁVIO BOLSONARO", "cc": "PL", "vap": 12915526, "pvap": 51.07, "st": "", "e": ""},
+   {"n": "13", "nm": "LULA", "cc": "PT", "vap": 10324360, "pvap": 40.82, "st": "", "e": ""},
+   {"n": "70", "nm": "AUGUSTO CURY", "cc": "AVANTE", "vap": 0, "pvap": 2.94, "st": "", "e": ""},
+   {"n": "55", "nm": "RONALDO CAIADO", "cc": "PSD", "vap": 0, "pvap": 2.38, "st": "", "e": ""},
+   {"n": "14", "nm": "RENAN SANTOS", "cc": "MISSÃO", "vap": 0, "pvap": 2.27, "st": "", "e": ""}
+  ]},
+  "governador": {"pst": 21.72, "dg": "04/10/2026", "hg": "18:32:00", "cand": [
+   {"n": "10", "nm": "TARCÍSIO", "cc": "REPUBLICANOS", "vap": 3201199, "pvap": 66.26, "st": "", "e": ""},
+   {"n": "13", "nm": "FERNANDO HADDAD", "cc": "PT", "vap": 1589640, "pvap": 32.90, "st": "", "e": ""}
+  ]}
+ },
+ "acompanhados": {}
+}
