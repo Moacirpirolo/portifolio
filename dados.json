@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-04T19:34:22-03:00",
+ "atualizado_em": "2026-10-04T19:37:09-03:00",
  "fonte": "TSE - resultados.tse.jus.br",
  "erros": [],
  "diagnostico": {
@@ -356,9 +356,9 @@
      },
      {
       "m": "SÃO PAULO",
-      "v": 1234,
+      "v": 1819,
       "p": 0.04,
-      "pst": 54.17
+      "pst": 83.96
      },
      {
       "m": "BRAGANÇA PAULISTA",
@@ -379,16 +379,22 @@
       "pst": 88.16
      },
      {
+      "m": "ITAQUAQUECETUBA",
+      "v": 118,
+      "p": 0.12,
+      "pst": 58.37
+     },
+     {
       "m": "ARUJÁ",
       "v": 89,
       "p": 0.19,
       "pst": 94.09
      },
      {
-      "m": "ITAQUAQUECETUBA",
-      "v": 70,
-      "p": 0.12,
-      "pst": 37.22
+      "m": "RIBEIRÃO PRETO",
+      "v": 82,
+      "p": 0.03,
+      "pst": 86.61
      },
      {
       "m": "CAPÃO BONITO",
@@ -401,6 +407,12 @@
       "v": 69,
       "p": 0.09,
       "pst": 49.3
+     },
+     {
+      "m": "SÃO BERNARDO DO CAMPO",
+      "v": 69,
+      "p": 0.02,
+      "pst": 74.79
      },
      {
       "m": "SÃO ROQUE",
@@ -416,9 +428,9 @@
      },
      {
       "m": "MAIRIPORÃ",
-      "v": 48,
+      "v": 52,
       "p": 0.12,
-      "pst": 89.47
+      "pst": 100.0
      },
      {
       "m": "PORTO FELIZ",
@@ -437,18 +449,6 @@
       "v": 46,
       "p": 0.02,
       "pst": 47.66
-     },
-     {
-      "m": "RIBEIRÃO PRETO",
-      "v": 43,
-      "p": 0.03,
-      "pst": 52.1
-     },
-     {
-      "m": "SÃO BERNARDO DO CAMPO",
-      "v": 42,
-      "p": 0.02,
-      "pst": 39.43
      },
      {
       "m": "GARÇA",
@@ -470,9 +470,15 @@
      },
      {
       "m": "MATÃO",
-      "v": 32,
+      "v": 34,
       "p": 0.08,
-      "pst": 91.28
+      "pst": 100.0
+     },
+     {
+      "m": "JUNDIAÍ",
+      "v": 33,
+      "p": 0.02,
+      "pst": 92.61
      },
      {
       "m": "APIAÍ",
@@ -487,16 +493,22 @@
       "pst": 100.0
      },
      {
-      "m": "JUNDIAÍ",
+      "m": "PIRASSUNUNGA",
       "v": 28,
-      "p": 0.02,
-      "pst": 77.31
+      "p": 0.07,
+      "pst": 100.0
+     },
+     {
+      "m": "MAIRINQUE",
+      "v": 27,
+      "p": 0.22,
+      "pst": 51.26
      },
      {
       "m": "POÁ",
       "v": 26,
-      "p": 0.05,
-      "pst": 78.39
+      "p": 0.04,
+      "pst": 91.94
      },
      {
       "m": "VÁRZEA PAULISTA",
@@ -517,16 +529,46 @@
       "pst": 100.0
      },
      {
-      "m": "PIRASSUNUNGA",
-      "v": 23,
-      "p": 0.08,
-      "pst": 79.14
+      "m": "SANTO ANDRÉ",
+      "v": 22,
+      "p": 0.01,
+      "pst": 93.23
+     },
+     {
+      "m": "ITUPEVA",
+      "v": 21,
+      "p": 0.06,
+      "pst": 100.0
+     },
+     {
+      "m": "MOGI DAS CRUZES",
+      "v": 21,
+      "p": 0.03,
+      "pst": 28.53
      },
      {
       "m": "OSASCO",
-      "v": 19,
+      "v": 20,
       "p": 0.01,
-      "pst": 44.42
+      "pst": 62.95
+     },
+     {
+      "m": "SÃO JOSÉ DO RIO PRETO",
+      "v": 20,
+      "p": 0.01,
+      "pst": 69.84
+     },
+     {
+      "m": "PRAIA GRANDE",
+      "v": 18,
+      "p": 0.01,
+      "pst": 80.63
+     },
+     {
+      "m": "RIBEIRÃO PIRES",
+      "v": 18,
+      "p": 0.03,
+      "pst": 86.26
      },
      {
       "m": "BOFETE",
@@ -551,12 +593,6 @@
       "v": 16,
       "p": 0.01,
       "pst": 92.77
-     },
-     {
-      "m": "PRAIA GRANDE",
-      "v": 16,
-      "p": 0.01,
-      "pst": 65.58
      },
      {
       "m": "ARAÇATUBA",
@@ -589,18 +625,6 @@
       "pst": 100.0
      },
      {
-      "m": "MAIRINQUE",
-      "v": 14,
-      "p": 0.23,
-      "pst": 23.53
-     },
-     {
-      "m": "SÃO JOSÉ DO RIO PRETO",
-      "v": 14,
-      "p": 0.01,
-      "pst": 54.18
-     },
-     {
       "m": "BÁLSAMO",
       "v": 13,
       "p": 0.25,
@@ -625,10 +649,22 @@
       "pst": 100.0
      },
      {
+      "m": "SÃO CAETANO DO SUL",
+      "v": 13,
+      "p": 0.02,
+      "pst": 61.64
+     },
+     {
       "m": "CERQUILHO",
       "v": 12,
       "p": 0.05,
       "pst": 100.0
+     },
+     {
+      "m": "PINDAMONHANGABA",
+      "v": 12,
+      "p": 0.01,
+      "pst": 99.49
      },
      {
       "m": "TIETÊ",
@@ -641,18 +677,6 @@
       "v": 11,
       "p": 0.01,
       "pst": 88.55
-     },
-     {
-      "m": "RIBEIRÃO PIRES",
-      "v": 11,
-      "p": 0.03,
-      "pst": 71.37
-     },
-     {
-      "m": "SÃO CAETANO DO SUL",
-      "v": 11,
-      "p": 0.02,
-      "pst": 55.5
      },
      {
       "m": "SÃO SIMÃO",
@@ -676,13 +700,13 @@
       "m": "ITAPEVI",
       "v": 10,
       "p": 0.01,
-      "pst": 91.17
+      "pst": 99.59
      },
      {
-      "m": "PINDAMONHANGABA",
+      "m": "JUQUITIBA",
       "v": 10,
-      "p": 0.02,
-      "pst": 76.26
+      "p": 0.11,
+      "pst": 59.21
      },
      {
       "m": "PIRACICABA",
@@ -691,16 +715,28 @@
       "pst": 99.12
      },
      {
+      "m": "SALTO",
+      "v": 10,
+      "p": 0.02,
+      "pst": 92.67
+     },
+     {
       "m": "CAMPO LIMPO PAULISTA",
       "v": 9,
       "p": 0.04,
       "pst": 61.97
      },
      {
-      "m": "SALTO",
+      "m": "ITANHAÉM",
       "v": 9,
-      "p": 0.02,
-      "pst": 83.52
+      "p": 0.03,
+      "pst": 51.61
+     },
+     {
+      "m": "ITAPECERICA DA SERRA",
+      "v": 9,
+      "p": 0.03,
+      "pst": 37.4
      },
      {
       "m": "BOITUVA",
@@ -727,10 +763,10 @@
       "pst": 100.0
      },
      {
-      "m": "SANTO ANDRÉ",
-      "v": 8,
-      "p": 0.0,
-      "pst": 47.7
+      "m": "ESPÍRITO SANTO DO PINHAL",
+      "v": 7,
+      "p": 0.03,
+      "pst": 98.2
      },
      {
       "m": "IBITINGA",
@@ -739,22 +775,16 @@
       "pst": 100.0
      },
      {
-      "m": "ITAPECERICA DA SERRA",
-      "v": 7,
-      "p": 0.03,
-      "pst": 30.47
-     },
-     {
       "m": "PENÁPOLIS",
       "v": 7,
-      "p": 0.04,
-      "pst": 53.75
+      "p": 0.02,
+      "pst": 99.38
      },
      {
       "m": "REGISTRO",
       "v": 7,
       "p": 0.02,
-      "pst": 96.13
+      "pst": 100.0
      },
      {
       "m": "ANGATUBA",
@@ -769,10 +799,34 @@
       "pst": 100.0
      },
      {
-      "m": "MOGI DAS CRUZES",
+      "m": "MAUÁ",
       "v": 6,
-      "p": 0.02,
-      "pst": 12.47
+      "p": 0.0,
+      "pst": 71.74
+     },
+     {
+      "m": "PEDREIRA",
+      "v": 6,
+      "p": 0.03,
+      "pst": 97.22
+     },
+     {
+      "m": "RAFARD",
+      "v": 6,
+      "p": 0.27,
+      "pst": 45.83
+     },
+     {
+      "m": "RIBEIRA",
+      "v": 6,
+      "p": 0.32,
+      "pst": 91.67
+     },
+     {
+      "m": "SANTOS",
+      "v": 6,
+      "p": 0.0,
+      "pst": 69.61
      },
      {
       "m": "SÃO SEBASTIÃO",
@@ -805,10 +859,28 @@
       "pst": 99.59
      },
      {
-      "m": "RAFARD",
+      "m": "ITAPEVA",
       "v": 5,
-      "p": 0.41,
-      "pst": 29.17
+      "p": 0.01,
+      "pst": 88.5
+     },
+     {
+      "m": "ITARARÉ",
+      "v": 5,
+      "p": 0.03,
+      "pst": 83.19
+     },
+     {
+      "m": "JARINU",
+      "v": 5,
+      "p": 0.04,
+      "pst": 68.83
+     },
+     {
+      "m": "MONTE MOR",
+      "v": 5,
+      "p": 0.02,
+      "pst": 100.0
      },
      {
       "m": "SUMARÉ",
@@ -871,12 +943,6 @@
       "pst": 91.01
      },
      {
-      "m": "ESPÍRITO SANTO DO PINHAL",
-      "v": 4,
-      "p": 0.05,
-      "pst": 36.04
-     },
-     {
       "m": "GASTÃO VIDIGAL",
       "v": 4,
       "p": 0.19,
@@ -895,12 +961,6 @@
       "pst": 62.5
      },
      {
-      "m": "ITARARÉ",
-      "v": 4,
-      "p": 0.03,
-      "pst": 54.87
-     },
-     {
       "m": "ITU",
       "v": 4,
       "p": 0.01,
@@ -911,12 +971,6 @@
       "v": 4,
       "p": 0.06,
       "pst": 100.0
-     },
-     {
-      "m": "PEDREIRA",
-      "v": 4,
-      "p": 0.05,
-      "pst": 36.11
      },
      {
       "m": "SANTA BRANCA",
@@ -979,28 +1033,16 @@
       "pst": 92.31
      },
      {
-      "m": "ITANHAÉM",
-      "v": 3,
-      "p": 0.03,
-      "pst": 20.56
-     },
-     {
-      "m": "ITAPEVA",
+      "m": "ITAPETININGA",
       "v": 3,
       "p": 0.01,
-      "pst": 67.26
+      "pst": 59.33
      },
      {
       "m": "ITATIBA",
       "v": 3,
       "p": 0.01,
       "pst": 100.0
-     },
-     {
-      "m": "ITUPEVA",
-      "v": 3,
-      "p": 0.02,
-      "pst": 36.3
      },
      {
       "m": "JARDINÓPOLIS",
@@ -1018,7 +1060,25 @@
       "m": "MARÍLIA",
       "v": 3,
       "p": 0.0,
-      "pst": 67.53
+      "pst": 82.9
+     },
+     {
+      "m": "MOMBUCA",
+      "v": 3,
+      "p": 0.14,
+      "pst": 100.0
+     },
+     {
+      "m": "SANTA BÁRBARA D'OESTE",
+      "v": 3,
+      "p": 0.0,
+      "pst": 94.68
+     },
+     {
+      "m": "SÃO CARLOS",
+      "v": 3,
+      "p": 0.0,
+      "pst": 98.96
      },
      {
       "m": "ÁGUAS DA PRATA",
@@ -1075,16 +1135,16 @@
       "pst": 88.46
      },
      {
+      "m": "IGARATÁ",
+      "v": 2,
+      "p": 0.03,
+      "pst": 100.0
+     },
+     {
       "m": "ILHA COMPRIDA",
       "v": 2,
       "p": 0.02,
       "pst": 100.0
-     },
-     {
-      "m": "ITAPETININGA",
-      "v": 2,
-      "p": 0.0,
-      "pst": 49.74
      },
      {
       "m": "ITAPIRA",
@@ -1095,26 +1155,20 @@
      {
       "m": "JUQUIÁ",
       "v": 2,
-      "p": 0.05,
-      "pst": 40.0
+      "p": 0.03,
+      "pst": 69.23
      },
      {
       "m": "LORENA",
       "v": 2,
       "p": 0.01,
-      "pst": 62.89
+      "pst": 86.6
      },
      {
       "m": "MOGI GUAÇU",
       "v": 2,
       "p": 0.0,
       "pst": 67.82
-     },
-     {
-      "m": "MONTE MOR",
-      "v": 2,
-      "p": 0.01,
-      "pst": 69.57
      },
      {
       "m": "PARAGUAÇU PAULISTA",
@@ -1129,6 +1183,18 @@
       "pst": 100.0
      },
      {
+      "m": "PERUÍBE",
+      "v": 2,
+      "p": 0.01,
+      "pst": 45.45
+     },
+     {
+      "m": "PIEDADE",
+      "v": 2,
+      "p": 0.01,
+      "pst": 77.97
+     },
+     {
       "m": "POTIM",
       "v": 2,
       "p": 0.02,
@@ -1141,22 +1207,10 @@
       "pst": 100.0
      },
      {
-      "m": "SANTA BÁRBARA D'OESTE",
+      "m": "RIO DAS PEDRAS",
       "v": 2,
-      "p": 0.0,
-      "pst": 52.66
-     },
-     {
-      "m": "SANTOS",
-      "v": 2,
-      "p": 0.0,
-      "pst": 21.1
-     },
-     {
-      "m": "SÃO CARLOS",
-      "v": 2,
-      "p": 0.0,
-      "pst": 84.78
+      "p": 0.01,
+      "pst": 95.0
      },
      {
       "m": "SÃO JOAQUIM DA BARRA",
@@ -1249,28 +1303,22 @@
       "pst": 100.0
      },
      {
+      "m": "ITÁPOLIS",
+      "v": 1,
+      "p": 0.01,
+      "pst": 84.09
+     },
+     {
       "m": "JABOTICABAL",
       "v": 1,
       "p": 0.0,
-      "pst": 93.17
-     },
-     {
-      "m": "JARINU",
-      "v": 1,
-      "p": 0.02,
-      "pst": 27.27
+      "pst": 100.0
      },
      {
       "m": "JAÚ",
       "v": 1,
       "p": 0.0,
       "pst": 100.0
-     },
-     {
-      "m": "MAUÁ",
-      "v": 1,
-      "p": 0.0,
-      "pst": 47.14
      },
      {
       "m": "MIGUELÓPOLIS",
@@ -1282,7 +1330,7 @@
       "m": "MONGAGUÁ",
       "v": 1,
       "p": 0.01,
-      "pst": 37.16
+      "pst": 53.38
      },
      {
       "m": "NATIVIDADE DA SERRA",
@@ -1297,16 +1345,22 @@
       "pst": 100.0
      },
      {
+      "m": "PARDINHO",
+      "v": 1,
+      "p": 0.02,
+      "pst": 100.0
+     },
+     {
       "m": "PEDERNEIRAS",
       "v": 1,
       "p": 0.0,
       "pst": 90.29
      },
      {
-      "m": "PIEDADE",
+      "m": "PINHALZINHO",
       "v": 1,
-      "p": 0.02,
-      "pst": 23.73
+      "p": 0.01,
+      "pst": 94.29
      },
      {
       "m": "PORTO FERREIRA",
@@ -1315,16 +1369,16 @@
       "pst": 100.0
      },
      {
+      "m": "REGINÓPOLIS",
+      "v": 1,
+      "p": 0.03,
+      "pst": 100.0
+     },
+     {
       "m": "RIBEIRÃO BRANCO",
       "v": 1,
       "p": 0.02,
-      "pst": 58.0
-     },
-     {
-      "m": "RIO DAS PEDRAS",
-      "v": 1,
-      "p": 0.01,
-      "pst": 75.0
+      "pst": 66.0
      },
      {
       "m": "SANTA GERTRUDES",
@@ -1371,7 +1425,7 @@
     ],
     "falhas": 0,
     "total_municipios": 645,
-    "com_voto": 170
+    "com_voto": 179
    }
   },
   "davi": {
