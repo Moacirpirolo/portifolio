@@ -1,6 +1,6 @@
-# Dobrada Anistaldo + Davi Sacer — apuração 2026
+# Apuração 2026 — Anistaldo, Davi Sacer e Marangoni
 
-Pastor Anistaldo (20147), Davi Sacer (1122), governador de SP e presidente, com dados da API pública do TSE.
+Pastor Anistaldo (20147), Davi Sacer (1122), Fernando Marangoni (Podemos), governador de SP e presidente, com dados da API pública do TSE.
 
 - `index.html`: o painel. Lê `dados.json` deste branch e se recarrega a cada 5 minutos.
 - `coleta_apuracao.py`: baixa os arquivos `-u.json` do TSE (eleições 6257 e 6259) e grava `dados.json`.

@@ -37,6 +37,9 @@ ACOMPANHADOS = {
                    "cargo": "Deputado estadual", "partido": "Podemos", "vagas": 94},
     "davi": {"fonte": "dep_federal", "numero": "1122", "nome": "Davi Sacer",
               "cargo": "Deputado federal", "partido": "PP", "vagas": 70},
+    # número de urna não confirmado: localiza pelo nome de urna e grava o número encontrado
+    "marangoni": {"fonte": "dep_federal", "numero": None, "busca": "MARANGONI", "nome": "Fernando Marangoni",
+                   "cargo": "Deputado federal", "partido": "Podemos", "vagas": 70},
 }
 
 
@@ -165,11 +168,18 @@ def main():
         if not j:
             continue
         lista = cands(j)
-        pos = next((i for i, c in enumerate(lista) if c["n"] == cfg["numero"]), None)
+        if cfg.get("numero"):
+            pos = next((i for i, c in enumerate(lista) if c["n"] == cfg["numero"]), None)
+        else:
+            alvo_nome = cfg["busca"].upper()
+            pos = next((i for i, c in enumerate(lista) if c["nm"].upper() == alvo_nome), None)
+            if pos is None:
+                pos = next((i for i, c in enumerate(lista) if alvo_nome in c["nm"].upper()), None)
         alvo = lista[pos] if pos is not None else None
         corte = lista[cfg["vagas"] - 1]["vap"] if len(lista) >= cfg["vagas"] else None
         saida["acompanhados"][chave] = {
             **{k: cfg[k] for k in ("numero", "nome", "cargo", "partido", "vagas")},
+            "numero": cfg.get("numero") or (alvo["n"] if alvo else ""),
             **cabecalho(j),
             "encontrado": alvo is not None,
             "vap": alvo["vap"] if alvo else 0,
@@ -192,7 +202,7 @@ def main():
     resumo = {k: v.get("pst") for k, v in {**saida["majoritarios"], **saida["acompanhados"]}.items()}
     print(f"ok {saida['atualizado_em']} | % seções: {resumo} | erros: {len(erros)}")
     # código de saída 2 = tudo 100% totalizado (o workflow para o laço)
-    if resumo and all((p or 0) >= 100 for p in resumo.values()) and len(resumo) == 4:
+    if resumo and all((p or 0) >= 100 for p in resumo.values()) and len(resumo) == 5:
         sys.exit(2)
     if len(erros) == len(FONTES):
         sys.exit(1)
