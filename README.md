@@ -1,4 +1,4 @@
-# Painel de apuração 2026
+# Dobrada Anistaldo + Davi Sacer — apuração 2026
 
 Pastor Anistaldo (20147), Davi Sacer (1122), governador de SP e presidente, com dados da API pública do TSE.
 

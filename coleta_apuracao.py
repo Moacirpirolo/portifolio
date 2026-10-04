@@ -74,6 +74,7 @@ def _varre(o, partido, out):
                 if isinstance(c, dict) and "n" in c:
                     out.append({
                         "n": str(c.get("n", "")),
+                        "sq": str(c.get("sqcand") or c.get("sq") or ""),
                         "nm": c.get("nmu") or c.get("nm") or "",
                         "cc": c.get("cc") or p or "",
                         "vap": num(c.get("vap")),
@@ -174,6 +175,7 @@ def main():
             "vap": alvo["vap"] if alvo else 0,
             "pvap": alvo["pvap"] if alvo else 0,
             "st": alvo["st"] if alvo else "",
+            "sq": alvo.get("sq", "") if alvo else "",
             "posicao": (pos + 1) if pos is not None else None,
             "total_candidatos": len(lista),
             "corte_vap": corte,
