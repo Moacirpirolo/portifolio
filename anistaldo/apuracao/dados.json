@@ -1,90 +1,386 @@
 {
- "atualizado_em": "2026-10-04T19:10:12-03:00",
+ "atualizado_em": "2026-10-04T19:11:09-03:00",
  "fonte": "TSE - resultados.tse.jus.br",
- "erros": [
-  "presidente: HTTP Error 404: Not Found",
-  "governador: HTTP Error 404: Not Found",
-  "dep_federal: HTTP Error 404: Not Found",
-  "dep_estadual: HTTP Error 404: Not Found"
- ],
+ "erros": [],
+ "diagnostico": {
+  "presidente": {
+   "url": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/br/br-c0001-e006257-u.json",
+   "chaves": [
+    "and",
+    "carg",
+    "cdabr",
+    "dg",
+    "dt",
+    "dv",
+    "e",
+    "ele",
+    "f",
+    "hg",
+    "ht",
+    "idg",
+    "md",
+    "s",
+    "sup",
+    "t",
+    "tf",
+    "tpabr",
+    "v"
+   ]
+  },
+  "governador": {
+   "url": "https://resultados.tse.jus.br/oficial/ele2026/6259/dados/sp/sp-c0003-e006259-u.json",
+   "chaves": [
+    "and",
+    "carg",
+    "cdabr",
+    "dg",
+    "dt",
+    "dv",
+    "e",
+    "ele",
+    "f",
+    "hg",
+    "ht",
+    "idg",
+    "md",
+    "s",
+    "sup",
+    "t",
+    "tf",
+    "tpabr",
+    "v"
+   ]
+  },
+  "dep_federal": {
+   "url": "https://resultados.tse.jus.br/oficial/ele2026/6259/dados/sp/sp-c0006-e006259-u.json",
+   "chaves": [
+    "and",
+    "carg",
+    "cdabr",
+    "dg",
+    "dt",
+    "dv",
+    "e",
+    "ele",
+    "f",
+    "hg",
+    "ht",
+    "idg",
+    "s",
+    "sup",
+    "t",
+    "tf",
+    "tpabr",
+    "v"
+   ]
+  },
+  "dep_estadual": {
+   "url": "https://resultados.tse.jus.br/oficial/ele2026/6259/dados/sp/sp-c0007-e006259-u.json",
+   "chaves": [
+    "and",
+    "carg",
+    "cdabr",
+    "dg",
+    "dt",
+    "dv",
+    "e",
+    "ele",
+    "f",
+    "hg",
+    "ht",
+    "idg",
+    "s",
+    "sup",
+    "t",
+    "tf",
+    "tpabr",
+    "v"
+   ]
+  }
+ },
  "majoritarios": {
   "presidente": {
-   "pst": 21.96,
+   "pst": 47.26,
    "dg": "04/10/2026",
-   "hg": "18:26:00",
+   "hg": "18:48:59",
+   "vb": 1005386,
+   "vn": 1535588,
+   "vv": 54746502,
+   "a": 15138258,
    "cand": [
     {
      "n": "22",
-     "nm": "FLÁVIO BOLSONARO",
+     "nm": "FLAVIO BOLSONARO",
      "cc": "PL",
-     "vap": 12915526,
-     "pvap": 51.07,
+     "vap": 27484298,
+     "pvap": 50.2,
      "st": "",
-     "e": ""
+     "e": "n"
     },
     {
      "n": "13",
      "nm": "LULA",
      "cc": "PT",
-     "vap": 10324360,
-     "pvap": 40.82,
+     "vap": 22791778,
+     "pvap": 41.63,
      "st": "",
-     "e": ""
+     "e": "n"
     },
     {
      "n": "70",
-     "nm": "AUGUSTO CURY",
+     "nm": "ESCRITOR AUGUSTO CURY",
      "cc": "AVANTE",
-     "vap": 0,
-     "pvap": 2.94,
+     "vap": 1618252,
+     "pvap": 2.96,
      "st": "",
-     "e": ""
+     "e": "n"
     },
     {
      "n": "55",
      "nm": "RONALDO CAIADO",
      "cc": "PSD",
-     "vap": 0,
+     "vap": 1302519,
      "pvap": 2.38,
      "st": "",
-     "e": ""
+     "e": "n"
     },
     {
      "n": "14",
      "nm": "RENAN SANTOS",
      "cc": "MISSÃO",
-     "vap": 0,
-     "pvap": 2.27,
+     "vap": 1269583,
+     "pvap": 2.32,
      "st": "",
-     "e": ""
+     "e": "n"
+    },
+    {
+     "n": "30",
+     "nm": "ZEMA",
+     "cc": "NOVO",
+     "vap": 157128,
+     "pvap": 0.29,
+     "st": "",
+     "e": "n"
+    },
+    {
+     "n": "80",
+     "nm": "SAMARA",
+     "cc": "UP",
+     "vap": 57248,
+     "pvap": 0.1,
+     "st": "",
+     "e": "n"
+    },
+    {
+     "n": "16",
+     "nm": "HERTZ DIAS",
+     "cc": "PSTU",
+     "vap": 20149,
+     "pvap": 0.04,
+     "st": "",
+     "e": "n"
+    },
+    {
+     "n": "27",
+     "nm": "CLARIANA BARAO",
+     "cc": "DC",
+     "vap": 19681,
+     "pvap": 0.04,
+     "st": "",
+     "e": "n"
+    },
+    {
+     "n": "21",
+     "nm": "EDMILSON COSTA",
+     "cc": "PCB",
+     "vap": 10259,
+     "pvap": 0.02,
+     "st": "",
+     "e": "n"
+    },
+    {
+     "n": "35",
+     "nm": "VETERINÁRIO WILSON GRASSI",
+     "cc": "DEMOCRATA",
+     "vap": 8076,
+     "pvap": 0.01,
+     "st": "",
+     "e": "n"
+    },
+    {
+     "n": "29",
+     "nm": "RUI COSTA PIMENTA",
+     "cc": "PCO",
+     "vap": 7531,
+     "pvap": 0.01,
+     "st": "",
+     "e": "n"
     }
    ]
   },
   "governador": {
-   "pst": 21.72,
+   "pst": 66.9,
    "dg": "04/10/2026",
-   "hg": "18:32:00",
+   "hg": "19:07:44",
+   "vb": 872068,
+   "vn": 1249177,
+   "vv": 15297808,
+   "a": 5032086,
    "cand": [
     {
      "n": "10",
      "nm": "TARCÍSIO",
      "cc": "REPUBLICANOS",
-     "vap": 3201199,
-     "pvap": 66.26,
+     "vap": 9718414,
+     "pvap": 63.53,
      "st": "",
-     "e": ""
+     "e": "n"
     },
     {
      "n": "13",
      "nm": "FERNANDO HADDAD",
      "cc": "PT",
-     "vap": 1589640,
-     "pvap": 32.9,
+     "vap": 5439774,
+     "pvap": 35.56,
      "st": "",
-     "e": ""
+     "e": "n"
+    },
+    {
+     "n": "80",
+     "nm": "VIVIAN MENDES",
+     "cc": "UP",
+     "vap": 52286,
+     "pvap": 0.34,
+     "st": "",
+     "e": "n"
+    },
+    {
+     "n": "16",
+     "nm": "VERA LÚCIA",
+     "cc": "PSTU",
+     "vap": 48808,
+     "pvap": 0.32,
+     "st": "",
+     "e": "n"
+    },
+    {
+     "n": "21",
+     "nm": "CARLOS MACHADO",
+     "cc": "PCB",
+     "vap": 38526,
+     "pvap": 0.25,
+     "st": "",
+     "e": "n"
     }
    ]
   }
  },
- "acompanhados": {}
+ "acompanhados": {
+  "anistaldo": {
+   "numero": "20147",
+   "nome": "Pastor Anistaldo",
+   "cargo": "Deputado estadual",
+   "partido": "Podemos",
+   "vagas": 94,
+   "pst": 55.57,
+   "dg": "04/10/2026",
+   "hg": "19:02:49",
+   "vb": 1003753,
+   "vn": 661579,
+   "vv": 12717533,
+   "a": 4151431,
+   "encontrado": true,
+   "vap": 5844,
+   "pvap": 0.05,
+   "st": "",
+   "posicao": 313,
+   "total_candidatos": 1346,
+   "corte_vap": 35659,
+   "lider": {
+    "nm": "EDUARDA CAMPOPIANO",
+    "cc": "PL",
+    "vap": 1082892
+   },
+   "partido_top": [
+    {
+     "nm": "ROGERIO LINS",
+     "vap": 90437,
+     "pos": 12
+    },
+    {
+     "nm": "DR. EDSON DA PAIOL",
+     "vap": 65921,
+     "pos": 31
+    },
+    {
+     "nm": "LEANDRO BASSON",
+     "vap": 54706,
+     "pos": 49
+    },
+    {
+     "nm": "KAKA DO AUTISMO",
+     "vap": 47182,
+     "pos": 60
+    },
+    {
+     "nm": "FABIO FARIA DE SÁ",
+     "vap": 38157,
+     "pos": 85
+    }
+   ]
+  },
+  "davi": {
+   "numero": "1122",
+   "nome": "Davi Sacer",
+   "cargo": "Deputado federal",
+   "partido": "PP",
+   "vagas": 70,
+   "pst": 58.57,
+   "dg": "04/10/2026",
+   "hg": "19:04:15",
+   "vb": 891315,
+   "vn": 645403,
+   "vv": 13650377,
+   "a": 4389559,
+   "encontrado": true,
+   "vap": 22366,
+   "pvap": 0.16,
+   "st": "",
+   "posicao": 129,
+   "total_candidatos": 1045,
+   "corte_vap": 46748,
+   "lider": {
+    "nm": "LUCAS PAVANATO",
+    "cc": "PL",
+    "vap": 1795531
+   },
+   "partido_top": [
+    {
+     "nm": "SARGENTO NANTES",
+     "vap": 184675,
+     "pos": 7
+    },
+    {
+     "nm": "MAURICIO NEVES",
+     "vap": 154824,
+     "pos": 11
+    },
+    {
+     "nm": "CORONEL TELHADA",
+     "vap": 58025,
+     "pos": 55
+    },
+    {
+     "nm": "VICTOR RUIZ",
+     "vap": 26796,
+     "pos": 110
+    },
+    {
+     "nm": "JANAINA PASCHOAL",
+     "vap": 26660,
+     "pos": 111
+    }
+   ]
+  }
+ }
 }
