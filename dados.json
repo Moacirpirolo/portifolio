@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-04T19:13:12-03:00",
+ "atualizado_em": "2026-10-04T19:16:02-03:00",
  "fonte": "TSE - resultados.tse.jus.br",
  "erros": [],
  "diagnostico": {
@@ -100,20 +100,20 @@
  },
  "majoritarios": {
   "presidente": {
-   "pst": 47.26,
+   "pst": 64.81,
    "dg": "04/10/2026",
-   "hg": "18:48:59",
-   "vb": 1005386,
-   "vn": 1535588,
-   "vv": 54746502,
-   "a": 15138258,
+   "hg": "19:14:08",
+   "vb": 1430294,
+   "vn": 2201540,
+   "vv": 75762826,
+   "a": 21004387,
    "cand": [
     {
      "n": "22",
      "nm": "FLAVIO BOLSONARO",
      "cc": "PL",
-     "vap": 27484298,
-     "pvap": 50.2,
+     "vap": 37566895,
+     "pvap": 49.58,
      "st": "",
      "e": "n"
     },
@@ -121,8 +121,8 @@
      "n": "13",
      "nm": "LULA",
      "cc": "PT",
-     "vap": 22791778,
-     "pvap": 41.63,
+     "vap": 32007853,
+     "pvap": 42.25,
      "st": "",
      "e": "n"
     },
@@ -130,8 +130,8 @@
      "n": "70",
      "nm": "ESCRITOR AUGUSTO CURY",
      "cc": "AVANTE",
-     "vap": 1618252,
-     "pvap": 2.96,
+     "vap": 2247926,
+     "pvap": 2.97,
      "st": "",
      "e": "n"
     },
@@ -139,8 +139,8 @@
      "n": "55",
      "nm": "RONALDO CAIADO",
      "cc": "PSD",
-     "vap": 1302519,
-     "pvap": 2.38,
+     "vap": 1774893,
+     "pvap": 2.34,
      "st": "",
      "e": "n"
     },
@@ -148,8 +148,8 @@
      "n": "14",
      "nm": "RENAN SANTOS",
      "cc": "MISSÃO",
-     "vap": 1269583,
-     "pvap": 2.32,
+     "vap": 1772742,
+     "pvap": 2.34,
      "st": "",
      "e": "n"
     },
@@ -157,7 +157,7 @@
      "n": "30",
      "nm": "ZEMA",
      "cc": "NOVO",
-     "vap": 157128,
+     "vap": 220598,
      "pvap": 0.29,
      "st": "",
      "e": "n"
@@ -166,8 +166,8 @@
      "n": "80",
      "nm": "SAMARA",
      "cc": "UP",
-     "vap": 57248,
-     "pvap": 0.1,
+     "vap": 80928,
+     "pvap": 0.11,
      "st": "",
      "e": "n"
     },
@@ -175,7 +175,7 @@
      "n": "16",
      "nm": "HERTZ DIAS",
      "cc": "PSTU",
-     "vap": 20149,
+     "vap": 28466,
      "pvap": 0.04,
      "st": "",
      "e": "n"
@@ -184,7 +184,7 @@
      "n": "27",
      "nm": "CLARIANA BARAO",
      "cc": "DC",
-     "vap": 19681,
+     "vap": 26802,
      "pvap": 0.04,
      "st": "",
      "e": "n"
@@ -193,7 +193,7 @@
      "n": "21",
      "nm": "EDMILSON COSTA",
      "cc": "PCB",
-     "vap": 10259,
+     "vap": 14415,
      "pvap": 0.02,
      "st": "",
      "e": "n"
@@ -202,7 +202,7 @@
      "n": "35",
      "nm": "VETERINÁRIO WILSON GRASSI",
      "cc": "DEMOCRATA",
-     "vap": 8076,
+     "vap": 11041,
      "pvap": 0.01,
      "st": "",
      "e": "n"
@@ -211,7 +211,7 @@
      "n": "29",
      "nm": "RUI COSTA PIMENTA",
      "cc": "PCO",
-     "vap": 7531,
+     "vap": 10267,
      "pvap": 0.01,
      "st": "",
      "e": "n"
@@ -219,20 +219,20 @@
    ]
   },
   "governador": {
-   "pst": 70.98,
+   "pst": 76.22,
    "dg": "04/10/2026",
-   "hg": "19:10:50",
-   "vb": 928735,
-   "vn": 1329891,
-   "vv": 16262150,
-   "a": 5357404,
+   "hg": "19:15:02",
+   "vb": 1002305,
+   "vn": 1434221,
+   "vv": 17486990,
+   "a": 5762791,
    "cand": [
     {
      "n": "10",
      "nm": "TARCÍSIO",
      "cc": "REPUBLICANOS",
-     "vap": 10312172,
-     "pvap": 63.41,
+     "vap": 11062407,
+     "pvap": 63.26,
      "st": "",
      "e": "n"
     },
@@ -240,8 +240,8 @@
      "n": "13",
      "nm": "FERNANDO HADDAD",
      "cc": "PT",
-     "vap": 5801217,
-     "pvap": 35.67,
+     "vap": 6264040,
+     "pvap": 35.82,
      "st": "",
      "e": "n"
     },
@@ -249,7 +249,7 @@
      "n": "80",
      "nm": "VIVIAN MENDES",
      "cc": "UP",
-     "vap": 55708,
+     "vap": 60194,
      "pvap": 0.34,
      "st": "",
      "e": "n"
@@ -258,7 +258,7 @@
      "n": "16",
      "nm": "VERA LÚCIA",
      "cc": "PSTU",
-     "vap": 52012,
+     "vap": 56241,
      "pvap": 0.32,
      "st": "",
      "e": "n"
@@ -267,7 +267,7 @@
      "n": "21",
      "nm": "CARLOS MACHADO",
      "cc": "PCB",
-     "vap": 41041,
+     "vap": 44108,
      "pvap": 0.25,
      "st": "",
      "e": "n"
@@ -282,49 +282,49 @@
    "cargo": "Deputado estadual",
    "partido": "Podemos",
    "vagas": 94,
-   "pst": 65.59,
+   "pst": 69.5,
    "dg": "04/10/2026",
-   "hg": "19:09:13",
-   "vb": 1185542,
-   "vn": 786524,
-   "vv": 15079256,
-   "a": 4928666,
+   "hg": "19:12:37",
+   "vb": 1258218,
+   "vn": 835099,
+   "vv": 16007862,
+   "a": 5237275,
    "encontrado": true,
-   "vap": 7305,
+   "vap": 7940,
    "pvap": 0.05,
    "st": "",
-   "posicao": 310,
+   "posicao": 307,
    "total_candidatos": 1346,
-   "corte_vap": 42566,
+   "corte_vap": 45441,
    "lider": {
     "nm": "EDUARDA CAMPOPIANO",
     "cc": "PL",
-    "vap": 1275506
+    "vap": 1354487
    },
    "partido_top": [
     {
      "nm": "ROGERIO LINS",
-     "vap": 106003,
-     "pos": 15
+     "vap": 119926,
+     "pos": 10
     },
     {
      "nm": "DR. EDSON DA PAIOL",
-     "vap": 78564,
-     "pos": 31
+     "vap": 84059,
+     "pos": 32
     },
     {
      "nm": "LEANDRO BASSON",
-     "vap": 63306,
+     "vap": 67388,
      "pos": 49
     },
     {
      "nm": "KAKA DO AUTISMO",
-     "vap": 57113,
-     "pos": 61
+     "vap": 58676,
+     "pos": 64
     },
     {
      "nm": "FABIO FARIA DE SÁ",
-     "vap": 48281,
+     "vap": 50525,
      "pos": 79
     }
    ]
@@ -335,50 +335,50 @@
    "cargo": "Deputado federal",
    "partido": "PP",
    "vagas": 70,
-   "pst": 65.59,
+   "pst": 72.46,
    "dg": "04/10/2026",
-   "hg": "19:08:49",
-   "vb": 997847,
-   "vn": 725173,
-   "vv": 15329941,
-   "a": 4928666,
+   "hg": "19:14:21",
+   "vb": 1105022,
+   "vn": 802921,
+   "vv": 16986633,
+   "a": 5473006,
    "encontrado": true,
-   "vap": 24880,
+   "vap": 27423,
    "pvap": 0.16,
    "st": "",
-   "posicao": 130,
+   "posicao": 131,
    "total_candidatos": 1045,
-   "corte_vap": 53804,
+   "corte_vap": 60564,
    "lider": {
     "nm": "LUCAS PAVANATO",
     "cc": "PL",
-    "vap": 2001119
+    "vap": 2206275
    },
    "partido_top": [
     {
      "nm": "SARGENTO NANTES",
-     "vap": 207111,
+     "vap": 230427,
      "pos": 7
     },
     {
      "nm": "MAURICIO NEVES",
-     "vap": 171677,
+     "vap": 187616,
      "pos": 11
     },
     {
      "nm": "CORONEL TELHADA",
-     "vap": 65645,
-     "pos": 54
-    },
-    {
-     "nm": "VICTOR RUIZ",
-     "vap": 30090,
-     "pos": 110
+     "vap": 74293,
+     "pos": 52
     },
     {
      "nm": "JANAINA PASCHOAL",
-     "vap": 29987,
+     "vap": 33465,
      "pos": 111
+    },
+    {
+     "nm": "VICTOR RUIZ",
+     "vap": 33408,
+     "pos": 112
     }
    ]
   }
