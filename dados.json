@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-04T19:26:27-03:00",
+ "atualizado_em": "2026-10-04T19:30:32-03:00",
  "fonte": "TSE - resultados.tse.jus.br",
  "erros": [],
  "diagnostico": {
@@ -299,51 +299,51 @@
    "cargo": "Deputado estadual",
    "partido": "Podemos",
    "vagas": 94,
-   "pst": 69.5,
+   "pst": 85.09,
    "dg": "04/10/2026",
-   "hg": "19:12:37",
-   "vb": 1258218,
-   "vn": 835099,
-   "vv": 16007862,
-   "a": 5237275,
+   "hg": "19:25:55",
+   "vb": 1556422,
+   "vn": 1031851,
+   "vv": 19735573,
+   "a": 6480602,
    "encontrado": true,
-   "vap": 7940,
+   "vap": 10828,
    "pvap": 0.05,
    "st": "",
    "sq": "250002545138",
-   "posicao": 307,
+   "posicao": 287,
    "total_candidatos": 1346,
-   "corte_vap": 45441,
+   "corte_vap": 56051,
    "lider": {
     "nm": "EDUARDA CAMPOPIANO",
     "cc": "PL",
-    "vap": 1354487
+    "vap": 1658428
    },
    "partido_top": [
     {
      "nm": "ROGERIO LINS",
-     "vap": 119926,
-     "pos": 10
+     "vap": 163246,
+     "pos": 8
     },
     {
      "nm": "DR. EDSON DA PAIOL",
-     "vap": 84059,
-     "pos": 32
+     "vap": 103039,
+     "pos": 34
     },
     {
      "nm": "LEANDRO BASSON",
-     "vap": 67388,
-     "pos": 49
+     "vap": 80409,
+     "pos": 51
     },
     {
      "nm": "KAKA DO AUTISMO",
-     "vap": 58676,
-     "pos": 64
+     "vap": 66872,
+     "pos": 71
     },
     {
      "nm": "FABIO FARIA DE SÁ",
-     "vap": 50525,
-     "pos": 79
+     "vap": 60068,
+     "pos": 87
     }
    ]
   },
@@ -353,51 +353,105 @@
    "cargo": "Deputado federal",
    "partido": "PP",
    "vagas": 70,
-   "pst": 72.46,
+   "pst": 84.16,
    "dg": "04/10/2026",
-   "hg": "19:14:21",
-   "vb": 1105022,
-   "vn": 802921,
-   "vv": 16986633,
-   "a": 5473006,
+   "hg": "19:24:46",
+   "vb": 1297038,
+   "vn": 941318,
+   "vv": 19837318,
+   "a": 6410420,
    "encontrado": true,
-   "vap": 27423,
+   "vap": 32577,
    "pvap": 0.16,
    "st": "",
    "sq": "250002532362",
-   "posicao": 131,
+   "posicao": 132,
    "total_candidatos": 1045,
-   "corte_vap": 60564,
+   "corte_vap": 72542,
    "lider": {
     "nm": "LUCAS PAVANATO",
     "cc": "PL",
-    "vap": 2206275
+    "vap": 2563976
    },
    "partido_top": [
     {
      "nm": "SARGENTO NANTES",
-     "vap": 230427,
+     "vap": 272916,
      "pos": 7
     },
     {
      "nm": "MAURICIO NEVES",
-     "vap": 187616,
-     "pos": 11
+     "vap": 221825,
+     "pos": 10
     },
     {
      "nm": "CORONEL TELHADA",
-     "vap": 74293,
+     "vap": 86828,
      "pos": 52
     },
     {
      "nm": "JANAINA PASCHOAL",
-     "vap": 33465,
-     "pos": 111
+     "vap": 39353,
+     "pos": 113
     },
     {
      "nm": "VICTOR RUIZ",
-     "vap": 33408,
-     "pos": 112
+     "vap": 39167,
+     "pos": 115
+    }
+   ]
+  },
+  "marangoni": {
+   "numero": "2044",
+   "nome": "Fernando Marangoni",
+   "cargo": "Deputado federal",
+   "partido": "Podemos",
+   "vagas": 70,
+   "pst": 84.16,
+   "dg": "04/10/2026",
+   "hg": "19:24:46",
+   "vb": 1297038,
+   "vn": 941318,
+   "vv": 19837318,
+   "a": 6410420,
+   "encontrado": true,
+   "vap": 58315,
+   "pvap": 0.29,
+   "st": "",
+   "sq": "250002544356",
+   "posicao": 83,
+   "total_candidatos": 1045,
+   "corte_vap": 72542,
+   "lider": {
+    "nm": "LUCAS PAVANATO",
+    "cc": "PL",
+    "vap": 2563976
+   },
+   "partido_top": [
+    {
+     "nm": "DELEGADO PALUMBO",
+     "vap": 257722,
+     "pos": 8
+    },
+    {
+     "nm": "ANA CAROLINA OLIVEIRA",
+     "vap": 211616,
+     "pos": 12
+    },
+    {
+     "nm": "DELEGADO BRUNO LIMA",
+     "vap": 184259,
+     "pos": 17
+    },
+    {
+     "nm": "RENATA ABREU",
+     "vap": 167652,
+     "pos": 19
+    },
+    {
+     "nm": "FELIPE BECARI",
+     "vap": 138070,
+     "pos": 24
     }
    ]
   }
