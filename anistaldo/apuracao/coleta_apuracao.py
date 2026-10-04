@@ -3,11 +3,13 @@
 
 Sem dependências externas (só biblioteca padrão). Roda no GitHub Actions a cada 2 minutos.
 
-Endpoints (mesma API pública que os portais de notícia usam):
-  Presidente  ele2026/6257/dados-simplificados/br/br-c0001-e006257-r.json
-  Governador  ele2026/6259/dados-simplificados/sp/sp-c0003-e006259-r.json
-  Dep. fed.   ele2026/6259/dados-simplificados/sp/sp-c0006-e006259-r.json
-  Dep. est.   ele2026/6259/dados-simplificados/sp/sp-c0007-e006259-r.json
+Endpoints (mesma API pública que os portais de notícia usam). Em 2026 o arquivo completo é o "-u.json":
+  Presidente  ele2026/6257/dados/br/br-c0001-e006257-u.json
+  Governador  ele2026/6259/dados/sp/sp-c0003-e006259-u.json
+  Dep. fed.   ele2026/6259/dados/sp/sp-c0006-e006259-u.json
+  Dep. est.   ele2026/6259/dados/sp/sp-c0007-e006259-u.json
+Estrutura: raiz (dg, hg, s.pst, v.vv...) -> carg[] -> agr[] (agremiação) -> par[] (sg = sigla) -> cand[]
+(n, nmu/nm, vap, pvap, st, e). Se o -u.json falhar, tenta o formato simplificado de 2022 (-r.json).
 6257 = Eleição Ordinária Federal 2026, 6259 = Eleição Ordinária Estadual 2026 (config/ele-c.json).
 """
 import json, os, sys, time, urllib.request
@@ -17,11 +19,17 @@ BASE = "https://resultados.tse.jus.br/oficial/ele2026"
 SAIDA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dados.json")
 BRT = timezone(timedelta(hours=-3))
 
+def urls(ele, uf, cargo):
+    e = f"e{int(ele):06d}"; c = f"c{int(cargo):04d}"
+    return [f"{BASE}/{ele}/dados/{uf}/{uf}-{c}-{e}-u.json",
+            f"{BASE}/{ele}/dados-simplificados/{uf}/{uf}-{c}-{e}-r.json"]
+
+
 FONTES = {
-    "presidente": f"{BASE}/6257/dados-simplificados/br/br-c0001-e006257-r.json",
-    "governador": f"{BASE}/6259/dados-simplificados/sp/sp-c0003-e006259-r.json",
-    "dep_federal": f"{BASE}/6259/dados-simplificados/sp/sp-c0006-e006259-r.json",
-    "dep_estadual": f"{BASE}/6259/dados-simplificados/sp/sp-c0007-e006259-r.json",
+    "presidente": urls(6257, "br", 1),
+    "governador": urls(6259, "sp", 3),
+    "dep_federal": urls(6259, "sp", 6),
+    "dep_estadual": urls(6259, "sp", 7),
 }
 
 ACOMPANHADOS = {
@@ -52,28 +60,57 @@ def baixa(url):
         return json.loads(r.read().decode("utf-8"))
 
 
+def _varre(o, partido, out):
+    """Percorre carg -> agr -> par -> cand guardando a sigla do partido mais próxima."""
+    if isinstance(o, list):
+        for x in o:
+            _varre(x, partido, out)
+    elif isinstance(o, dict):
+        sg = o.get("sg") or (o.get("cc") if "cand" in o else None)
+        p = sg if isinstance(sg, str) and sg else partido
+        lista = o.get("cand")
+        if isinstance(lista, list):
+            for c in lista:
+                if isinstance(c, dict) and "n" in c:
+                    out.append({
+                        "n": str(c.get("n", "")),
+                        "nm": c.get("nmu") or c.get("nm") or "",
+                        "cc": c.get("cc") or p or "",
+                        "vap": num(c.get("vap")),
+                        "pvap": num(c.get("pvap")),
+                        "st": c.get("st", "") or "",
+                        "e": c.get("e", "") or "",
+                    })
+        for k, v in o.items():
+            if k != "cand" and isinstance(v, (dict, list)):
+                _varre(v, p, out)
+
+
 def cands(j):
     out = []
-    for c in j.get("cand", []) or []:
-        out.append({
-            "n": str(c.get("n", "")),
-            "nm": c.get("nm", ""),
-            "cc": c.get("cc", ""),
-            "vap": num(c.get("vap")),
-            "pvap": num(c.get("pvap")),
-            "st": c.get("st", ""),
-            "e": c.get("e", ""),
-        })
-    out.sort(key=lambda c: c["vap"], reverse=True)
-    return out
+    _varre(j, None, out)
+    vistos, unicos = set(), []
+    for c in out:
+        if c["n"] not in vistos:
+            vistos.add(c["n"]); unicos.append(c)
+    unicos.sort(key=lambda c: c["vap"], reverse=True)
+    return unicos
+
+
+def _campo(j, sub, *chaves):
+    for fonte in (j.get(sub) if isinstance(j.get(sub), dict) else {}, j):
+        for k in chaves:
+            if fonte.get(k) not in (None, ""):
+                return fonte.get(k)
+    return None
 
 
 def cabecalho(j):
     return {
-        "pst": num(j.get("pst")),          # % de seções totalizadas
+        "pst": num(_campo(j, "s", "pst")),   # % de seções totalizadas
         "dg": j.get("dg", ""), "hg": j.get("hg", ""),  # data/hora da totalização no TSE
-        "vb": num(j.get("vb")), "vn": num(j.get("vn") or j.get("tvn")),
-        "vv": num(j.get("vv")), "a": num(j.get("a")),
+        "vb": num(_campo(j, "v", "vb")), "vn": num(_campo(j, "v", "tvn", "vn")),
+        "vv": num(_campo(j, "v", "vv")), "a": num(_campo(j, "e", "a")),
     }
 
 
@@ -85,22 +122,34 @@ def main():
         except Exception:
             anterior = {}
 
-    brutos, erros = {}, []
-    for chave, url in FONTES.items():
-        for tentativa in range(3):
-            try:
-                brutos[chave] = baixa(url)
+    brutos, erros, diag = {}, [], {}
+    for chave, lista in FONTES.items():
+        falhas = []
+        for url in lista:
+            for tentativa in range(2):
+                try:
+                    j = baixa(url)
+                    if cands(j):
+                        brutos[chave] = j
+                        diag[chave] = {"url": url, "chaves": sorted(j.keys())[:20]}
+                    else:
+                        falhas.append(f"{url.rsplit('/', 1)[-1]}: sem candidatos (chaves {sorted(j.keys())[:12]})")
+                    break
+                except Exception as e:  # noqa: BLE001
+                    if tentativa == 1:
+                        falhas.append(f"{url.rsplit('/', 1)[-1]}: {e}")
+                    time.sleep(2)
+            if chave in brutos:
                 break
-            except Exception as e:  # noqa: BLE001
-                if tentativa == 2:
-                    erros.append(f"{chave}: {e}")
-                    print(f"! {chave}: {e}", file=sys.stderr)
-                time.sleep(3)
+        if chave not in brutos:
+            erros.append(f"{chave}: " + " | ".join(falhas))
+            print(f"! {chave}: {falhas}", file=sys.stderr)
 
     saida = {
         "atualizado_em": datetime.now(BRT).isoformat(timespec="seconds"),
         "fonte": "TSE - resultados.tse.jus.br",
         "erros": erros,
+        "diagnostico": diag,
         "majoritarios": dict(anterior.get("majoritarios", {})),
         "acompanhados": dict(anterior.get("acompanhados", {})),
     }
