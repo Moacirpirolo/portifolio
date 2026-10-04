@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-04T19:37:09-03:00",
+ "atualizado_em": "2026-10-04T19:44:26-03:00",
  "fonte": "TSE - resultados.tse.jus.br",
  "erros": [],
  "diagnostico": {
@@ -231,21 +231,21 @@
    ]
   },
   "governador": {
-   "pst": 76.22,
+   "pst": 90.02,
    "dg": "04/10/2026",
-   "hg": "19:15:02",
-   "vb": 1002305,
-   "vn": 1434221,
-   "vv": 17486990,
-   "a": 5762791,
+   "hg": "19:32:10",
+   "vb": 1199683,
+   "vn": 1712157,
+   "vv": 20774924,
+   "a": 6874393,
    "cand": [
     {
      "n": "10",
      "sq": "250002541303",
      "nm": "TARCÍSIO",
      "cc": "REPUBLICANOS",
-     "vap": 11062407,
-     "pvap": 63.26,
+     "vap": 13057319,
+     "pvap": 62.85,
      "st": "",
      "e": "n"
     },
@@ -254,8 +254,8 @@
      "sq": "250002549705",
      "nm": "FERNANDO HADDAD",
      "cc": "PT",
-     "vap": 6264040,
-     "pvap": 35.82,
+     "vap": 7525403,
+     "pvap": 36.22,
      "st": "",
      "e": "n"
     },
@@ -264,8 +264,8 @@
      "sq": "250002544912",
      "nm": "VIVIAN MENDES",
      "cc": "UP",
-     "vap": 60194,
-     "pvap": 0.34,
+     "vap": 71974,
+     "pvap": 0.35,
      "st": "",
      "e": "n"
     },
@@ -274,7 +274,7 @@
      "sq": "250002536915",
      "nm": "VERA LÚCIA",
      "cc": "PSTU",
-     "vap": 56241,
+     "vap": 67516,
      "pvap": 0.32,
      "st": "",
      "e": "n"
@@ -284,7 +284,7 @@
      "sq": "250002550913",
      "nm": "CARLOS MACHADO",
      "cc": "PCB",
-     "vap": 44108,
+     "vap": 52712,
      "pvap": 0.25,
      "st": "",
      "e": "n"
@@ -299,51 +299,51 @@
    "cargo": "Deputado estadual",
    "partido": "Podemos",
    "vagas": 94,
-   "pst": 85.09,
+   "pst": 88.52,
    "dg": "04/10/2026",
-   "hg": "19:25:55",
-   "vb": 1556422,
-   "vn": 1031851,
-   "vv": 19735573,
-   "a": 6480602,
+   "hg": "19:31:54",
+   "vb": 1622046,
+   "vn": 1075156,
+   "vv": 20552314,
+   "a": 6752021,
    "encontrado": true,
-   "vap": 10828,
-   "pvap": 0.05,
+   "vap": 11392,
+   "pvap": 0.06,
    "st": "",
    "sq": "250002545138",
-   "posicao": 287,
+   "posicao": 284,
    "total_candidatos": 1346,
-   "corte_vap": 56051,
+   "corte_vap": 58680,
    "lider": {
     "nm": "EDUARDA CAMPOPIANO",
     "cc": "PL",
-    "vap": 1658428
+    "vap": 1727887
    },
    "partido_top": [
     {
      "nm": "ROGERIO LINS",
-     "vap": 163246,
-     "pos": 8
+     "vap": 174293,
+     "pos": 7
     },
     {
      "nm": "DR. EDSON DA PAIOL",
-     "vap": 103039,
+     "vap": 106942,
      "pos": 34
     },
     {
      "nm": "LEANDRO BASSON",
-     "vap": 80409,
-     "pos": 51
+     "vap": 84511,
+     "pos": 50
     },
     {
      "nm": "KAKA DO AUTISMO",
-     "vap": 66872,
+     "vap": 68374,
      "pos": 71
     },
     {
      "nm": "FABIO FARIA DE SÁ",
-     "vap": 60068,
-     "pos": 87
+     "vap": 61318,
+     "pos": 90
     }
    ],
    "por_cidade": {
@@ -374,15 +374,27 @@
      },
      {
       "m": "SOROCABA",
-      "v": 129,
+      "v": 139,
       "p": 0.04,
-      "pst": 88.16
+      "pst": 98.26
      },
      {
       "m": "ITAQUAQUECETUBA",
       "v": 118,
       "p": 0.12,
       "pst": 58.37
+     },
+     {
+      "m": "SUZANO",
+      "v": 115,
+      "p": 0.09,
+      "pst": 82.17
+     },
+     {
+      "m": "SÃO ROQUE",
+      "v": 94,
+      "p": 0.54,
+      "pst": 43.96
      },
      {
       "m": "ARUJÁ",
@@ -397,28 +409,22 @@
       "pst": 86.61
      },
      {
+      "m": "SÃO JOSÉ DOS CAMPOS",
+      "v": 74,
+      "p": 0.03,
+      "pst": 74.63
+     },
+     {
       "m": "CAPÃO BONITO",
       "v": 69,
       "p": 0.29,
       "pst": 99.18
      },
      {
-      "m": "SUZANO",
-      "v": 69,
-      "p": 0.09,
-      "pst": 49.3
-     },
-     {
       "m": "SÃO BERNARDO DO CAMPO",
       "v": 69,
       "p": 0.02,
       "pst": 74.79
-     },
-     {
-      "m": "SÃO ROQUE",
-      "v": 64,
-      "p": 0.56,
-      "pst": 28.57
      },
      {
       "m": "ATIBAIA",
@@ -443,12 +449,6 @@
       "v": 47,
       "p": 0.31,
       "pst": 90.0
-     },
-     {
-      "m": "SÃO JOSÉ DOS CAMPOS",
-      "v": 46,
-      "p": 0.02,
-      "pst": 47.66
      },
      {
       "m": "GARÇA",
@@ -593,6 +593,12 @@
       "v": 16,
       "p": 0.01,
       "pst": 92.77
+     },
+     {
+      "m": "SERRA AZUL",
+      "v": 16,
+      "p": 0.31,
+      "pst": 100.0
      },
      {
       "m": "ARAÇATUBA",
@@ -763,6 +769,12 @@
       "pst": 100.0
      },
      {
+      "m": "SÃO SEBASTIÃO",
+      "v": 8,
+      "p": 0.03,
+      "pst": 50.23
+     },
+     {
       "m": "ESPÍRITO SANTO DO PINHAL",
       "v": 7,
       "p": 0.03,
@@ -785,6 +797,18 @@
       "v": 7,
       "p": 0.02,
       "pst": 100.0
+     },
+     {
+      "m": "SUMARÉ",
+      "v": 7,
+      "p": 0.01,
+      "pst": 78.41
+     },
+     {
+      "m": "VOTORANTIM",
+      "v": 7,
+      "p": 0.01,
+      "pst": 89.72
      },
      {
       "m": "ANGATUBA",
@@ -829,10 +853,10 @@
       "pst": 69.61
      },
      {
-      "m": "SÃO SEBASTIÃO",
+      "m": "VARGEM GRANDE PAULISTA",
       "v": 6,
-      "p": 0.03,
-      "pst": 40.85
+      "p": 0.02,
+      "pst": 100.0
      },
      {
       "m": "ARARAQUARA",
@@ -883,28 +907,16 @@
       "pst": 100.0
      },
      {
-      "m": "SUMARÉ",
-      "v": 5,
-      "p": 0.01,
-      "pst": 63.04
-     },
-     {
       "m": "TABOÃO DA SERRA",
       "v": 5,
       "p": 0.0,
-      "pst": 71.62
+      "pst": 97.16
      },
      {
       "m": "VARGEM",
       "v": 5,
       "p": 0.11,
       "pst": 100.0
-     },
-     {
-      "m": "VARGEM GRANDE PAULISTA",
-      "v": 5,
-      "p": 0.05,
-      "pst": 36.72
      },
      {
       "m": "APARECIDA",
@@ -977,12 +989,6 @@
       "v": 4,
       "p": 0.05,
       "pst": 100.0
-     },
-     {
-      "m": "VOTORANTIM",
-      "v": 4,
-      "p": 0.02,
-      "pst": 32.62
      },
      {
       "m": "ÁLVARO DE CARVALHO",
@@ -1079,6 +1085,12 @@
       "v": 3,
       "p": 0.0,
       "pst": 98.96
+     },
+     {
+      "m": "TAUBATÉ",
+      "v": 3,
+      "p": 0.0,
+      "pst": 96.3
      },
      {
       "m": "ÁGUAS DA PRATA",
@@ -1225,16 +1237,22 @@
       "pst": 100.0
      },
      {
-      "m": "TAUBATÉ",
+      "m": "TATUÍ",
+      "v": 2,
+      "p": 0.01,
+      "pst": 37.55
+     },
+     {
+      "m": "UBATUBA",
       "v": 2,
       "p": 0.0,
-      "pst": 88.07
+      "pst": 96.64
      },
      {
       "m": "VOTUPORANGA",
       "v": 2,
-      "p": 0.01,
-      "pst": 57.61
+      "p": 0.0,
+      "pst": 93.0
      },
      {
       "m": "ARARAS",
@@ -1396,13 +1414,13 @@
       "m": "SERRA NEGRA",
       "v": 1,
       "p": 0.01,
-      "pst": 53.09
+      "pst": 100.0
      },
      {
       "m": "SERTÃOZINHO",
       "v": 1,
       "p": 0.0,
-      "pst": 53.9
+      "pst": 100.0
      },
      {
       "m": "SÃO MANUEL",
@@ -1417,15 +1435,21 @@
       "pst": 100.0
      },
      {
-      "m": "UBATUBA",
+      "m": "VALINHOS",
       "v": 1,
       "p": 0.0,
-      "pst": 50.0
+      "pst": 59.78
+     },
+     {
+      "m": "VINHEDO",
+      "v": 1,
+      "p": 0.01,
+      "pst": 20.93
      }
     ],
     "falhas": 0,
     "total_municipios": 645,
-    "com_voto": 179
+    "com_voto": 183
    }
   },
   "davi": {
@@ -1434,51 +1458,51 @@
    "cargo": "Deputado federal",
    "partido": "PP",
    "vagas": 70,
-   "pst": 84.16,
+   "pst": 88.52,
    "dg": "04/10/2026",
-   "hg": "19:24:46",
-   "vb": 1297038,
-   "vn": 941318,
-   "vv": 19837318,
-   "a": 6410420,
+   "hg": "19:31:13",
+   "vb": 1370018,
+   "vn": 992913,
+   "vv": 20891090,
+   "a": 6752021,
    "encontrado": true,
-   "vap": 32577,
-   "pvap": 0.16,
+   "vap": 34616,
+   "pvap": 0.17,
    "st": "",
    "sq": "250002532362",
-   "posicao": 132,
+   "posicao": 131,
    "total_candidatos": 1045,
-   "corte_vap": 72542,
+   "corte_vap": 75964,
    "lider": {
     "nm": "LUCAS PAVANATO",
     "cc": "PL",
-    "vap": 2563976
+    "vap": 2701065
    },
    "partido_top": [
     {
      "nm": "SARGENTO NANTES",
-     "vap": 272916,
+     "vap": 288742,
      "pos": 7
     },
     {
      "nm": "MAURICIO NEVES",
-     "vap": 221825,
+     "vap": 238414,
      "pos": 10
     },
     {
      "nm": "CORONEL TELHADA",
-     "vap": 86828,
+     "vap": 91689,
      "pos": 52
     },
     {
-     "nm": "JANAINA PASCHOAL",
-     "vap": 39353,
-     "pos": 113
+     "nm": "VICTOR RUIZ",
+     "vap": 41140,
+     "pos": 112
     },
     {
-     "nm": "VICTOR RUIZ",
-     "vap": 39167,
-     "pos": 115
+     "nm": "JANAINA PASCHOAL",
+     "vap": 41056,
+     "pos": 113
     }
    ]
   },
@@ -1488,50 +1512,50 @@
    "cargo": "Deputado federal",
    "partido": "Podemos",
    "vagas": 70,
-   "pst": 84.16,
+   "pst": 88.52,
    "dg": "04/10/2026",
-   "hg": "19:24:46",
-   "vb": 1297038,
-   "vn": 941318,
-   "vv": 19837318,
-   "a": 6410420,
+   "hg": "19:31:13",
+   "vb": 1370018,
+   "vn": 992913,
+   "vv": 20891090,
+   "a": 6752021,
    "encontrado": true,
-   "vap": 58315,
+   "vap": 60925,
    "pvap": 0.29,
    "st": "",
    "sq": "250002544356",
-   "posicao": 83,
+   "posicao": 82,
    "total_candidatos": 1045,
-   "corte_vap": 72542,
+   "corte_vap": 75964,
    "lider": {
     "nm": "LUCAS PAVANATO",
     "cc": "PL",
-    "vap": 2563976
+    "vap": 2701065
    },
    "partido_top": [
     {
      "nm": "DELEGADO PALUMBO",
-     "vap": 257722,
+     "vap": 270469,
      "pos": 8
     },
     {
      "nm": "ANA CAROLINA OLIVEIRA",
-     "vap": 211616,
+     "vap": 221284,
      "pos": 12
     },
     {
      "nm": "DELEGADO BRUNO LIMA",
-     "vap": 184259,
+     "vap": 194023,
      "pos": 17
     },
     {
      "nm": "RENATA ABREU",
-     "vap": 167652,
-     "pos": 19
+     "vap": 176460,
+     "pos": 18
     },
     {
      "nm": "FELIPE BECARI",
-     "vap": 138070,
+     "vap": 144922,
      "pos": 24
     }
    ]
