@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-04T19:44:26-03:00",
+ "atualizado_em": "2026-10-04T21:57:11-03:00",
  "fonte": "TSE - resultados.tse.jus.br",
  "erros": [],
  "diagnostico": {
@@ -100,21 +100,21 @@
  },
  "majoritarios": {
   "presidente": {
-   "pst": 64.81,
+   "pst": 99.72,
    "dg": "04/10/2026",
-   "hg": "19:14:08",
-   "vb": 1430294,
-   "vn": 2201540,
-   "vv": 75762826,
-   "a": 21004387,
+   "hg": "21:56:35",
+   "vb": 2296179,
+   "vn": 3662856,
+   "vv": 118972715,
+   "a": 33357149,
    "cand": [
     {
      "n": "22",
      "sq": "280002551544",
      "nm": "FLAVIO BOLSONARO",
      "cc": "PL",
-     "vap": 37566895,
-     "pvap": 49.58,
+     "vap": 56025109,
+     "pvap": 47.09,
      "st": "",
      "e": "n"
     },
@@ -123,8 +123,8 @@
      "sq": "280002542548",
      "nm": "LULA",
      "cc": "PT",
-     "vap": 32007853,
-     "pvap": 42.25,
+     "vap": 53644006,
+     "pvap": 45.09,
      "st": "",
      "e": "n"
     },
@@ -133,18 +133,8 @@
      "sq": "280002551547",
      "nm": "ESCRITOR AUGUSTO CURY",
      "cc": "AVANTE",
-     "vap": 2247926,
-     "pvap": 2.97,
-     "st": "",
-     "e": "n"
-    },
-    {
-     "n": "55",
-     "sq": "280002551932",
-     "nm": "RONALDO CAIADO",
-     "cc": "PSD",
-     "vap": 1774893,
-     "pvap": 2.34,
+     "vap": 3442523,
+     "pvap": 2.89,
      "st": "",
      "e": "n"
     },
@@ -153,8 +143,18 @@
      "sq": "280002540694",
      "nm": "RENAN SANTOS",
      "cc": "MISSÃO",
-     "vap": 1772742,
-     "pvap": 2.34,
+     "vap": 2672775,
+     "pvap": 2.25,
+     "st": "",
+     "e": "n"
+    },
+    {
+     "n": "55",
+     "sq": "280002551932",
+     "nm": "RONALDO CAIADO",
+     "cc": "PSD",
+     "vap": 2601929,
+     "pvap": 2.19,
      "st": "",
      "e": "n"
     },
@@ -163,8 +163,8 @@
      "sq": "280002539826",
      "nm": "ZEMA",
      "cc": "NOVO",
-     "vap": 220598,
-     "pvap": 0.29,
+     "vap": 326070,
+     "pvap": 0.27,
      "st": "",
      "e": "n"
     },
@@ -173,8 +173,8 @@
      "sq": "280002538811",
      "nm": "SAMARA",
      "cc": "UP",
-     "vap": 80928,
-     "pvap": 0.11,
+     "vap": 122786,
+     "pvap": 0.1,
      "st": "",
      "e": "n"
     },
@@ -183,7 +183,7 @@
      "sq": "280002541457",
      "nm": "HERTZ DIAS",
      "cc": "PSTU",
-     "vap": 28466,
+     "vap": 43033,
      "pvap": 0.04,
      "st": "",
      "e": "n"
@@ -193,8 +193,8 @@
      "sq": "280002552484",
      "nm": "CLARIANA BARAO",
      "cc": "DC",
-     "vap": 26802,
-     "pvap": 0.04,
+     "vap": 39995,
+     "pvap": 0.03,
      "st": "",
      "e": "n"
     },
@@ -203,7 +203,7 @@
      "sq": "280002551975",
      "nm": "EDMILSON COSTA",
      "cc": "PCB",
-     "vap": 14415,
+     "vap": 22629,
      "pvap": 0.02,
      "st": "",
      "e": "n"
@@ -213,7 +213,7 @@
      "sq": "280002548139",
      "nm": "VETERINÁRIO WILSON GRASSI",
      "cc": "DEMOCRATA",
-     "vap": 11041,
+     "vap": 16851,
      "pvap": 0.01,
      "st": "",
      "e": "n"
@@ -223,7 +223,7 @@
      "sq": "280002552487",
      "nm": "RUI COSTA PIMENTA",
      "cc": "PCO",
-     "vap": 10267,
+     "vap": 15009,
      "pvap": 0.01,
      "st": "",
      "e": "n"
@@ -231,21 +231,21 @@
    ]
   },
   "governador": {
-   "pst": 90.02,
+   "pst": 99.99,
    "dg": "04/10/2026",
-   "hg": "19:32:10",
-   "vb": 1199683,
-   "vn": 1712157,
-   "vv": 20774924,
-   "a": 6874393,
+   "hg": "21:51:23",
+   "vb": 1348115,
+   "vn": 1915249,
+   "vv": 23127381,
+   "a": 7686467,
    "cand": [
     {
      "n": "10",
      "sq": "250002541303",
      "nm": "TARCÍSIO",
      "cc": "REPUBLICANOS",
-     "vap": 13057319,
-     "pvap": 62.85,
+     "vap": 14489750,
+     "pvap": 62.65,
      "st": "",
      "e": "n"
     },
@@ -254,8 +254,8 @@
      "sq": "250002549705",
      "nm": "FERNANDO HADDAD",
      "cc": "PT",
-     "vap": 7525403,
-     "pvap": 36.22,
+     "vap": 8422659,
+     "pvap": 36.42,
      "st": "",
      "e": "n"
     },
@@ -264,7 +264,7 @@
      "sq": "250002544912",
      "nm": "VIVIAN MENDES",
      "cc": "UP",
-     "vap": 71974,
+     "vap": 80477,
      "pvap": 0.35,
      "st": "",
      "e": "n"
@@ -274,8 +274,8 @@
      "sq": "250002536915",
      "nm": "VERA LÚCIA",
      "cc": "PSTU",
-     "vap": 67516,
-     "pvap": 0.32,
+     "vap": 75637,
+     "pvap": 0.33,
      "st": "",
      "e": "n"
     },
@@ -284,7 +284,7 @@
      "sq": "250002550913",
      "nm": "CARLOS MACHADO",
      "cc": "PCB",
-     "vap": 52712,
+     "vap": 58858,
      "pvap": 0.25,
      "st": "",
      "e": "n"
@@ -299,66 +299,66 @@
    "cargo": "Deputado estadual",
    "partido": "Podemos",
    "vagas": 94,
-   "pst": 88.52,
+   "pst": 99.98,
    "dg": "04/10/2026",
-   "hg": "19:31:54",
-   "vb": 1622046,
-   "vn": 1075156,
-   "vv": 20552314,
-   "a": 6752021,
+   "hg": "21:52:10",
+   "vb": 1846989,
+   "vn": 1220580,
+   "vv": 23286613,
+   "a": 7686301,
    "encontrado": true,
-   "vap": 11392,
+   "vap": 13243,
    "pvap": 0.06,
    "st": "",
    "sq": "250002545138",
-   "posicao": 284,
+   "posicao": 281,
    "total_candidatos": 1346,
-   "corte_vap": 58680,
+   "corte_vap": 66511,
    "lider": {
     "nm": "EDUARDA CAMPOPIANO",
     "cc": "PL",
-    "vap": 1727887
+    "vap": 1956097
    },
    "partido_top": [
     {
      "nm": "ROGERIO LINS",
-     "vap": 174293,
+     "vap": 229928,
      "pos": 7
     },
     {
      "nm": "DR. EDSON DA PAIOL",
-     "vap": 106942,
-     "pos": 34
+     "vap": 124386,
+     "pos": 32
     },
     {
      "nm": "LEANDRO BASSON",
-     "vap": 84511,
-     "pos": 50
+     "vap": 90929,
+     "pos": 55
     },
     {
      "nm": "KAKA DO AUTISMO",
-     "vap": 68374,
-     "pos": 71
+     "vap": 74365,
+     "pos": 74
     },
     {
      "nm": "FABIO FARIA DE SÁ",
-     "vap": 61318,
-     "pos": 90
+     "vap": 68054,
+     "pos": 91
     }
    ],
    "por_cidade": {
     "cidades": [
      {
       "m": "GUARULHOS",
-      "v": 4046,
-      "p": 1.14,
-      "pst": 54.37
+      "v": 7227,
+      "p": 1.08,
+      "pst": 99.96
      },
      {
       "m": "SÃO PAULO",
-      "v": 1819,
-      "p": 0.04,
-      "pst": 83.96
+      "v": 2038,
+      "p": 0.03,
+      "pst": 99.99
      },
      {
       "m": "BRAGANÇA PAULISTA",
@@ -368,33 +368,57 @@
      },
      {
       "m": "BERTIOGA",
-      "v": 220,
-      "p": 0.96,
-      "pst": 66.46
-     },
-     {
-      "m": "SOROCABA",
-      "v": 139,
-      "p": 0.04,
-      "pst": 98.26
-     },
-     {
-      "m": "ITAQUAQUECETUBA",
-      "v": 118,
-      "p": 0.12,
-      "pst": 58.37
-     },
-     {
-      "m": "SUZANO",
-      "v": 115,
-      "p": 0.09,
-      "pst": 82.17
+      "v": 279,
+      "p": 0.79,
+      "pst": 100.0
      },
      {
       "m": "SÃO ROQUE",
-      "v": 94,
-      "p": 0.54,
-      "pst": 43.96
+      "v": 242,
+      "p": 0.6,
+      "pst": 100.0
+     },
+     {
+      "m": "ITAQUAQUECETUBA",
+      "v": 239,
+      "p": 0.14,
+      "pst": 99.2
+     },
+     {
+      "m": "SOROCABA",
+      "v": 144,
+      "p": 0.04,
+      "pst": 100.0
+     },
+     {
+      "m": "SUZANO",
+      "v": 138,
+      "p": 0.09,
+      "pst": 100.0
+     },
+     {
+      "m": "SÃO JOSÉ DOS CAMPOS",
+      "v": 109,
+      "p": 0.03,
+      "pst": 100.0
+     },
+     {
+      "m": "ATIBAIA",
+      "v": 101,
+      "p": 0.12,
+      "pst": 100.0
+     },
+     {
+      "m": "SÃO BERNARDO DO CAMPO",
+      "v": 96,
+      "p": 0.02,
+      "pst": 100.0
+     },
+     {
+      "m": "MAIRINQUE",
+      "v": 90,
+      "p": 0.35,
+      "pst": 98.32
      },
      {
       "m": "ARUJÁ",
@@ -404,33 +428,27 @@
      },
      {
       "m": "RIBEIRÃO PRETO",
-      "v": 82,
+      "v": 85,
       "p": 0.03,
-      "pst": 86.61
-     },
-     {
-      "m": "SÃO JOSÉ DOS CAMPOS",
-      "v": 74,
-      "p": 0.03,
-      "pst": 74.63
+      "pst": 100.0
      },
      {
       "m": "CAPÃO BONITO",
       "v": 69,
       "p": 0.29,
-      "pst": 99.18
+      "pst": 100.0
      },
      {
-      "m": "SÃO BERNARDO DO CAMPO",
-      "v": 69,
-      "p": 0.02,
-      "pst": 74.79
+      "m": "MOGI DAS CRUZES",
+      "v": 61,
+      "p": 0.03,
+      "pst": 100.0
      },
      {
-      "m": "ATIBAIA",
-      "v": 59,
-      "p": 0.14,
-      "pst": 53.61
+      "m": "ARAÇARIGUAMA",
+      "v": 56,
+      "p": 0.48,
+      "pst": 100.0
      },
      {
       "m": "MAIRIPORÃ",
@@ -439,33 +457,45 @@
       "pst": 100.0
      },
      {
+      "m": "SÃO MIGUEL ARCANJO",
+      "v": 51,
+      "p": 0.31,
+      "pst": 98.75
+     },
+     {
       "m": "PORTO FELIZ",
       "v": 47,
       "p": 0.19,
       "pst": 82.05
      },
      {
-      "m": "SÃO MIGUEL ARCANJO",
-      "v": 47,
-      "p": 0.31,
-      "pst": 90.0
-     },
-     {
       "m": "GARÇA",
       "v": 41,
-      "p": 0.21,
-      "pst": 93.39
+      "p": 0.19,
+      "pst": 100.0
      },
      {
       "m": "DIADEMA",
       "v": 39,
       "p": 0.02,
-      "pst": 98.19
+      "pst": 100.0
+     },
+     {
+      "m": "SÃO JOSÉ DO RIO PRETO",
+      "v": 36,
+      "p": 0.02,
+      "pst": 98.94
      },
      {
       "m": "EMBU-GUAÇU",
       "v": 35,
       "p": 0.1,
+      "pst": 100.0
+     },
+     {
+      "m": "JUNDIAÍ",
+      "v": 35,
+      "p": 0.01,
       "pst": 100.0
      },
      {
@@ -475,10 +505,10 @@
       "pst": 100.0
      },
      {
-      "m": "JUNDIAÍ",
-      "v": 33,
-      "p": 0.02,
-      "pst": 92.61
+      "m": "POÁ",
+      "v": 31,
+      "p": 0.05,
+      "pst": 100.0
      },
      {
       "m": "APIAÍ",
@@ -499,16 +529,22 @@
       "pst": 100.0
      },
      {
-      "m": "MAIRINQUE",
+      "m": "OSASCO",
       "v": 27,
-      "p": 0.22,
-      "pst": 51.26
+      "p": 0.01,
+      "pst": 98.9
      },
      {
-      "m": "POÁ",
+      "m": "INDAIATUBA",
       "v": 26,
-      "p": 0.04,
-      "pst": 91.94
+      "p": 0.02,
+      "pst": 100.0
+     },
+     {
+      "m": "SANTO ANDRÉ",
+      "v": 26,
+      "p": 0.01,
+      "pst": 100.0
      },
      {
       "m": "VÁRZEA PAULISTA",
@@ -517,9 +553,21 @@
       "pst": 98.43
      },
      {
+      "m": "CAMPINAS",
+      "v": 25,
+      "p": 0.0,
+      "pst": 100.0
+     },
+     {
       "m": "FERRAZ DE VASCONCELOS",
       "v": 25,
       "p": 0.03,
+      "pst": 100.0
+     },
+     {
+      "m": "PORANGABA",
+      "v": 25,
+      "p": 0.49,
       "pst": 100.0
      },
      {
@@ -529,10 +577,16 @@
       "pst": 100.0
      },
      {
-      "m": "SANTO ANDRÉ",
-      "v": 22,
-      "p": 0.01,
-      "pst": 93.23
+      "m": "ARAÇATUBA",
+      "v": 21,
+      "p": 0.02,
+      "pst": 100.0
+     },
+     {
+      "m": "CAPIVARI",
+      "v": 21,
+      "p": 0.08,
+      "pst": 100.0
      },
      {
       "m": "ITUPEVA",
@@ -541,34 +595,46 @@
       "pst": 100.0
      },
      {
-      "m": "MOGI DAS CRUZES",
-      "v": 21,
-      "p": 0.03,
-      "pst": 28.53
-     },
-     {
-      "m": "OSASCO",
-      "v": 20,
-      "p": 0.01,
-      "pst": 62.95
-     },
-     {
-      "m": "SÃO JOSÉ DO RIO PRETO",
-      "v": 20,
-      "p": 0.01,
-      "pst": 69.84
+      "m": "BOITUVA",
+      "v": 19,
+      "p": 0.06,
+      "pst": 100.0
      },
      {
       "m": "PRAIA GRANDE",
-      "v": 18,
+      "v": 19,
       "p": 0.01,
-      "pst": 80.63
+      "pst": 98.56
      },
      {
       "m": "RIBEIRÃO PIRES",
-      "v": 18,
+      "v": 19,
       "p": 0.03,
-      "pst": 86.26
+      "pst": 92.75
+     },
+     {
+      "m": "ITANHAÉM",
+      "v": 17,
+      "p": 0.03,
+      "pst": 100.0
+     },
+     {
+      "m": "JACAREÍ",
+      "v": 17,
+      "p": 0.01,
+      "pst": 99.82
+     },
+     {
+      "m": "SANTOS",
+      "v": 17,
+      "p": 0.01,
+      "pst": 99.91
+     },
+     {
+      "m": "BARUERI",
+      "v": 16,
+      "p": 0.01,
+      "pst": 100.0
      },
      {
       "m": "BOFETE",
@@ -580,7 +646,7 @@
       "m": "FRANCISCO MORATO",
       "v": 16,
       "p": 0.02,
-      "pst": 93.48
+      "pst": 100.0
      },
      {
       "m": "FRANCO DA ROCHA",
@@ -589,10 +655,16 @@
       "pst": 97.95
      },
      {
-      "m": "JACAREÍ",
+      "m": "ITAPECERICA DA SERRA",
       "v": 16,
-      "p": 0.01,
-      "pst": 92.77
+      "p": 0.02,
+      "pst": 100.0
+     },
+     {
+      "m": "RAFARD",
+      "v": 16,
+      "p": 0.3,
+      "pst": 100.0
      },
      {
       "m": "SERRA AZUL",
@@ -601,10 +673,16 @@
       "pst": 100.0
      },
      {
-      "m": "ARAÇATUBA",
+      "m": "SÃO CAETANO DO SUL",
+      "v": 16,
+      "p": 0.01,
+      "pst": 100.0
+     },
+     {
+      "m": "MAUÁ",
       "v": 15,
-      "p": 0.02,
-      "pst": 78.09
+      "p": 0.01,
+      "pst": 100.0
      },
      {
       "m": "PIRATININGA",
@@ -613,9 +691,27 @@
       "pst": 100.0
      },
      {
+      "m": "SÃO SEBASTIÃO",
+      "v": 15,
+      "p": 0.03,
+      "pst": 100.0
+     },
+     {
       "m": "TANABI",
       "v": 15,
       "p": 0.11,
+      "pst": 100.0
+     },
+     {
+      "m": "CARAPICUÍBA",
+      "v": 14,
+      "p": 0.01,
+      "pst": 100.0
+     },
+     {
+      "m": "ITAOCA",
+      "v": 14,
+      "p": 0.65,
       "pst": 100.0
      },
      {
@@ -637,28 +733,16 @@
       "pst": 100.0
      },
      {
-      "m": "CAPIVARI",
-      "v": 13,
-      "p": 0.07,
-      "pst": 70.73
-     },
-     {
-      "m": "INDAIATUBA",
-      "v": 13,
-      "p": 0.02,
-      "pst": 62.0
-     },
-     {
       "m": "LARANJAL PAULISTA",
       "v": 13,
       "p": 0.09,
       "pst": 100.0
      },
      {
-      "m": "SÃO CAETANO DO SUL",
-      "v": 13,
-      "p": 0.02,
-      "pst": 61.64
+      "m": "CAMPO LIMPO PAULISTA",
+      "v": 12,
+      "p": 0.03,
+      "pst": 100.0
      },
      {
       "m": "CERQUILHO",
@@ -667,10 +751,34 @@
       "pst": 100.0
      },
      {
+      "m": "CESÁRIO LANGE",
+      "v": 12,
+      "p": 0.13,
+      "pst": 100.0
+     },
+     {
+      "m": "COTIA",
+      "v": 12,
+      "p": 0.01,
+      "pst": 97.49
+     },
+     {
+      "m": "GUAREÍ",
+      "v": 12,
+      "p": 0.2,
+      "pst": 100.0
+     },
+     {
+      "m": "PARANAPANEMA",
+      "v": 12,
+      "p": 0.12,
+      "pst": 100.0
+     },
+     {
       "m": "PINDAMONHANGABA",
       "v": 12,
       "p": 0.01,
-      "pst": 99.49
+      "pst": 100.0
      },
      {
       "m": "TIETÊ",
@@ -682,13 +790,31 @@
       "m": "HORTOLÂNDIA",
       "v": 11,
       "p": 0.01,
-      "pst": 88.55
+      "pst": 100.0
+     },
+     {
+      "m": "ITAPEVI",
+      "v": 11,
+      "p": 0.01,
+      "pst": 100.0
+     },
+     {
+      "m": "JUQUITIBA",
+      "v": 11,
+      "p": 0.07,
+      "pst": 100.0
      },
      {
       "m": "SÃO SIMÃO",
       "v": 11,
       "p": 0.15,
       "pst": 100.0
+     },
+     {
+      "m": "ARAÇOIABA DA SERRA",
+      "v": 10,
+      "p": 0.06,
+      "pst": 97.37
      },
      {
       "m": "CARAGUATATUBA",
@@ -703,16 +829,10 @@
       "pst": 100.0
      },
      {
-      "m": "ITAPEVI",
+      "m": "GUARUJÁ",
       "v": 10,
       "p": 0.01,
-      "pst": 99.59
-     },
-     {
-      "m": "JUQUITIBA",
-      "v": 10,
-      "p": 0.11,
-      "pst": 59.21
+      "pst": 100.0
      },
      {
       "m": "PIRACICABA",
@@ -723,37 +843,55 @@
      {
       "m": "SALTO",
       "v": 10,
+      "p": 0.01,
+      "pst": 100.0
+     },
+     {
+      "m": "TATUÍ",
+      "v": 10,
       "p": 0.02,
-      "pst": 92.67
+      "pst": 100.0
      },
      {
-      "m": "CAMPO LIMPO PAULISTA",
+      "m": "ITAPETININGA",
       "v": 9,
-      "p": 0.04,
-      "pst": 61.97
+      "p": 0.01,
+      "pst": 100.0
      },
      {
-      "m": "ITANHAÉM",
+      "m": "ITU",
       "v": 9,
-      "p": 0.03,
-      "pst": 51.61
+      "p": 0.01,
+      "pst": 100.0
      },
      {
-      "m": "ITAPECERICA DA SERRA",
+      "m": "ROSANA",
       "v": 9,
-      "p": 0.03,
-      "pst": 37.4
+      "p": 0.1,
+      "pst": 100.0
      },
      {
-      "m": "BOITUVA",
+      "m": "SUMARÉ",
+      "v": 9,
+      "p": 0.01,
+      "pst": 96.55
+     },
+     {
+      "m": "BOM JESUS DOS PERDÕES",
       "v": 8,
-      "p": 0.05,
-      "pst": 48.84
+      "p": 0.07,
+      "pst": 94.74
      },
      {
       "m": "CLEMENTINA",
       "v": 8,
       "p": 0.21,
+      "pst": 100.0
+     },
+     {
+      "m": "GUARAREMA",
+      "v": 8,
+      "p": 0.04,
       "pst": 100.0
      },
      {
@@ -769,16 +907,16 @@
       "pst": 100.0
      },
      {
-      "m": "SÃO SEBASTIÃO",
-      "v": 8,
-      "p": 0.03,
-      "pst": 50.23
+      "m": "ANGATUBA",
+      "v": 7,
+      "p": 0.06,
+      "pst": 100.0
      },
      {
       "m": "ESPÍRITO SANTO DO PINHAL",
       "v": 7,
       "p": 0.03,
-      "pst": 98.2
+      "pst": 100.0
      },
      {
       "m": "IBITINGA",
@@ -787,10 +925,22 @@
       "pst": 100.0
      },
      {
+      "m": "NARANDIBA",
+      "v": 7,
+      "p": 0.21,
+      "pst": 100.0
+     },
+     {
+      "m": "NOVA CAMPINA",
+      "v": 7,
+      "p": 0.14,
+      "pst": 100.0
+     },
+     {
       "m": "PENÁPOLIS",
       "v": 7,
       "p": 0.02,
-      "pst": 99.38
+      "pst": 100.0
      },
      {
       "m": "REGISTRO",
@@ -799,22 +949,16 @@
       "pst": 100.0
      },
      {
-      "m": "SUMARÉ",
+      "m": "RIBEIRÃO BRANCO",
       "v": 7,
-      "p": 0.01,
-      "pst": 78.41
+      "p": 0.07,
+      "pst": 100.0
      },
      {
       "m": "VOTORANTIM",
       "v": 7,
       "p": 0.01,
-      "pst": 89.72
-     },
-     {
-      "m": "ANGATUBA",
-      "v": 6,
-      "p": 0.06,
-      "pst": 80.7
+      "pst": 100.0
      },
      {
       "m": "AVARÉ",
@@ -823,22 +967,34 @@
       "pst": 100.0
      },
      {
-      "m": "MAUÁ",
+      "m": "BIRIGUI",
+      "v": 6,
+      "p": 0.01,
+      "pst": 100.0
+     },
+     {
+      "m": "BURI",
+      "v": 6,
+      "p": 0.06,
+      "pst": 100.0
+     },
+     {
+      "m": "EMBU DAS ARTES",
       "v": 6,
       "p": 0.0,
-      "pst": 71.74
+      "pst": 100.0
+     },
+     {
+      "m": "NAZARÉ PAULISTA",
+      "v": 6,
+      "p": 0.06,
+      "pst": 100.0
      },
      {
       "m": "PEDREIRA",
       "v": 6,
       "p": 0.03,
-      "pst": 97.22
-     },
-     {
-      "m": "RAFARD",
-      "v": 6,
-      "p": 0.27,
-      "pst": 45.83
+      "pst": 100.0
      },
      {
       "m": "RIBEIRA",
@@ -847,10 +1003,10 @@
       "pst": 91.67
      },
      {
-      "m": "SANTOS",
+      "m": "TABOÃO DA SERRA",
       "v": 6,
       "p": 0.0,
-      "pst": 69.61
+      "pst": 100.0
      },
      {
       "m": "VARGEM GRANDE PAULISTA",
@@ -862,43 +1018,43 @@
       "m": "ARARAQUARA",
       "v": 5,
       "p": 0.0,
-      "pst": 99.5
-     },
-     {
-      "m": "BURI",
-      "v": 5,
-      "p": 0.05,
-      "pst": 93.75
-     },
-     {
-      "m": "CARAPICUÍBA",
-      "v": 5,
-      "p": 0.01,
-      "pst": 29.29
+      "pst": 100.0
      },
      {
       "m": "CAÇAPAVA",
       "v": 5,
       "p": 0.01,
-      "pst": 99.59
+      "pst": 100.0
+     },
+     {
+      "m": "CRAVINHOS",
+      "v": 5,
+      "p": 0.03,
+      "pst": 100.0
      },
      {
       "m": "ITAPEVA",
       "v": 5,
       "p": 0.01,
-      "pst": 88.5
+      "pst": 97.79
      },
      {
       "m": "ITARARÉ",
       "v": 5,
-      "p": 0.03,
-      "pst": 83.19
+      "p": 0.02,
+      "pst": 100.0
      },
      {
       "m": "JARINU",
       "v": 5,
-      "p": 0.04,
-      "pst": 68.83
+      "p": 0.03,
+      "pst": 100.0
+     },
+     {
+      "m": "MOGI GUAÇU",
+      "v": 5,
+      "p": 0.01,
+      "pst": 100.0
      },
      {
       "m": "MONTE MOR",
@@ -907,10 +1063,16 @@
       "pst": 100.0
      },
      {
-      "m": "TABOÃO DA SERRA",
+      "m": "PEDRA BELA",
       "v": 5,
-      "p": 0.0,
-      "pst": 97.16
+      "p": 0.15,
+      "pst": 100.0
+     },
+     {
+      "m": "PERUÍBE",
+      "v": 5,
+      "p": 0.01,
+      "pst": 100.0
      },
      {
       "m": "VARGEM",
@@ -919,10 +1081,22 @@
       "pst": 100.0
      },
      {
+      "m": "VINHEDO",
+      "v": 5,
+      "p": 0.01,
+      "pst": 98.26
+     },
+     {
+      "m": "AGUAÍ",
+      "v": 4,
+      "p": 0.03,
+      "pst": 100.0
+     },
+     {
       "m": "APARECIDA",
       "v": 4,
       "p": 0.02,
-      "pst": 98.84
+      "pst": 100.0
      },
      {
       "m": "BARRETOS",
@@ -934,7 +1108,7 @@
       "m": "BAURU",
       "v": 4,
       "p": 0.0,
-      "pst": 99.89
+      "pst": 100.0
      },
      {
       "m": "BRAÚNA",
@@ -943,16 +1117,10 @@
       "pst": 100.0
      },
      {
-      "m": "COTIA",
+      "m": "CAPELA DO ALTO",
       "v": 4,
-      "p": 0.01,
-      "pst": 53.05
-     },
-     {
-      "m": "EMBU DAS ARTES",
-      "v": 4,
-      "p": 0.0,
-      "pst": 91.01
+      "p": 0.04,
+      "pst": 100.0
      },
      {
       "m": "GASTÃO VIDIGAL",
@@ -961,22 +1129,10 @@
       "pst": 100.0
      },
      {
-      "m": "GUARUJÁ",
-      "v": 4,
-      "p": 0.0,
-      "pst": 53.88
-     },
-     {
       "m": "IBIÚNA",
       "v": 4,
-      "p": 0.02,
-      "pst": 62.5
-     },
-     {
-      "m": "ITU",
-      "v": 4,
       "p": 0.01,
-      "pst": 30.83
+      "pst": 100.0
      },
      {
       "m": "LUÍS ANTÔNIO",
@@ -997,10 +1153,10 @@
       "pst": 100.0
      },
      {
-      "m": "BARUERI",
+      "m": "ALUMÍNIO",
       "v": 3,
-      "p": 0.0,
-      "pst": 29.36
+      "p": 0.07,
+      "pst": 50.0
      },
      {
       "m": "CABRÁLIA PAULISTA",
@@ -1015,34 +1171,34 @@
       "pst": 75.0
      },
      {
-      "m": "CAMPINAS",
-      "v": 3,
-      "p": 0.0,
-      "pst": 14.5
-     },
-     {
       "m": "CANANÉIA",
       "v": 3,
       "p": 0.04,
-      "pst": 94.74
+      "pst": 100.0
+     },
+     {
+      "m": "COROADOS",
+      "v": 3,
+      "p": 0.1,
+      "pst": 100.0
      },
      {
       "m": "FRANCA",
       "v": 3,
       "p": 0.0,
-      "pst": 99.73
+      "pst": 100.0
+     },
+     {
+      "m": "IPERÓ",
+      "v": 3,
+      "p": 0.02,
+      "pst": 100.0
      },
      {
       "m": "IPORANGA",
       "v": 3,
-      "p": 0.14,
-      "pst": 92.31
-     },
-     {
-      "m": "ITAPETININGA",
-      "v": 3,
-      "p": 0.01,
-      "pst": 59.33
+      "p": 0.13,
+      "pst": 100.0
      },
      {
       "m": "ITATIBA",
@@ -1057,6 +1213,12 @@
       "pst": 100.0
      },
      {
+      "m": "JUQUIÁ",
+      "v": 3,
+      "p": 0.03,
+      "pst": 100.0
+     },
+     {
       "m": "LUCÉLIA",
       "v": 3,
       "p": 0.03,
@@ -1066,7 +1228,7 @@
       "m": "MARÍLIA",
       "v": 3,
       "p": 0.0,
-      "pst": 82.9
+      "pst": 99.31
      },
      {
       "m": "MOMBUCA",
@@ -1078,7 +1240,7 @@
       "m": "SANTA BÁRBARA D'OESTE",
       "v": 3,
       "p": 0.0,
-      "pst": 94.68
+      "pst": 100.0
      },
      {
       "m": "SÃO CARLOS",
@@ -1090,7 +1252,19 @@
       "m": "TAUBATÉ",
       "v": 3,
       "p": 0.0,
-      "pst": 96.3
+      "pst": 100.0
+     },
+     {
+      "m": "UBATUBA",
+      "v": 3,
+      "p": 0.01,
+      "pst": 100.0
+     },
+     {
+      "m": "VOTUPORANGA",
+      "v": 3,
+      "p": 0.01,
+      "pst": 100.0
      },
      {
       "m": "ÁGUAS DA PRATA",
@@ -1102,7 +1276,7 @@
       "m": "AMERICANA",
       "v": 2,
       "p": 0.0,
-      "pst": 96.32
+      "pst": 100.0
      },
      {
       "m": "AMÉRICO BRASILIENSE",
@@ -1117,21 +1291,39 @@
       "pst": 100.0
      },
      {
+      "m": "ARARAS",
+      "v": 2,
+      "p": 0.0,
+      "pst": 100.0
+     },
+     {
       "m": "ASSIS",
       "v": 2,
       "p": 0.0,
-      "pst": 98.17
+      "pst": 100.0
      },
      {
       "m": "CAIEIRAS",
       "v": 2,
       "p": 0.0,
-      "pst": 85.13
+      "pst": 100.0
+     },
+     {
+      "m": "CAJAMAR",
+      "v": 2,
+      "p": 0.0,
+      "pst": 99.06
      },
      {
       "m": "DESCALVADO",
       "v": 2,
       "p": 0.01,
+      "pst": 100.0
+     },
+     {
+      "m": "ESTIVA GERBI",
+      "v": 2,
+      "p": 0.03,
       "pst": 100.0
      },
      {
@@ -1144,7 +1336,7 @@
       "m": "GUAPIARA",
       "v": 2,
       "p": 0.02,
-      "pst": 88.46
+      "pst": 100.0
      },
      {
       "m": "IGARATÁ",
@@ -1165,22 +1357,22 @@
       "pst": 100.0
      },
      {
-      "m": "JUQUIÁ",
+      "m": "ITARIRI",
       "v": 2,
       "p": 0.03,
-      "pst": 69.23
+      "pst": 100.0
      },
      {
       "m": "LORENA",
       "v": 2,
-      "p": 0.01,
-      "pst": 86.6
+      "p": 0.0,
+      "pst": 100.0
      },
      {
-      "m": "MOGI GUAÇU",
+      "m": "MONGAGUÁ",
       "v": 2,
-      "p": 0.0,
-      "pst": 67.82
+      "p": 0.01,
+      "pst": 100.0
      },
      {
       "m": "PARAGUAÇU PAULISTA",
@@ -1195,16 +1387,16 @@
       "pst": 100.0
      },
      {
-      "m": "PERUÍBE",
-      "v": 2,
-      "p": 0.01,
-      "pst": 45.45
-     },
-     {
       "m": "PIEDADE",
       "v": 2,
       "p": 0.01,
-      "pst": 77.97
+      "pst": 100.0
+     },
+     {
+      "m": "PINHALZINHO",
+      "v": 2,
+      "p": 0.03,
+      "pst": 100.0
      },
      {
       "m": "POTIM",
@@ -1225,6 +1417,18 @@
       "pst": 95.0
      },
      {
+      "m": "SALESÓPOLIS",
+      "v": 2,
+      "p": 0.02,
+      "pst": 100.0
+     },
+     {
+      "m": "SALTO DE PIRAPORA",
+      "v": 2,
+      "p": 0.02,
+      "pst": 50.57
+     },
+     {
       "m": "SÃO JOAQUIM DA BARRA",
       "v": 2,
       "p": 0.01,
@@ -1237,28 +1441,10 @@
       "pst": 100.0
      },
      {
-      "m": "TATUÍ",
-      "v": 2,
-      "p": 0.01,
-      "pst": 37.55
-     },
-     {
-      "m": "UBATUBA",
+      "m": "VALINHOS",
       "v": 2,
       "p": 0.0,
-      "pst": 96.64
-     },
-     {
-      "m": "VOTUPORANGA",
-      "v": 2,
-      "p": 0.0,
-      "pst": 93.0
-     },
-     {
-      "m": "ARARAS",
-      "v": 1,
-      "p": 0.0,
-      "pst": 71.93
+      "pst": 100.0
      },
      {
       "m": "BARRA BONITA",
@@ -1267,10 +1453,16 @@
       "pst": 100.0
      },
      {
-      "m": "BIRIGUI",
+      "m": "BARRINHA",
       "v": 1,
-      "p": 0.0,
-      "pst": 49.05
+      "p": 0.01,
+      "pst": 77.65
+     },
+     {
+      "m": "BIRITIBA MIRIM",
+      "v": 1,
+      "p": 0.01,
+      "pst": 66.67
      },
      {
       "m": "BOREBI",
@@ -1285,22 +1477,10 @@
       "pst": 100.0
      },
      {
-      "m": "COROADOS",
-      "v": 1,
-      "p": 0.05,
-      "pst": 61.54
-     },
-     {
       "m": "COSMÓPOLIS",
       "v": 1,
       "p": 0.0,
       "pst": 100.0
-     },
-     {
-      "m": "ESTIVA GERBI",
-      "v": 1,
-      "p": 0.02,
-      "pst": 92.59
      },
      {
       "m": "GUARARAPES",
@@ -1309,10 +1489,22 @@
       "pst": 100.0
      },
      {
+      "m": "GUATAPARÁ",
+      "v": 1,
+      "p": 0.03,
+      "pst": 100.0
+     },
+     {
       "m": "IGUAPE",
       "v": 1,
       "p": 0.01,
       "pst": 100.0
+     },
+     {
+      "m": "ITAPIRAPUÃ PAULISTA",
+      "v": 1,
+      "p": 0.07,
+      "pst": 60.0
      },
      {
       "m": "ITAPUÍ",
@@ -1324,10 +1516,16 @@
       "m": "ITÁPOLIS",
       "v": 1,
       "p": 0.01,
-      "pst": 84.09
+      "pst": 100.0
      },
      {
       "m": "JABOTICABAL",
+      "v": 1,
+      "p": 0.0,
+      "pst": 100.0
+     },
+     {
+      "m": "JANDIRA",
       "v": 1,
       "p": 0.0,
       "pst": 100.0
@@ -1339,16 +1537,16 @@
       "pst": 100.0
      },
      {
+      "m": "LOUVEIRA",
+      "v": 1,
+      "p": 0.0,
+      "pst": 100.0
+     },
+     {
       "m": "MIGUELÓPOLIS",
       "v": 1,
       "p": 0.01,
       "pst": 100.0
-     },
-     {
-      "m": "MONGAGUÁ",
-      "v": 1,
-      "p": 0.01,
-      "pst": 53.38
      },
      {
       "m": "NATIVIDADE DA SERRA",
@@ -1372,13 +1570,7 @@
       "m": "PEDERNEIRAS",
       "v": 1,
       "p": 0.0,
-      "pst": 90.29
-     },
-     {
-      "m": "PINHALZINHO",
-      "v": 1,
-      "p": 0.01,
-      "pst": 94.29
+      "pst": 100.0
      },
      {
       "m": "PORTO FERREIRA",
@@ -1393,12 +1585,6 @@
       "pst": 100.0
      },
      {
-      "m": "RIBEIRÃO BRANCO",
-      "v": 1,
-      "p": 0.02,
-      "pst": 66.0
-     },
-     {
       "m": "SANTA GERTRUDES",
       "v": 1,
       "p": 0.01,
@@ -1409,6 +1595,18 @@
       "v": 1,
       "p": 0.01,
       "pst": 100.0
+     },
+     {
+      "m": "SANTANA DE PARNAÍBA",
+      "v": 1,
+      "p": 0.0,
+      "pst": 97.38
+     },
+     {
+      "m": "SARAPUÍ",
+      "v": 1,
+      "p": 0.03,
+      "pst": 64.0
      },
      {
       "m": "SERRA NEGRA",
@@ -1433,23 +1631,11 @@
       "v": 1,
       "p": 0.01,
       "pst": 100.0
-     },
-     {
-      "m": "VALINHOS",
-      "v": 1,
-      "p": 0.0,
-      "pst": 59.78
-     },
-     {
-      "m": "VINHEDO",
-      "v": 1,
-      "p": 0.01,
-      "pst": 20.93
      }
     ],
     "falhas": 0,
     "total_municipios": 645,
-    "com_voto": 183
+    "com_voto": 214
    }
   },
   "davi": {
@@ -1458,50 +1644,50 @@
    "cargo": "Deputado federal",
    "partido": "PP",
    "vagas": 70,
-   "pst": 88.52,
+   "pst": 99.98,
    "dg": "04/10/2026",
-   "hg": "19:31:13",
-   "vb": 1370018,
-   "vn": 992913,
-   "vv": 20891090,
-   "a": 6752021,
+   "hg": "21:51:32",
+   "vb": 1561373,
+   "vn": 1127999,
+   "vv": 23670757,
+   "a": 7686301,
    "encontrado": true,
-   "vap": 34616,
+   "vap": 40084,
    "pvap": 0.17,
    "st": "",
    "sq": "250002532362",
-   "posicao": 131,
+   "posicao": 127,
    "total_candidatos": 1045,
-   "corte_vap": 75964,
+   "corte_vap": 88141,
    "lider": {
     "nm": "LUCAS PAVANATO",
     "cc": "PL",
-    "vap": 2701065
+    "vap": 3038185
    },
    "partido_top": [
     {
      "nm": "SARGENTO NANTES",
-     "vap": 288742,
+     "vap": 333375,
      "pos": 7
     },
     {
      "nm": "MAURICIO NEVES",
-     "vap": 238414,
+     "vap": 269941,
      "pos": 10
     },
     {
      "nm": "CORONEL TELHADA",
-     "vap": 91689,
+     "vap": 104501,
      "pos": 52
     },
     {
      "nm": "VICTOR RUIZ",
-     "vap": 41140,
+     "vap": 46803,
      "pos": 112
     },
     {
      "nm": "JANAINA PASCHOAL",
-     "vap": 41056,
+     "vap": 46772,
      "pos": 113
     }
    ]
@@ -1512,51 +1698,51 @@
    "cargo": "Deputado federal",
    "partido": "Podemos",
    "vagas": 70,
-   "pst": 88.52,
+   "pst": 99.98,
    "dg": "04/10/2026",
-   "hg": "19:31:13",
-   "vb": 1370018,
-   "vn": 992913,
-   "vv": 20891090,
-   "a": 6752021,
+   "hg": "21:51:32",
+   "vb": 1561373,
+   "vn": 1127999,
+   "vv": 23670757,
+   "a": 7686301,
    "encontrado": true,
-   "vap": 60925,
-   "pvap": 0.29,
+   "vap": 67018,
+   "pvap": 0.28,
    "st": "",
    "sq": "250002544356",
-   "posicao": 82,
+   "posicao": 85,
    "total_candidatos": 1045,
-   "corte_vap": 75964,
+   "corte_vap": 88141,
    "lider": {
     "nm": "LUCAS PAVANATO",
     "cc": "PL",
-    "vap": 2701065
+    "vap": 3038185
    },
    "partido_top": [
     {
      "nm": "DELEGADO PALUMBO",
-     "vap": 270469,
+     "vap": 303222,
      "pos": 8
     },
     {
      "nm": "ANA CAROLINA OLIVEIRA",
-     "vap": 221284,
-     "pos": 12
+     "vap": 246733,
+     "pos": 13
     },
     {
      "nm": "DELEGADO BRUNO LIMA",
-     "vap": 194023,
+     "vap": 217937,
      "pos": 17
     },
     {
      "nm": "RENATA ABREU",
-     "vap": 176460,
-     "pos": 18
+     "vap": 199073,
+     "pos": 19
     },
     {
      "nm": "FELIPE BECARI",
-     "vap": 144922,
-     "pos": 24
+     "vap": 162944,
+     "pos": 25
     }
    ]
   }
