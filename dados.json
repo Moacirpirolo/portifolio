@@ -1,5 +1,5 @@
 {
- "atualizado_em": "2026-10-04T21:57:11-03:00",
+ "atualizado_em": "2026-10-05T03:26:39-03:00",
  "fonte": "TSE - resultados.tse.jus.br",
  "erros": [],
  "diagnostico": {
@@ -38,11 +38,12 @@
     "dv",
     "e",
     "ele",
+    "esae",
     "f",
     "hg",
     "ht",
     "idg",
-    "md",
+    "mnae",
     "s",
     "sup",
     "t",
@@ -100,21 +101,21 @@
  },
  "majoritarios": {
   "presidente": {
-   "pst": 99.72,
-   "dg": "04/10/2026",
-   "hg": "21:56:35",
-   "vb": 2296179,
-   "vn": 3662856,
-   "vv": 118972715,
-   "a": 33357149,
+   "pst": 100.0,
+   "dg": "05/10/2026",
+   "hg": "02:59:31",
+   "vb": 2300798,
+   "vn": 3674249,
+   "vv": 119300788,
+   "a": 33469244,
    "cand": [
     {
      "n": "22",
      "sq": "280002551544",
      "nm": "FLAVIO BOLSONARO",
      "cc": "PL",
-     "vap": 56025109,
-     "pvap": 47.09,
+     "vap": 56104503,
+     "pvap": 47.03,
      "st": "",
      "e": "n"
     },
@@ -123,8 +124,8 @@
      "sq": "280002542548",
      "nm": "LULA",
      "cc": "PT",
-     "vap": 53644006,
-     "pvap": 45.09,
+     "vap": 53879538,
+     "pvap": 45.16,
      "st": "",
      "e": "n"
     },
@@ -133,7 +134,7 @@
      "sq": "280002551547",
      "nm": "ESCRITOR AUGUSTO CURY",
      "cc": "AVANTE",
-     "vap": 3442523,
+     "vap": 3448569,
      "pvap": 2.89,
      "st": "",
      "e": "n"
@@ -143,8 +144,8 @@
      "sq": "280002540694",
      "nm": "RENAN SANTOS",
      "cc": "MISSÃO",
-     "vap": 2672775,
-     "pvap": 2.25,
+     "vap": 2675887,
+     "pvap": 2.24,
      "st": "",
      "e": "n"
     },
@@ -153,8 +154,8 @@
      "sq": "280002551932",
      "nm": "RONALDO CAIADO",
      "cc": "PSD",
-     "vap": 2601929,
-     "pvap": 2.19,
+     "vap": 2605148,
+     "pvap": 2.18,
      "st": "",
      "e": "n"
     },
@@ -163,7 +164,7 @@
      "sq": "280002539826",
      "nm": "ZEMA",
      "cc": "NOVO",
-     "vap": 326070,
+     "vap": 326488,
      "pvap": 0.27,
      "st": "",
      "e": "n"
@@ -173,7 +174,7 @@
      "sq": "280002538811",
      "nm": "SAMARA",
      "cc": "UP",
-     "vap": 122786,
+     "vap": 122911,
      "pvap": 0.1,
      "st": "",
      "e": "n"
@@ -183,7 +184,7 @@
      "sq": "280002541457",
      "nm": "HERTZ DIAS",
      "cc": "PSTU",
-     "vap": 43033,
+     "vap": 43103,
      "pvap": 0.04,
      "st": "",
      "e": "n"
@@ -193,7 +194,7 @@
      "sq": "280002552484",
      "nm": "CLARIANA BARAO",
      "cc": "DC",
-     "vap": 39995,
+     "vap": 40043,
      "pvap": 0.03,
      "st": "",
      "e": "n"
@@ -203,7 +204,7 @@
      "sq": "280002551975",
      "nm": "EDMILSON COSTA",
      "cc": "PCB",
-     "vap": 22629,
+     "vap": 22693,
      "pvap": 0.02,
      "st": "",
      "e": "n"
@@ -213,7 +214,7 @@
      "sq": "280002548139",
      "nm": "VETERINÁRIO WILSON GRASSI",
      "cc": "DEMOCRATA",
-     "vap": 16851,
+     "vap": 16881,
      "pvap": 0.01,
      "st": "",
      "e": "n"
@@ -223,7 +224,7 @@
      "sq": "280002552487",
      "nm": "RUI COSTA PIMENTA",
      "cc": "PCO",
-     "vap": 15009,
+     "vap": 15024,
      "pvap": 0.01,
      "st": "",
      "e": "n"
@@ -231,32 +232,32 @@
    ]
   },
   "governador": {
-   "pst": 99.99,
+   "pst": 100.0,
    "dg": "04/10/2026",
-   "hg": "21:51:23",
-   "vb": 1348115,
-   "vn": 1915249,
-   "vv": 23127381,
-   "a": 7686467,
+   "hg": "22:59:12",
+   "vb": 1348262,
+   "vn": 1915481,
+   "vv": 23130513,
+   "a": 7687443,
    "cand": [
     {
      "n": "10",
      "sq": "250002541303",
      "nm": "TARCÍSIO",
      "cc": "REPUBLICANOS",
-     "vap": 14489750,
+     "vap": 14491874,
      "pvap": 62.65,
-     "st": "",
-     "e": "n"
+     "st": "Eleito",
+     "e": "s"
     },
     {
      "n": "13",
      "sq": "250002549705",
      "nm": "FERNANDO HADDAD",
      "cc": "PT",
-     "vap": 8422659,
+     "vap": 8423656,
      "pvap": 36.42,
-     "st": "",
+     "st": "Não eleito",
      "e": "n"
     },
     {
@@ -264,9 +265,9 @@
      "sq": "250002544912",
      "nm": "VIVIAN MENDES",
      "cc": "UP",
-     "vap": 80477,
+     "vap": 80480,
      "pvap": 0.35,
-     "st": "",
+     "st": "Não eleito",
      "e": "n"
     },
     {
@@ -274,9 +275,9 @@
      "sq": "250002536915",
      "nm": "VERA LÚCIA",
      "cc": "PSTU",
-     "vap": 75637,
+     "vap": 75641,
      "pvap": 0.33,
-     "st": "",
+     "st": "Não eleito",
      "e": "n"
     },
     {
@@ -284,9 +285,9 @@
      "sq": "250002550913",
      "nm": "CARLOS MACHADO",
      "cc": "PCB",
-     "vap": 58858,
+     "vap": 58862,
      "pvap": 0.25,
-     "st": "",
+     "st": "Não eleito",
      "e": "n"
     }
    ]
@@ -299,13 +300,13 @@
    "cargo": "Deputado estadual",
    "partido": "Podemos",
    "vagas": 94,
-   "pst": 99.98,
+   "pst": 100.0,
    "dg": "04/10/2026",
-   "hg": "21:52:10",
-   "vb": 1846989,
-   "vn": 1220580,
-   "vv": 23286613,
-   "a": 7686301,
+   "hg": "23:01:33",
+   "vb": 1847209,
+   "vn": 1220728,
+   "vv": 23290014,
+   "a": 7687443,
    "encontrado": true,
    "vap": 13243,
    "pvap": 0.06,
@@ -313,11 +314,11 @@
    "sq": "250002545138",
    "posicao": 281,
    "total_candidatos": 1346,
-   "corte_vap": 66511,
+   "corte_vap": 66512,
    "lider": {
     "nm": "EDUARDA CAMPOPIANO",
     "cc": "PL",
-    "vap": 1956097
+    "vap": 1956238
    },
    "partido_top": [
     {
@@ -327,12 +328,12 @@
     },
     {
      "nm": "DR. EDSON DA PAIOL",
-     "vap": 124386,
+     "vap": 124394,
      "pos": 32
     },
     {
      "nm": "LEANDRO BASSON",
-     "vap": 90929,
+     "vap": 90934,
      "pos": 55
     },
     {
@@ -342,7 +343,7 @@
     },
     {
      "nm": "FABIO FARIA DE SÁ",
-     "vap": 68054,
+     "vap": 68055,
      "pos": 91
     }
    ],
@@ -350,15 +351,15 @@
     "cidades": [
      {
       "m": "GUARULHOS",
-      "v": 7227,
+      "v": 7230,
       "p": 1.08,
-      "pst": 99.96
+      "pst": 100.0
      },
      {
       "m": "SÃO PAULO",
       "v": 2038,
       "p": 0.03,
-      "pst": 99.99
+      "pst": 100.0
      },
      {
       "m": "BRAGANÇA PAULISTA",
@@ -380,9 +381,9 @@
      },
      {
       "m": "ITAQUAQUECETUBA",
-      "v": 239,
+      "v": 241,
       "p": 0.14,
-      "pst": 99.2
+      "pst": 100.0
      },
      {
       "m": "SOROCABA",
@@ -409,6 +410,12 @@
       "pst": 100.0
      },
      {
+      "m": "ARUJÁ",
+      "v": 97,
+      "p": 0.19,
+      "pst": 100.0
+     },
+     {
       "m": "SÃO BERNARDO DO CAMPO",
       "v": 96,
       "p": 0.02,
@@ -416,15 +423,9 @@
      },
      {
       "m": "MAIRINQUE",
-      "v": 90,
+      "v": 91,
       "p": 0.35,
-      "pst": 98.32
-     },
-     {
-      "m": "ARUJÁ",
-      "v": 89,
-      "p": 0.19,
-      "pst": 94.09
+      "pst": 100.0
      },
      {
       "m": "RIBEIRÃO PRETO",
@@ -451,6 +452,12 @@
       "pst": 100.0
      },
      {
+      "m": "PORTO FELIZ",
+      "v": 55,
+      "p": 0.18,
+      "pst": 100.0
+     },
+     {
       "m": "MAIRIPORÃ",
       "v": 52,
       "p": 0.12,
@@ -458,15 +465,9 @@
      },
      {
       "m": "SÃO MIGUEL ARCANJO",
-      "v": 51,
+      "v": 52,
       "p": 0.31,
-      "pst": 98.75
-     },
-     {
-      "m": "PORTO FELIZ",
-      "v": 47,
-      "p": 0.19,
-      "pst": 82.05
+      "pst": 100.0
      },
      {
       "m": "GARÇA",
@@ -484,7 +485,7 @@
       "m": "SÃO JOSÉ DO RIO PRETO",
       "v": 36,
       "p": 0.02,
-      "pst": 98.94
+      "pst": 100.0
      },
      {
       "m": "EMBU-GUAÇU",
@@ -529,10 +530,16 @@
       "pst": 100.0
      },
      {
+      "m": "VÁRZEA PAULISTA",
+      "v": 28,
+      "p": 0.05,
+      "pst": 100.0
+     },
+     {
       "m": "OSASCO",
       "v": 27,
       "p": 0.01,
-      "pst": 98.9
+      "pst": 100.0
      },
      {
       "m": "INDAIATUBA",
@@ -545,12 +552,6 @@
       "v": 26,
       "p": 0.01,
       "pst": 100.0
-     },
-     {
-      "m": "VÁRZEA PAULISTA",
-      "v": 26,
-      "p": 0.04,
-      "pst": 98.43
      },
      {
       "m": "CAMPINAS",
@@ -604,13 +605,19 @@
       "m": "PRAIA GRANDE",
       "v": 19,
       "p": 0.01,
-      "pst": 98.56
+      "pst": 100.0
      },
      {
       "m": "RIBEIRÃO PIRES",
       "v": 19,
       "p": 0.03,
-      "pst": 92.75
+      "pst": 100.0
+     },
+     {
+      "m": "FRANCO DA ROCHA",
+      "v": 18,
+      "p": 0.03,
+      "pst": 100.0
      },
      {
       "m": "ITANHAÉM",
@@ -622,13 +629,13 @@
       "m": "JACAREÍ",
       "v": 17,
       "p": 0.01,
-      "pst": 99.82
+      "pst": 100.0
      },
      {
       "m": "SANTOS",
       "v": 17,
       "p": 0.01,
-      "pst": 99.91
+      "pst": 100.0
      },
      {
       "m": "BARUERI",
@@ -647,12 +654,6 @@
       "v": 16,
       "p": 0.02,
       "pst": 100.0
-     },
-     {
-      "m": "FRANCO DA ROCHA",
-      "v": 16,
-      "p": 0.02,
-      "pst": 97.95
      },
      {
       "m": "ITAPECERICA DA SERRA",
@@ -760,7 +761,7 @@
       "m": "COTIA",
       "v": 12,
       "p": 0.01,
-      "pst": 97.49
+      "pst": 100.0
      },
      {
       "m": "GUAREÍ",
@@ -805,6 +806,12 @@
       "pst": 100.0
      },
      {
+      "m": "SUMARÉ",
+      "v": 11,
+      "p": 0.01,
+      "pst": 100.0
+     },
+     {
       "m": "SÃO SIMÃO",
       "v": 11,
       "p": 0.15,
@@ -813,8 +820,8 @@
      {
       "m": "ARAÇOIABA DA SERRA",
       "v": 10,
-      "p": 0.06,
-      "pst": 97.37
+      "p": 0.05,
+      "pst": 100.0
      },
      {
       "m": "CARAGUATATUBA",
@@ -838,7 +845,7 @@
       "m": "PIRACICABA",
       "v": 10,
       "p": 0.0,
-      "pst": 99.12
+      "pst": 100.0
      },
      {
       "m": "SALTO",
@@ -871,16 +878,10 @@
       "pst": 100.0
      },
      {
-      "m": "SUMARÉ",
-      "v": 9,
-      "p": 0.01,
-      "pst": 96.55
-     },
-     {
       "m": "BOM JESUS DOS PERDÕES",
       "v": 8,
-      "p": 0.07,
-      "pst": 94.74
+      "p": 0.06,
+      "pst": 100.0
      },
      {
       "m": "CLEMENTINA",
@@ -897,8 +898,14 @@
      {
       "m": "PARAIBUNA",
       "v": 8,
-      "p": 0.1,
-      "pst": 82.98
+      "p": 0.08,
+      "pst": 100.0
+     },
+     {
+      "m": "RIBEIRA",
+      "v": 8,
+      "p": 0.38,
+      "pst": 100.0
      },
      {
       "m": "SANTA ISABEL",
@@ -997,12 +1004,6 @@
       "pst": 100.0
      },
      {
-      "m": "RIBEIRA",
-      "v": 6,
-      "p": 0.32,
-      "pst": 91.67
-     },
-     {
       "m": "TABOÃO DA SERRA",
       "v": 6,
       "p": 0.0,
@@ -1036,7 +1037,7 @@
       "m": "ITAPEVA",
       "v": 5,
       "p": 0.01,
-      "pst": 97.79
+      "pst": 100.0
      },
      {
       "m": "ITARARÉ",
@@ -1084,12 +1085,18 @@
       "m": "VINHEDO",
       "v": 5,
       "p": 0.01,
-      "pst": 98.26
+      "pst": 100.0
      },
      {
       "m": "AGUAÍ",
       "v": 4,
       "p": 0.03,
+      "pst": 100.0
+     },
+     {
+      "m": "ALUMÍNIO",
+      "v": 4,
+      "p": 0.04,
       "pst": 100.0
      },
      {
@@ -1153,10 +1160,10 @@
       "pst": 100.0
      },
      {
-      "m": "ALUMÍNIO",
+      "m": "BIRITIBA MIRIM",
       "v": 3,
-      "p": 0.07,
-      "pst": 50.0
+      "p": 0.02,
+      "pst": 100.0
      },
      {
       "m": "CABRÁLIA PAULISTA",
@@ -1167,8 +1174,8 @@
      {
       "m": "CAMPINA DO MONTE ALEGRE",
       "v": 3,
-      "p": 0.11,
-      "pst": 75.0
+      "p": 0.08,
+      "pst": 100.0
      },
      {
       "m": "CANANÉIA",
@@ -1228,12 +1235,18 @@
       "m": "MARÍLIA",
       "v": 3,
       "p": 0.0,
-      "pst": 99.31
+      "pst": 100.0
      },
      {
       "m": "MOMBUCA",
       "v": 3,
       "p": 0.14,
+      "pst": 100.0
+     },
+     {
+      "m": "SALTO DE PIRAPORA",
+      "v": 3,
+      "p": 0.01,
       "pst": 100.0
      },
      {
@@ -1246,7 +1259,7 @@
       "m": "SÃO CARLOS",
       "v": 3,
       "p": 0.0,
-      "pst": 98.96
+      "pst": 100.0
      },
      {
       "m": "TAUBATÉ",
@@ -1270,7 +1283,7 @@
       "m": "ÁGUAS DA PRATA",
       "v": 3,
       "p": 0.07,
-      "pst": 94.74
+      "pst": 100.0
      },
      {
       "m": "AMERICANA",
@@ -1312,7 +1325,7 @@
       "m": "CAJAMAR",
       "v": 2,
       "p": 0.0,
-      "pst": 99.06
+      "pst": 100.0
      },
      {
       "m": "DESCALVADO",
@@ -1329,8 +1342,8 @@
      {
       "m": "EUCLIDES DA CUNHA PAULISTA",
       "v": 2,
-      "p": 0.09,
-      "pst": 47.62
+      "p": 0.05,
+      "pst": 100.0
      },
      {
       "m": "GUAPIARA",
@@ -1414,19 +1427,13 @@
       "m": "RIO DAS PEDRAS",
       "v": 2,
       "p": 0.01,
-      "pst": 95.0
+      "pst": 100.0
      },
      {
       "m": "SALESÓPOLIS",
       "v": 2,
       "p": 0.02,
       "pst": 100.0
-     },
-     {
-      "m": "SALTO DE PIRAPORA",
-      "v": 2,
-      "p": 0.02,
-      "pst": 50.57
      },
      {
       "m": "SÃO JOAQUIM DA BARRA",
@@ -1456,13 +1463,7 @@
       "m": "BARRINHA",
       "v": 1,
       "p": 0.01,
-      "pst": 77.65
-     },
-     {
-      "m": "BIRITIBA MIRIM",
-      "v": 1,
-      "p": 0.01,
-      "pst": 66.67
+      "pst": 100.0
      },
      {
       "m": "BOREBI",
@@ -1503,8 +1504,8 @@
      {
       "m": "ITAPIRAPUÃ PAULISTA",
       "v": 1,
-      "p": 0.07,
-      "pst": 60.0
+      "p": 0.04,
+      "pst": 100.0
      },
      {
       "m": "ITAPUÍ",
@@ -1600,13 +1601,13 @@
       "m": "SANTANA DE PARNAÍBA",
       "v": 1,
       "p": 0.0,
-      "pst": 97.38
+      "pst": 100.0
      },
      {
       "m": "SARAPUÍ",
       "v": 1,
-      "p": 0.03,
-      "pst": 64.0
+      "p": 0.02,
+      "pst": 100.0
      },
      {
       "m": "SERRA NEGRA",
@@ -1627,6 +1628,12 @@
       "pst": 100.0
      },
      {
+      "m": "TACIBA",
+      "v": 1,
+      "p": 0.03,
+      "pst": 100.0
+     },
+     {
       "m": "TUPI PAULISTA",
       "v": 1,
       "p": 0.01,
@@ -1635,7 +1642,7 @@
     ],
     "falhas": 0,
     "total_municipios": 645,
-    "com_voto": 214
+    "com_voto": 215
    }
   },
   "davi": {
@@ -1644,50 +1651,50 @@
    "cargo": "Deputado federal",
    "partido": "PP",
    "vagas": 70,
-   "pst": 99.98,
+   "pst": 100.0,
    "dg": "04/10/2026",
-   "hg": "21:51:32",
-   "vb": 1561373,
-   "vn": 1127999,
-   "vv": 23670757,
-   "a": 7686301,
+   "hg": "23:00:41",
+   "vb": 1561578,
+   "vn": 1128132,
+   "vv": 23674188,
+   "a": 7687443,
    "encontrado": true,
-   "vap": 40084,
+   "vap": 40088,
    "pvap": 0.17,
    "st": "",
    "sq": "250002532362",
    "posicao": 127,
    "total_candidatos": 1045,
-   "corte_vap": 88141,
+   "corte_vap": 88195,
    "lider": {
     "nm": "LUCAS PAVANATO",
     "cc": "PL",
-    "vap": 3038185
+    "vap": 3038438
    },
    "partido_top": [
     {
      "nm": "SARGENTO NANTES",
-     "vap": 333375,
+     "vap": 333401,
      "pos": 7
     },
     {
      "nm": "MAURICIO NEVES",
-     "vap": 269941,
+     "vap": 269996,
      "pos": 10
     },
     {
      "nm": "CORONEL TELHADA",
-     "vap": 104501,
+     "vap": 104513,
      "pos": 52
     },
     {
      "nm": "VICTOR RUIZ",
-     "vap": 46803,
+     "vap": 46804,
      "pos": 112
     },
     {
      "nm": "JANAINA PASCHOAL",
-     "vap": 46772,
+     "vap": 46773,
      "pos": 113
     }
    ]
@@ -1698,50 +1705,50 @@
    "cargo": "Deputado federal",
    "partido": "Podemos",
    "vagas": 70,
-   "pst": 99.98,
+   "pst": 100.0,
    "dg": "04/10/2026",
-   "hg": "21:51:32",
-   "vb": 1561373,
-   "vn": 1127999,
-   "vv": 23670757,
-   "a": 7686301,
+   "hg": "23:00:41",
+   "vb": 1561578,
+   "vn": 1128132,
+   "vv": 23674188,
+   "a": 7687443,
    "encontrado": true,
-   "vap": 67018,
+   "vap": 67111,
    "pvap": 0.28,
    "st": "",
    "sq": "250002544356",
    "posicao": 85,
    "total_candidatos": 1045,
-   "corte_vap": 88141,
+   "corte_vap": 88195,
    "lider": {
     "nm": "LUCAS PAVANATO",
     "cc": "PL",
-    "vap": 3038185
+    "vap": 3038438
    },
    "partido_top": [
     {
      "nm": "DELEGADO PALUMBO",
-     "vap": 303222,
+     "vap": 303271,
      "pos": 8
     },
     {
      "nm": "ANA CAROLINA OLIVEIRA",
-     "vap": 246733,
+     "vap": 246741,
      "pos": 13
     },
     {
      "nm": "DELEGADO BRUNO LIMA",
-     "vap": 217937,
+     "vap": 217952,
      "pos": 17
     },
     {
      "nm": "RENATA ABREU",
-     "vap": 199073,
+     "vap": 199100,
      "pos": 19
     },
     {
      "nm": "FELIPE BECARI",
-     "vap": 162944,
+     "vap": 162957,
      "pos": 25
     }
    ]
