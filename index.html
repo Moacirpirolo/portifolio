@@ -203,7 +203,13 @@ main, footer { position: relative; z-index: 1; }
 .d1 { animation-delay: .45s; } .d2 { animation-delay: .6s; } .d3 { animation-delay: .75s; } .d4 { animation-delay: .9s; }
 @keyframes fadeup { to { opacity: 1; transform: none; } }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
-.trust { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 34px; padding: 0; list-style: none; color: var(--muted); font-size: 14px; }
+.preco-topo { display: inline-grid; grid-template-columns: auto auto; align-items: center; gap: 2px 18px; margin-top: 30px; padding: 16px 22px; border: 1px solid var(--line); border-left: 3px solid var(--accent-3); background: rgba(7, 4, 5, .45); text-decoration: none; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); transition: border-color .3s, background .3s, transform .4s var(--ease); }
+.preco-topo:hover { border-color: var(--accent-3); background: rgba(143, 29, 51, .18); transform: translateY(-2px); }
+.pt-rot { grid-column: 1 / -1; font-size: 12px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--accent-3); }
+.pt-val { font: 400 46px/1 var(--serif); color: var(--white); font-variant-numeric: tabular-nums; }
+.pt-val small { font-size: 18px; color: var(--muted); margin-right: 4px; vertical-align: top; }
+.pt-det { color: var(--muted); font-size: 14px; line-height: 1.45; }
+.trust { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 22px; padding: 0; list-style: none; color: var(--muted); font-size: 14px; }
 .trust li { display: inline-flex; align-items: center; gap: 9px; }
 .trust li::before { content: ""; width: 16px; height: 16px; flex: none; background: var(--accent-3); -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M6.2 11.6 2.6 8l1.1-1.1 2.5 2.5 6.1-6.1 1.1 1.1z'/></svg>") center/contain no-repeat; mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M6.2 11.6 2.6 8l1.1-1.1 2.5 2.5 6.1-6.1 1.1 1.1z'/></svg>") center/contain no-repeat; }
 
@@ -550,6 +556,7 @@ footer a:hover { color: var(--white); }
 }
 @media (max-width: 600px) {
   .plan.hot ul, .plan.matriz ul { grid-template-columns: 1fr; }
+  .preco-topo { display: grid; grid-template-columns: 1fr; }
   .out-num small { display: block; margin-top: 6px; font-size: 22px; }
   .tickets { gap: 4px; }
   .mini { grid-template-columns: 1fr; }
@@ -588,11 +595,11 @@ footer a:hover { color: var(--white); }
   <div class="wrap">
     <a class="brand" href="#inicio" aria-label="Cria Site, início"><span class="brand-mark">CS</span><span>Cria Site</span></a>
     <nav class="nav" aria-label="Principal">
-      <a href="#conta">A conta da comissão</a>
       <a href="#como-funciona">Como funciona</a>
       <a href="#lojas">Lojas de teste</a>
       <a href="#planos">Planos</a>
       <a href="#duvidas">Dúvidas</a>
+      <a href="#conta">Faça a conta</a>
     </nav>
     <a class="btn small ring magnetic" href="https://wa.me/5511971003058?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Cria%20Site." target="_blank" rel="noreferrer"><span class="long">Chamar no&nbsp;</span>WhatsApp</a>
   </div>
@@ -615,10 +622,14 @@ footer a:hover { color: var(--white); }
           <a class="btn ring magnetic" href="#lojas">Fazer um pedido de teste <span class="arrow">→</span></a>
           <a class="btn ghost magnetic" href="#planos">Ver planos e preços</a>
         </div>
-        <ul class="trust fade-up d3">
+        <a class="preco-topo fade-up d3" href="#planos">
+          <span class="pt-rot">Delivery Completo</span>
+          <span class="pt-val"><small>R$</small>2.300</span>
+          <span class="pt-det">uma vez, sem comissão por pedido<br />+ R$ 79,90 por mês de sustentação · até 12x no cartão</span>
+        </a>
+        <ul class="trust fade-up d4">
           <li>Preço aberto, sem surpresa</li>
           <li>Metade só na entrega, depois de aprovar</li>
-          <li>Até 12x no cartão</li>
         </ul>
       </div>
 
@@ -659,60 +670,8 @@ footer a:hover { color: var(--white); }
     </div>
   </div>
 
-  <!-- CONTA DA COMISSÃO -->
-  <section class="sec" id="conta">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="kicker rv">A conta que ninguém mostra</p>
-        <h2 class="rv" style="--d:.08s">Pense num dia normal <span class="accent-text">da sua loja.</span></h2>
-        <p class="lede rv" style="--d:.16s">Responda do seu jeito, sem precisar de planilha. A gente mostra quanto do seu trabalho fica com o app.</p>
-      </div>
-
-      <div class="calc">
-        <div class="card fala rv-l">
-          <p class="frase">Num dia normal, o app me manda</p>
-          <div class="passo" role="group" aria-label="Pedidos por dia">
-            <button type="button" class="mm" data-d="-1" aria-label="Menos um pedido">−</button>
-            <output id="nPed">10</output>
-            <button type="button" class="mm" data-d="1" aria-label="Mais um pedido">+</button>
-            <span class="unid">pedidos</span>
-          </div>
-          <p class="frase">de mais ou menos</p>
-          <div class="chips" id="ticket-medio" role="group" aria-label="Valor médio do pedido">
-            <button type="button" data-v="30" aria-pressed="false">R$ 30</button>
-            <button type="button" data-v="50" aria-pressed="true">R$ 50</button>
-            <button type="button" data-v="80" aria-pressed="false">R$ 80</button>
-            <button type="button" data-v="120" aria-pressed="false">R$ 120</button>
-          </div>
-          <p class="frase">cada um. Quem entrega é</p>
-          <div class="chips" id="quem" role="group" aria-label="Quem entrega">
-            <button type="button" data-tx="12" aria-pressed="true">o meu motoboy</button>
-            <button type="button" data-tx="23" aria-pressed="false">o entregador do app</button>
-          </div>
-          <label class="check"><input type="checkbox" id="online" checked /> e o cliente paga pelo app</label>
-        </div>
-
-        <div class="card calc-out rv-s" style="--d:.1s" aria-live="polite">
-          <div class="glow" aria-hidden="true"></div>
-          <div class="resp">
-            <p class="out-label" id="r1a">De cada pedido de R$ 50,</p>
-            <p class="out-num"><span id="r1">R$ 7,60</span> <small>ficam com o app.</small></p>
-          </div>
-          <div class="resp">
-            <div class="tickets" id="tickets" aria-hidden="true"></div>
-            <p class="t-leg"><span class="lg-voce"></span> seu <span class="lg-app"></span> do app</p>
-            <p class="fala-out" id="r2">É como se <b>2 dos seus 10 pedidos</b> de hoje fossem de graça.</p>
-          </div>
-          <p class="fala-out" id="r3">Em 30 dias, são <b>46 pedidos</b> que você prepara, entrega e não recebe.</p>
-          <p class="payback" id="r4"></p>
-          <p class="note">Comissão de 12% com entregador da loja e 23% com entregador do app, mais 3,2% de pagamento online: valores publicados pelo maior app de delivery do país, 2026. A conta supõe que esses pedidos viessem pelo seu site. Delivery Completo: R$ 2.300 uma vez, mais R$ 79,90 por mês de sustentação técnica.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- COMO FUNCIONA -->
-  <section class="sec" id="como-funciona" style="padding-top:0">
+  <section class="sec" id="como-funciona">
     <div class="wrap">
       <div class="sec-head">
         <p class="kicker rv">Como funciona</p>
@@ -817,31 +776,8 @@ footer a:hover { color: var(--white); }
     </div>
   </section>
 
-  <!-- ALUGAR OU SER SEU -->
-  <section class="sec" id="comparativo" style="background:var(--black);border-block:1px solid var(--line)">
-    <div class="wrap cmp">
-      <div>
-        <p class="kicker rv">Alugar ou ser seu</p>
-        <h2 class="rv" style="--d:.08s">Sistema por assinatura <span class="accent-text">nunca termina de pagar.</span></h2>
-        <p class="lede rv" style="--d:.16s">Na assinatura, a mensalidade continua enquanto você usar. Aqui você paga o site uma vez. A sustentação técnica tem 1 ano de fidelidade no Delivery Completo. <b>Depois disso você cancela quando quiser e o site continua seu.</b></p>
-        <div class="rv" style="--d:.24s;margin-top:30px"><a class="btn magnetic" href="https://wa.me/5511971003058?text=Vi%20a%20compara%C3%A7%C3%A3o%20no%20site%20e%20quero%20um%20sistema%20que%20seja%20meu." target="_blank" rel="noreferrer">Quero um que seja meu <span class="arrow">→</span></a></div>
-      </div>
-      <div class="card rv-s" style="--d:.1s" id="cmpBox">
-        <div class="cmp-anos" id="cmpAnos">Em 3 anos</div>
-        <input type="range" id="cmpRange" min="3" max="5" step="1" value="3" aria-label="Quantidade de anos" />
-        <div class="range-ends"><span>3 anos</span><span>5 anos</span></div>
-        <div class="cmp-item" data-mes="327" data-setup="0"><div class="cmp-topo"><span>Sistema por assinatura, plano completo</span><span class="v"></span></div><div class="trilho"><div class="barra"></div></div></div>
-        <div class="cmp-item" data-mes="175" data-setup="325"><div class="cmp-topo"><span>Sistema com taxa de adesão</span><span class="v"></span></div><div class="trilho"><div class="barra"></div></div></div>
-        <div class="cmp-item" data-mes="127" data-setup="0"><div class="cmp-topo"><span>Sistema por assinatura, plano de entrada</span><span class="v"></span></div><div class="trilho"><div class="barra"></div></div></div>
-        <div class="cmp-item nosso" data-nosso="1"><div class="cmp-topo"><span>Cria Site, Delivery Completo</span><span class="v"></span></div><div class="trilho"><div class="barra"></div></div></div>
-        <p class="cmp-fecha" id="cmpFecha"></p>
-        <p class="note" style="margin-top:14px">Valores dos sistemas por assinatura informados pelas próprias empresas em consulta comercial, setembro de 2026. Cria Site: R$ 2.300 uma vez, mais R$ 79,90 por mês de sustentação técnica no primeiro ano e R$ 50 por ano de endereço a partir do segundo ano. A conta considera a sustentação cancelada no fim do primeiro ano.</p>
-      </div>
-    </div>
-  </section>
-
   <!-- PLANOS -->
-  <section class="sec" id="planos">
+  <section class="sec" id="planos" style="padding-top:0">
     <div class="wrap">
       <div class="sec-head">
         <p class="kicker rv">Planos e preços</p>
@@ -938,8 +874,31 @@ footer a:hover { color: var(--white); }
     </div>
   </section>
 
+  <!-- ALUGAR OU SER SEU -->
+  <section class="sec" id="comparativo" style="background:var(--black);border-block:1px solid var(--line)">
+    <div class="wrap cmp">
+      <div>
+        <p class="kicker rv">Alugar ou ser seu</p>
+        <h2 class="rv" style="--d:.08s">Sistema por assinatura <span class="accent-text">nunca termina de pagar.</span></h2>
+        <p class="lede rv" style="--d:.16s">Na assinatura, a mensalidade continua enquanto você usar. Aqui você paga o site uma vez. A sustentação técnica tem 1 ano de fidelidade no Delivery Completo. <b>Depois disso você cancela quando quiser e o site continua seu.</b></p>
+        <div class="rv" style="--d:.24s;margin-top:30px"><a class="btn magnetic" href="https://wa.me/5511971003058?text=Vi%20a%20compara%C3%A7%C3%A3o%20no%20site%20e%20quero%20um%20sistema%20que%20seja%20meu." target="_blank" rel="noreferrer">Quero um que seja meu <span class="arrow">→</span></a></div>
+      </div>
+      <div class="card rv-s" style="--d:.1s" id="cmpBox">
+        <div class="cmp-anos" id="cmpAnos">Em 3 anos</div>
+        <input type="range" id="cmpRange" min="3" max="5" step="1" value="3" aria-label="Quantidade de anos" />
+        <div class="range-ends"><span>3 anos</span><span>5 anos</span></div>
+        <div class="cmp-item" data-mes="327" data-setup="0"><div class="cmp-topo"><span>Sistema por assinatura, plano completo</span><span class="v"></span></div><div class="trilho"><div class="barra"></div></div></div>
+        <div class="cmp-item" data-mes="175" data-setup="325"><div class="cmp-topo"><span>Sistema com taxa de adesão</span><span class="v"></span></div><div class="trilho"><div class="barra"></div></div></div>
+        <div class="cmp-item" data-mes="127" data-setup="0"><div class="cmp-topo"><span>Sistema por assinatura, plano de entrada</span><span class="v"></span></div><div class="trilho"><div class="barra"></div></div></div>
+        <div class="cmp-item nosso" data-nosso="1"><div class="cmp-topo"><span>Cria Site, Delivery Completo</span><span class="v"></span></div><div class="trilho"><div class="barra"></div></div></div>
+        <p class="cmp-fecha" id="cmpFecha"></p>
+        <p class="note" style="margin-top:14px">Valores dos sistemas por assinatura informados pelas próprias empresas em consulta comercial, setembro de 2026. Cria Site: R$ 2.300 uma vez, mais R$ 79,90 por mês de sustentação técnica no primeiro ano e R$ 50 por ano de endereço a partir do segundo ano. A conta considera a sustentação cancelada no fim do primeiro ano.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- COMO CONTRATAR -->
-  <section class="sec" id="contratar" style="padding-top:0">
+  <section class="sec" id="contratar">
     <div class="wrap">
       <div class="sec-head">
         <p class="kicker rv">Como contratar</p>
@@ -977,6 +936,58 @@ footer a:hover { color: var(--white); }
         <details class="rv"><summary>Quem muda preço, foto e cardápio?<span class="plus"></span></summary><div class="a">Você, pelo painel, na hora: preço, foto, item esgotado, horário e textos. Sem esperar ninguém e sem pagar por alteração.</div></details>
         <details class="rv"><summary>E se o site sair do ar num sábado à noite?<span class="plus"></span></summary><div class="a">Com a sustentação técnica, o site é monitorado 24 horas e a gente fica sabendo antes de você. O suporte atende no horário da loja, inclusive no fim de semana.</div></details>
         <details class="rv"><summary>Quanto tempo leva?<span class="plus"></span></summary><div class="a">De 3 a 7 dias, conforme o plano, contados a partir do pagamento da primeira metade e do envio do cardápio, das fotos e do logo.</div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTA DA COMISSÃO -->
+  <section class="sec" id="conta" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker rv">Ainda pensando?</p>
+        <h2 class="rv" style="--d:.08s">Pense num dia normal <span class="accent-text">da sua loja.</span></h2>
+        <p class="lede rv" style="--d:.16s">Faça a conta do seu jeito, sem planilha. A gente mostra quanto do seu trabalho fica com o app.</p>
+      </div>
+
+      <div class="calc">
+        <div class="card fala rv-l">
+          <p class="frase">Num dia normal, o app me manda</p>
+          <div class="passo" role="group" aria-label="Pedidos por dia">
+            <button type="button" class="mm" data-d="-1" aria-label="Menos um pedido">−</button>
+            <output id="nPed">10</output>
+            <button type="button" class="mm" data-d="1" aria-label="Mais um pedido">+</button>
+            <span class="unid">pedidos</span>
+          </div>
+          <p class="frase">de mais ou menos</p>
+          <div class="chips" id="ticket-medio" role="group" aria-label="Valor médio do pedido">
+            <button type="button" data-v="30" aria-pressed="false">R$ 30</button>
+            <button type="button" data-v="50" aria-pressed="true">R$ 50</button>
+            <button type="button" data-v="80" aria-pressed="false">R$ 80</button>
+            <button type="button" data-v="120" aria-pressed="false">R$ 120</button>
+          </div>
+          <p class="frase">cada um. Quem entrega é</p>
+          <div class="chips" id="quem" role="group" aria-label="Quem entrega">
+            <button type="button" data-tx="12" aria-pressed="true">o meu motoboy</button>
+            <button type="button" data-tx="23" aria-pressed="false">o entregador do app</button>
+          </div>
+          <label class="check"><input type="checkbox" id="online" checked /> e o cliente paga pelo app</label>
+        </div>
+
+        <div class="card calc-out rv-s" style="--d:.1s" aria-live="polite">
+          <div class="glow" aria-hidden="true"></div>
+          <div class="resp">
+            <p class="out-label" id="r1a">De cada pedido de R$ 50,</p>
+            <p class="out-num"><span id="r1">R$ 7,60</span> <small>ficam com o app.</small></p>
+          </div>
+          <div class="resp">
+            <div class="tickets" id="tickets" aria-hidden="true"></div>
+            <p class="t-leg"><span class="lg-voce"></span> seu <span class="lg-app"></span> do app</p>
+            <p class="fala-out" id="r2">É como se <b>2 dos seus 10 pedidos</b> de hoje fossem de graça.</p>
+          </div>
+          <p class="fala-out" id="r3">Em 30 dias, são <b>46 pedidos</b> que você prepara, entrega e não recebe.</p>
+          <p class="payback" id="r4"></p>
+          <p class="note">Comissão de 12% com entregador da loja e 23% com entregador do app, mais 3,2% de pagamento online: valores publicados pelo maior app de delivery do país, 2026. A conta supõe que esses pedidos viessem pelo seu site. Delivery Completo: R$ 2.300 uma vez, mais R$ 79,90 por mês de sustentação técnica.</p>
+        </div>
       </div>
     </div>
   </section>
