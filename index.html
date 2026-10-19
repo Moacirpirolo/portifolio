@@ -6,7 +6,7 @@
 <meta name="color-scheme" content="dark" />
 <meta name="theme-color" content="#12090b" />
 <title>Cria Site | Site de delivery sem comissão por pedido</title>
-<meta name="description" content="Site com cardápio, pedido pelo site e pela mesa, painel da loja e comanda impressa. Sem comissão por pedido, feito por pessoas, pronto em até 7 dias. O site é seu." />
+<meta name="description" content="Site com cardápio, pedido pelo site e pela mesa, painel da loja e comanda impressa. Sem comissão por pedido, feito por pessoas, pronto em até 7 dias úteis." />
 <link rel="canonical" href="https://criasite.site/" />
 <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 <meta property="og:type" content="website" />
@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="Cria Site" />
 <meta property="og:url" content="https://criasite.site/" />
 <meta property="og:title" content="Cria Site | Venda pelo seu site, sem comissão por pedido" />
-<meta property="og:description" content="Cardápio, pedido pelo site e pela mesa, painel da loja e comanda impressa. Pronto em até 7 dias. O site é seu." />
+<meta property="og:description" content="Cardápio, pedido pelo site e pela mesa, painel da loja e comanda impressa. Sem comissão por pedido, pronto em até 7 dias úteis." />
 <meta property="og:image" content="https://criasite.site/og.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
@@ -367,20 +367,6 @@ input[type=range]::-moz-range-thumb { width: 16px; height: 16px; background: var
 .other h3 { font-size: 24px; margin-bottom: 6px; }
 .other p { color: var(--muted); font-size: 14px; }
 
-/* ---------- alugar ou ser seu ---------- */
-.cmp { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(30px, 5vw, 70px); align-items: center; }
-.cmp h2 { font-size: clamp(38px, 5.4vw, 70px); }
-.cmp .lede { margin-top: 20px; }
-.cmp-anos { font-family: var(--serif); font-size: clamp(30px, 3.6vw, 44px); color: var(--white); margin-bottom: 12px; }
-.cmp-item { margin-top: 22px; }
-.cmp-topo { display: flex; justify-content: space-between; gap: 12px; font-size: 14px; margin-bottom: 8px; }
-.cmp-topo .v { font-weight: 800; color: var(--white); font-variant-numeric: tabular-nums; }
-.trilho { height: 14px; background: rgba(255,255,255,.05); overflow: hidden; }
-.barra { height: 100%; width: 0; background: linear-gradient(90deg, #4b2a30, #6d4249); transition: width 1.2s var(--ease); }
-.cmp-item.nosso .barra { background: linear-gradient(90deg, var(--accent), var(--accent-3)); box-shadow: 0 0 24px rgba(226, 86, 111, .5); }
-.cmp-item.nosso .cmp-topo { color: var(--white); font-weight: 700; }
-.cmp-fecha { margin-top: 26px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); }
-
 /* ---------- planos ---------- */
 .plans { display: grid; grid-template-columns: 1.15fr 1fr; gap: 18px; align-items: stretch; }
 .plan.hot ul { grid-template-columns: 1fr 1fr; column-gap: 22px; }
@@ -625,7 +611,7 @@ footer a:hover { color: var(--white); }
           <span class="line"><span>seu site.</span></span>
           <span class="line"><span class="accent-text">Sem comissão.</span></span>
         </h1>
-        <p class="lede fade-up d1">Cardápio, pedido pelo site e pela mesa, painel da loja e comanda impressa. Feito por pessoas, pronto em até 7 dias. E o site é seu.</p>
+        <p class="lede fade-up d1">Cardápio, pedido pelo site e pela mesa, painel da loja e comanda impressa. Feito por pessoas, pronto em até 7 dias úteis. Mensalidade fixa, venda o quanto vender.</p>
         <div class="hero-actions fade-up d2">
           <a class="btn ring magnetic" href="#lojas">Fazer um pedido de teste <span class="arrow">→</span></a>
           <a class="btn ghost magnetic" href="#planos">Ver planos e preços</a>
@@ -637,7 +623,7 @@ footer a:hover { color: var(--white); }
         </a>
         <ul class="trust fade-up d4">
           <li>Preço aberto, sem surpresa</li>
-          <li>Metade só na entrega, depois de aprovar</li>
+          <li>Metade na assinatura, metade na entrega</li>
         </ul>
       </div>
 
@@ -828,7 +814,7 @@ footer a:hover { color: var(--white); }
       <div class="sec-head">
         <p class="kicker rv">Planos e preços</p>
         <h2 class="rv" style="--d:.08s">Preço aberto. <span class="accent-text">Sem letra miúda.</span></h2>
-        <p class="lede rv" style="--d:.16s">Delivery próprio, no ar e feito para celular. Você mesmo altera pelo painel. A sustentação técnica é obrigatória no Delivery Completo e na Matriz, com 1 ano de fidelidade.</p>
+        <p class="lede rv" style="--d:.16s">Delivery próprio, no ar e feito para celular. Todos os planos têm a sustentação técnica de R$ 79,90 por mês, com fidelidade de 1 ano. Tudo isso está no contrato, que você lê antes de pagar.</p>
       </div>
 
       <div class="plans">
@@ -837,7 +823,7 @@ footer a:hover { color: var(--white); }
           <h3>Delivery Completo</h3>
           <p class="for">Pizzaria, hamburgueria, açaí e restaurante que querem vender sem pagar comissão</p>
           <p class="price"><small>R$</small><span class="count" data-to="2300">2.300</span></p>
-          <p class="meta"><span>Pronto em até 7 dias</span><span>ou até 12x no cartão</span></p>
+          <p class="meta"><span>Pronto em até 7 dias úteis</span><span>ou até 12x no cartão</span></p>
           <p class="split">Site R$ 900 + sistema de pedidos R$ 1.400</p>
           <ul>
             <li>Tudo do Cardápio Digital</li>
@@ -856,7 +842,7 @@ footer a:hover { color: var(--white); }
           <h3>Cardápio Digital</h3>
           <p class="for">Restaurante, pizzaria, hamburgueria, lanchonete</p>
           <p class="price"><small>R$</small><span class="count" data-to="900">900</span></p>
-          <p class="meta"><span>Pronto em 4 dias</span><span>ou até 12x no cartão</span></p>
+          <p class="meta"><span>Pronto em até 4 dias úteis</span><span>ou até 12x no cartão</span></p>
           <ul>
             <li>Tudo do Site Essencial</li>
             <li><b>Cardápio digital completo</b>, com foto e preço de cada item</li>
@@ -893,16 +879,16 @@ footer a:hover { color: var(--white); }
       <div class="sust rv">
         <div>
           <h3>Sustentação técnica</h3>
-          <p class="lede" style="font-size:15px;margin-top:10px">A estrutura que mantém seu site no ar. Obrigatória no Delivery Completo e na Matriz (uma por filial), com 1 ano de fidelidade, e opcional nos demais planos.</p>
+          <p class="lede" style="font-size:15px;margin-top:10px">A estrutura que mantém seu site no ar, em todos os planos (na Matriz, uma por filial). Fidelidade de 1 ano; depois renova sem fidelidade e você cancela avisando com 30 dias.</p>
           <p class="price">R$ 79,90 <small>/mês</small></p>
           <span class="gift">Primeiro mês grátis</span>
         </div>
         <ul>
-          <li><b>Hospedagem</b> rápida e <b>sempre no ar</b></li>
-          <li>Seu endereço <b>.com.br</b> registrado em nome da sua empresa e renovado por nós</li>
+          <li><b>Hospedagem</b> rápida e monitorada</li>
+          <li>Seu endereço <b>.com.br</b> em nome da sua empresa, administrado por nós (grátis no 1º ano, depois R$ 50 por ano)</li>
           <li><b>Monitoramento 24 horas</b>: se o site cair, a gente fica sabendo antes de você</li>
           <li>Backup, <b>certificado de segurança</b> (o cadeado do navegador) e atualizações</li>
-          <li>Sistema de pedidos e painel da loja <b>funcionando</b> no Delivery</li>
+          <li><b>Troca de fotos, cardápio e contatos</b>; no Delivery, também taxa de entrega, comanda e mesas</li>
           <li><b>Suporte se algo parar de funcionar</b>, no horário da loja, inclusive fim de semana</li>
         </ul>
       </div>
@@ -910,31 +896,8 @@ footer a:hover { color: var(--white); }
         <p class="kicker rv">Também fazemos</p>
         <article class="mini rv" style="--d:0s">
           <div><h3>Site Essencial</h3><p>Profissional autônomo: corretor, advogado, personal, cabeleireiro</p><p class="mini-itens">Site completo de uma página, com seu nome, sua foto e seu registro, Botão de WhatsApp fixo, sempre na tela, Galeria de fotos e seus depoimentos de clientes.</p></div>
-          <div class="mini-preco"><strong>R$ 650</strong><span>Pronto em 3 dias</span><a class="btn ghost small" href="https://wa.me/5511971003058?text=Ol%C3%A1%2C%20quero%20o%20Site%20Essencial%20da%20Cria%20Site." target="_blank" rel="noreferrer">Quero este</a></div>
+          <div class="mini-preco"><strong>R$ 650</strong><span>Pronto em até 3 dias úteis</span><a class="btn ghost small" href="https://wa.me/5511971003058?text=Ol%C3%A1%2C%20quero%20o%20Site%20Essencial%20da%20Cria%20Site." target="_blank" rel="noreferrer">Quero este</a></div>
         </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ALUGAR OU SER SEU -->
-  <section class="sec" id="comparativo" style="background:var(--black);border-block:1px solid var(--line)">
-    <div class="wrap cmp">
-      <div>
-        <p class="kicker rv">Alugar ou ser seu</p>
-        <h2 class="rv" style="--d:.08s">Sistema por assinatura <span class="accent-text">nunca termina de pagar.</span></h2>
-        <p class="lede rv" style="--d:.16s">Na assinatura, a mensalidade continua enquanto você usar. Aqui você paga o site uma vez. A sustentação técnica tem 1 ano de fidelidade no Delivery Completo. <b>Depois disso você cancela quando quiser e o site continua seu.</b></p>
-        <div class="rv" style="--d:.24s;margin-top:30px"><a class="btn magnetic" href="https://wa.me/5511971003058?text=Vi%20a%20compara%C3%A7%C3%A3o%20no%20site%20e%20quero%20um%20sistema%20que%20seja%20meu." target="_blank" rel="noreferrer">Quero um que seja meu <span class="arrow">→</span></a></div>
-      </div>
-      <div class="card rv-s" style="--d:.1s" id="cmpBox">
-        <div class="cmp-anos" id="cmpAnos">Em 3 anos</div>
-        <input type="range" id="cmpRange" min="3" max="5" step="1" value="3" aria-label="Quantidade de anos" />
-        <div class="range-ends"><span>3 anos</span><span>5 anos</span></div>
-        <div class="cmp-item" data-mes="327" data-setup="0"><div class="cmp-topo"><span>Sistema por assinatura, plano completo</span><span class="v"></span></div><div class="trilho"><div class="barra"></div></div></div>
-        <div class="cmp-item" data-mes="175" data-setup="325"><div class="cmp-topo"><span>Sistema com taxa de adesão</span><span class="v"></span></div><div class="trilho"><div class="barra"></div></div></div>
-        <div class="cmp-item" data-mes="127" data-setup="0"><div class="cmp-topo"><span>Sistema por assinatura, plano de entrada</span><span class="v"></span></div><div class="trilho"><div class="barra"></div></div></div>
-        <div class="cmp-item nosso" data-nosso="1"><div class="cmp-topo"><span>Cria Site, Delivery Completo</span><span class="v"></span></div><div class="trilho"><div class="barra"></div></div></div>
-        <p class="cmp-fecha" id="cmpFecha"></p>
-        <p class="note" style="margin-top:14px">Valores dos sistemas por assinatura informados pelas próprias empresas em consulta comercial, setembro de 2026. Cria Site: R$ 2.300 uma vez, mais R$ 79,90 por mês de sustentação técnica no primeiro ano e R$ 50 por ano de endereço a partir do segundo ano. A conta considera a sustentação cancelada no fim do primeiro ano.</p>
       </div>
     </div>
   </section>
@@ -965,14 +928,14 @@ footer a:hover { color: var(--white); }
       <ol class="flow rv" style="padding:0;margin:0">
         <span class="fill" aria-hidden="true"></span>
         <li><h3>Conversa</h3><p>Pelo WhatsApp ou na sua loja. Você conta como a loja funciona e manda cardápio, fotos e logo.</p></li>
-        <li><h3>50% para começar</h3><p>Pix ou cartão em até 12x. O prazo começa a contar a partir daqui.</p></li>
-        <li><h3>Você aprova</h3><p>Em até 7 dias o site está pronto para você navegar, testar e pedir ajustes.</p></li>
-        <li><h3>No ar</h3><p>Aprovou, paga os outros 50% e o site entra no ar, com o seu endereço.</p></li>
+        <li><h3>50% na assinatura</h3><p>Pix, dinheiro ou cartão em até 12x. O prazo começa quando a entrada cai e você manda o material.</p></li>
+        <li><h3>Você aprova</h3><p>Em até 7 dias úteis o site está pronto para você navegar, testar e pedir ajustes.</p></li>
+        <li><h3>No ar</h3><p>Pagou os outros 50%, o site é liberado com o seu endereço. A mensalidade só começa 30 dias depois.</p></li>
       </ol>
       <div class="promises">
         <div class="rv"><h3>Feito por pessoas</h3><p>Gente de verdade do começo ao fim, no WhatsApp da Cria Site.</p></div>
-        <div class="rv" style="--d:.08s"><h3>O site é seu</h3><p>Endereço próprio, registrado em nome da sua empresa. Se cancelar a sustentação, o site continua seu.</p></div>
-        <div class="rv" style="--d:.16s"><h3>Tudo por escrito</h3><p>Preço, prazo, fidelidade e o que acontece se cancelar estão no contrato, antes de você pagar.</p></div>
+        <div class="rv" style="--d:.08s"><h3>Seu endereço, seu conteúdo</h3><p>O domínio fica em nome da sua empresa. Fotos, textos, logo e preços são seus.</p></div>
+        <div class="rv" style="--d:.16s"><h3>Tudo por escrito</h3><p>Preço, prazo, fidelidade e o que acontece se cancelar estão no contrato. <a href="contrato.html" style="color:#ffd2d9">Leia as regras antes de pagar</a>.</p></div>
       </div>
     </div>
   </section>
@@ -986,14 +949,15 @@ footer a:hover { color: var(--white); }
         <p class="lede rv" style="--d:.16s">Se a sua dúvida não estiver aqui, chame no WhatsApp. Quem responde é gente.</p>
       </div>
       <div class="qa">
-        <details class="rv"><summary>Vocês cobram comissão por pedido?<span class="plus"></span></summary><div class="a">Não. Você paga o site uma vez e a sustentação técnica por mês. Venda R$ 1 mil ou R$ 100 mil pelo site, o valor é o mesmo.</div></details>
-        <details class="rv"><summary>O site é meu mesmo?<span class="plus"></span></summary><div class="a">É. O endereço .com.br é registrado em nome da sua empresa. Se você cancelar a sustentação técnica, o site continua funcionando e continua seu, só que sem a nossa responsabilidade por falhas. Você pode contratar a sustentação de novo quando quiser.</div></details>
-        <details class="rv"><summary>Tem fidelidade?<span class="plus"></span></summary><div class="a">Só no Delivery Completo: a sustentação técnica tem 1 ano de fidelidade, porque ela mantém o sistema de pedidos e o painel da loja funcionando. Depois ela renova sozinha e você cancela quando quiser. Nos outros planos a sustentação é opcional.</div></details>
-        <details class="rv"><summary>Como eu pago?<span class="plus"></span></summary><div class="a">50% para começar e 50% na entrega, depois que você aprovar o site. Dá para pagar no Pix ou no cartão em até 12x, com os juros do cartão por conta de quem parcela. A sustentação técnica é por boleto e começa 30 dias depois do site no ar.</div></details>
-        <details class="rv"><summary>E o endereço do site?<span class="plus"></span></summary><div class="a">O primeiro ano do .com.br é por nossa conta. A partir do segundo ano custa R$ 50 por ano.</div></details>
-        <details class="rv"><summary>Quem muda preço, foto e cardápio?<span class="plus"></span></summary><div class="a">Você, pelo painel, na hora: preço, foto, item esgotado, horário e textos. Sem esperar ninguém e sem pagar por alteração.</div></details>
+        <details class="rv"><summary>Vocês cobram comissão por pedido?<span class="plus"></span></summary><div class="a">Não. Você paga a implantação uma vez e a sustentação técnica de R$ 79,90 por mês. Venda pouco ou muito pelo site, o valor é o mesmo. A mensalidade pode ser corrigida pela inflação (IPCA) uma vez por ano.</div></details>
+        <details class="rv"><summary>De quem é o site?<span class="plus"></span></summary><div class="a">O endereço .com.br é seu, em nome da sua empresa, e o conteúdo também: fotos, textos, logo e preços. O sistema por trás do site é da Cria Site e é o mesmo para todos os clientes, por isso o preço cabe no bolso. Se o contrato terminar com tudo pago, você recebe uma cópia dos arquivos em até 15 dias.</div></details>
+        <details class="rv"><summary>Tem fidelidade?<span class="plus"></span></summary><div class="a">Sim, 1 ano, em todos os planos. Se cancelar antes, a multa é de 50% das mensalidades que faltam, e não tem multa se o problema for culpa nossa. Depois do primeiro ano, renova sem fidelidade e você cancela avisando com 30 dias.</div></details>
+        <details class="rv"><summary>Como eu pago?<span class="plus"></span></summary><div class="a">50% na assinatura e 50% na entrega. Pix, dinheiro ou cartão em até 12x, com os juros do cartão por conta de quem parcela. A entrada não é devolvida, porque paga o trabalho já começado; para pessoa física vale o direito de desistir em 7 dias com devolução total. A sustentação técnica é por boleto e começa 30 dias depois que o site é liberado.</div></details>
+        <details class="rv"><summary>E o endereço do site?<span class="plus"></span></summary><div class="a">O .com.br fica em nome da sua empresa. O primeiro ano é por nossa conta; a partir do segundo, custa R$ 50 por ano, cobrado à parte da mensalidade. A Cria Site administra o domínio enquanto durar o contrato.</div></details>
+        <details class="rv"><summary>Quem muda preço, foto e cardápio?<span class="plus"></span></summary><div class="a">No Delivery Completo, você mesmo muda pelo painel, na hora: preço, item esgotado e loja aberta ou fechada. Troca de fotos, cardápio e contatos também está incluída na sustentação: é só pedir. Funcionalidade nova é orçada à parte.</div></details>
         <details class="rv"><summary>E se o site sair do ar num sábado à noite?<span class="plus"></span></summary><div class="a">Com a sustentação técnica, o site é monitorado 24 horas e a gente fica sabendo antes de você. O suporte atende no horário da loja, inclusive no fim de semana.</div></details>
-        <details class="rv"><summary>Quanto tempo leva?<span class="plus"></span></summary><div class="a">De 3 a 7 dias, conforme o plano, contados a partir do pagamento da primeira metade e do envio do cardápio, das fotos e do logo.</div></details>
+        <details class="rv"><summary>Quanto tempo leva?<span class="plus"></span></summary><div class="a">Até 7 dias úteis, podendo ser antes. O prazo conta a partir do pagamento da entrada e do envio do material: cardápio, fotos e logo.</div></details>
+        <details class="rv"><summary>O meu site vai ser exclusivo?<span class="plus"></span></summary><div class="a">O sistema é o mesmo para todos os clientes. O que muda é o seu: logo, cores, fotos e cardápio. É assim que a gente entrega um sistema completo pelo preço de um site.</div></details>
       </div>
     </div>
   </section>
@@ -1076,6 +1040,7 @@ footer a:hover { color: var(--white); }
       <a href="#duvidas">Dúvidas</a>
       <a href="https://www.instagram.com/_criasite/" target="_blank" rel="noreferrer">Instagram</a>
       <a href="privacidade.html">Privacidade</a>
+      <a href="contrato.html">Regras do contrato</a>
       <a href="termos.html">Termos de uso</a>
       <a href="https://portal.criasite.site/" rel="nofollow">Área do cliente</a>
     </nav>
@@ -1193,8 +1158,8 @@ footer a:hover { color: var(--white); }
     document.getElementById("r2").innerHTML = "É como se <b>" + g + " dos seus " + est.n + " pedidos</b> de hoje fossem de graça para o app.";
     document.getElementById("r3").innerHTML = "Em 30 dias, são <b>" + plural(gratisMes, "pedido", "pedidos") + "</b> que você prepara, entrega e não recebe.";
     document.getElementById("r4").innerHTML = dias <= 45
-      ? "O que vai para o app em <b>" + plural(dias, "dia", "dias") + "</b> já pagaria o seu delivery próprio. Depois disso, quem pede pelo seu site paga só para você."
-      : "O que vai para o app em <b>" + plural(Math.round(dias / 30), "mês", "meses") + "</b> já pagaria o seu delivery próprio. Depois disso, quem pede pelo seu site paga só para você.";
+      ? "O que vai para o app em <b>" + plural(dias, "dia", "dias") + "</b> já pagaria a implantação do seu delivery próprio. E no seu site, a comissão por pedido é zero."
+      : "O que vai para o app em <b>" + plural(Math.round(dias / 30), "mês", "meses") + "</b> já pagaria a implantação do seu delivery próprio. E no seu site, a comissão por pedido é zero.";
   }
   document.querySelectorAll(".mm").forEach(function (b) {
     b.addEventListener("click", function () {
@@ -1237,35 +1202,6 @@ footer a:hover { color: var(--white); }
     if (!cheio) c.className = "o";
     qr.appendChild(c);
   }
-
-  /* alugar ou ser seu */
-  var UNICO = 2300, DOMINIO = 50, MANUT = 79.9, MESES = 12;
-  var cr = document.getElementById("cmpRange"), cAnos = document.getElementById("cmpAnos"), cFecha = document.getElementById("cmpFecha");
-  var itens = Array.prototype.slice.call(document.querySelectorAll(".cmp-item")), visto = false;
-  function compara() {
-    var anos = Number(cr.value), meses = anos * 12;
-    cAnos.textContent = "Em " + anos + " anos";
-    preencher(cr);
-    var nosso = UNICO + MANUT * MESES + DOMINIO * (anos - 1);
-    var vals = itens.map(function (it) { return it.dataset.nosso ? nosso : Number(it.dataset.setup) + Number(it.dataset.mes) * meses; });
-    var maior = Math.max.apply(null, vals);
-    itens.forEach(function (it, k) {
-      it.querySelector(".v").textContent = reais(vals[k]);
-      it.querySelector(".barra").style.width = visto ? (vals[k] / maior * 100) + "%" : "0";
-    });
-    var barato = Math.min.apply(null, vals.filter(function (v, k) { return !itens[k].dataset.nosso; }));
-    cFecha.innerHTML = "No sistema por assinatura mais em conta você já pagou " + reais(barato) +
-      ", e a mensalidade continua. Aqui, depois do primeiro ano, você para quando quiser e <b>o site continua seu.</b>";
-  }
-  cr.addEventListener("input", compara);
-  compara();
-  var box = document.getElementById("cmpBox");
-  if ("IntersectionObserver" in window) {
-    var bo = new IntersectionObserver(function (es) {
-      if (es[0].isIntersecting) { visto = true; setTimeout(compara, 250); bo.disconnect(); }
-    }, { threshold: .3 });
-    bo.observe(box);
-  } else { visto = true; compara(); }
 
   /* preços que contam */
   var contadores = document.querySelectorAll(".count");
