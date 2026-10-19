@@ -296,29 +296,46 @@ main, footer { position: relative; z-index: 1; }
   position: relative; background: linear-gradient(180deg, rgba(38, 17, 26, .9), rgba(18, 9, 11, .9));
   border: 1px solid var(--line); padding: clamp(22px, 3vw, 40px);
 }
-.calc-in label { display: block; font-size: 13px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
-.calc-in .big { font-family: var(--serif); font-size: clamp(40px, 5vw, 64px); color: var(--white); line-height: 1; margin-bottom: 18px; font-variant-numeric: tabular-nums; }
-.field + .field { margin-top: 34px; }
+.range-ends { display: flex; justify-content: space-between; color: var(--soft); font-size: 13px; margin-top: 10px; }
 input[type=range] { -webkit-appearance: none; appearance: none; width: 100%; height: 4px; background: linear-gradient(90deg, var(--accent-3) var(--fill, 50%), rgba(255,255,255,.12) var(--fill, 50%)); outline: none; cursor: pointer; }
 input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 26px; height: 26px; background: var(--white); border: 6px solid var(--accent-2); border-radius: 50%; box-shadow: 0 0 0 8px rgba(177, 42, 67, .2); transition: transform .2s; }
 input[type=range]::-webkit-slider-thumb:hover { transform: scale(1.15); }
 input[type=range]::-moz-range-thumb { width: 16px; height: 16px; background: var(--white); border: 6px solid var(--accent-2); border-radius: 50%; }
-.range-ends { display: flex; justify-content: space-between; color: var(--soft); font-size: 13px; margin-top: 10px; }
-.seg { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--line); }
-.seg button { appearance: none; border: 0; background: transparent; color: var(--muted); font: 600 14px/1.3 var(--sans); padding: 14px 10px; cursor: pointer; transition: background .3s, color .3s; }
-.seg button[aria-pressed=true] { background: var(--accent); color: var(--white); }
-.check { display: flex; align-items: center; gap: 12px; margin-top: 18px; color: var(--muted); font-size: 15px; cursor: pointer; }
-.calc-in label.check { display: flex; text-transform: none; letter-spacing: 0; font-weight: 500; font-size: 15px; color: var(--muted); margin: 18px 0 0; }
-.check input { width: 20px; height: 20px; accent-color: var(--accent-2); }
-.calc-out { display: grid; gap: 22px; align-content: start; overflow: hidden; }
+.fala { display: grid; gap: 14px; align-content: start; }
+.frase { font: 400 clamp(22px, 2.4vw, 30px)/1.25 var(--serif); color: var(--ink); }
+.frase:not(:first-child) { margin-top: 10px; }
+.passo { display: flex; align-items: center; gap: 14px; }
+.passo output { min-width: 2.2ch; text-align: center; font: 400 clamp(52px, 6vw, 72px)/1 var(--serif); color: var(--white); font-variant-numeric: tabular-nums; }
+.passo output.pulse { animation: pulse .35s var(--ease); }
+@keyframes pulse { 40% { transform: scale(1.18); color: var(--accent-3); } }
+.passo .unid { font: italic 400 clamp(22px, 2.4vw, 30px) var(--serif); color: var(--accent-3); }
+.mm { appearance: none; width: 52px; height: 52px; border: 1px solid var(--line); background: transparent; color: var(--white); font: 400 28px/1 var(--sans); cursor: pointer; transition: background .25s, border-color .25s, transform .15s; }
+.mm:hover { background: var(--accent); border-color: var(--accent); }
+.mm:active { transform: scale(.92); }
+.chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.chips button { appearance: none; border: 1px solid var(--line); background: transparent; color: var(--muted); font: 600 15px/1 var(--sans); padding: 14px 18px; cursor: pointer; transition: background .3s, color .3s, border-color .3s, transform .2s; }
+.chips button:hover { color: var(--white); border-color: var(--accent-3); }
+.chips button[aria-pressed=true] { background: var(--accent); border-color: var(--accent); color: var(--white); transform: translateY(-2px); }
+.check { display: flex; align-items: center; gap: 12px; margin-top: 10px; color: var(--muted); font: 400 clamp(19px, 2vw, 24px)/1.3 var(--serif); cursor: pointer; }
+.check input { width: 22px; height: 22px; accent-color: var(--accent-2); flex: none; }
+.resp { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; }
+.tickets { display: grid; grid-template-columns: repeat(auto-fill, minmax(15px, 22px)); gap: 6px; }
+.tickets i { aspect-ratio: 3 / 4; background: rgba(248, 241, 239, .14); border-top: 3px solid rgba(248, 241, 239, .28); animation: tk .45s var(--ease) both; animation-delay: calc(var(--k) * 22ms); }
+.tickets i.app { background: var(--accent-2); border-top-color: #ffd2d9; box-shadow: 0 0 16px rgba(226, 86, 111, .45); }
+.tickets i.meio { background: linear-gradient(90deg, var(--accent-2) var(--f), rgba(248, 241, 239, .14) var(--f)); }
+@keyframes tk { from { opacity: 0; transform: translateY(10px) scale(.6); } }
+.t-leg { display: flex; align-items: center; gap: 8px; color: var(--soft); font-size: 13px; }
+.t-leg span { display: inline-block; width: 10px; height: 12px; }
+.lg-voce { background: rgba(248, 241, 239, .2); }
+.lg-app { background: var(--accent-2); margin-left: 10px; }
+.fala-out { font: 400 clamp(21px, 2.2vw, 27px)/1.3 var(--serif); color: var(--ink); }
+.fala-out b { color: var(--accent-3); font-weight: 400; }
+.calc > * { min-width: 0; }
+.calc-out { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; align-content: start; overflow: hidden; }
 .calc-out .glow { position: absolute; width: 420px; height: 420px; right: -160px; top: -160px; border-radius: 50%; background: radial-gradient(circle, rgba(177,42,67,.45), transparent 65%); pointer-events: none; animation: float2 14s ease-in-out infinite; }
 .out-label { color: var(--muted); font-size: 15px; }
-.out-num { font-family: var(--serif); font-size: clamp(52px, 8vw, 104px); line-height: .95; color: var(--white); font-variant-numeric: tabular-nums; }
-.out-num small { font-size: .35em; color: var(--muted); }
-.out-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); }
-.out-row div { background: var(--paper); padding: 18px; }
-.out-row strong { display: block; font-family: var(--serif); font-weight: 400; font-size: clamp(26px, 3vw, 36px); font-variant-numeric: tabular-nums; }
-.out-row span { color: var(--muted); font-size: 13px; }
+.out-num { font-family: var(--serif); font-size: clamp(48px, 6.5vw, 84px); line-height: 1; color: var(--white); font-variant-numeric: tabular-nums; }
+.out-num small { font-size: .36em; color: var(--muted); font-style: italic; }
 .payback { padding: 20px; border-left: 3px solid var(--accent-3); background: rgba(177, 42, 67, .12); font-size: 18px; }
 .note { color: var(--soft); font-size: 13px; line-height: 1.55; }
 
@@ -533,6 +550,8 @@ footer a:hover { color: var(--white); }
 }
 @media (max-width: 600px) {
   .plan.hot ul, .plan.matriz ul { grid-template-columns: 1fr; }
+  .out-num small { display: block; margin-top: 6px; font-size: 22px; }
+  .tickets { gap: 4px; }
   .mini { grid-template-columns: 1fr; }
   .mini-preco { justify-items: start; text-align: left; }
   .flow { grid-template-columns: 1fr; }
@@ -544,7 +563,6 @@ footer a:hover { color: var(--white); }
   .order:nth-child(n+4) { display: none; }
   .ticket { width: 160px; right: 0; font-size: 11px; }
   .chip.c1 { top: 0; }
-  .out-row { grid-template-columns: 1fr; }
   .other { grid-template-columns: 1fr; }
   .top .btn.small { padding: 0 14px; }
   .top .btn .long { display: none; }
@@ -646,40 +664,48 @@ footer a:hover { color: var(--white); }
     <div class="wrap">
       <div class="sec-head">
         <p class="kicker rv">A conta que ninguém mostra</p>
-        <h2 class="rv" style="--d:.08s">Quanto o app de delivery <span class="accent-text">leva de você?</span></h2>
-        <p class="lede rv" style="--d:.16s">Coloque quanto a sua loja vende pelo app num mês. A conta é feita na hora, aqui mesmo.</p>
+        <h2 class="rv" style="--d:.08s">Pense num dia normal <span class="accent-text">da sua loja.</span></h2>
+        <p class="lede rv" style="--d:.16s">Responda do seu jeito, sem precisar de planilha. A gente mostra quanto do seu trabalho fica com o app.</p>
       </div>
 
       <div class="calc">
-        <div class="card calc-in rv-l">
-          <div class="field">
-            <label for="fat">Vendas pelo app por mês</label>
-            <div class="big" id="fatTxt">R$ 30.000</div>
-            <input type="range" id="fat" min="2000" max="100000" step="1000" value="30000" aria-label="Vendas pelo app por mês" />
-            <div class="range-ends"><span>R$ 2 mil</span><span>R$ 100 mil</span></div>
+        <div class="card fala rv-l">
+          <p class="frase">Num dia normal, o app me manda</p>
+          <div class="passo" role="group" aria-label="Pedidos por dia">
+            <button type="button" class="mm" data-d="-1" aria-label="Menos um pedido">−</button>
+            <output id="nPed">10</output>
+            <button type="button" class="mm" data-d="1" aria-label="Mais um pedido">+</button>
+            <span class="unid">pedidos</span>
           </div>
-          <div class="field">
-            <label>Quem entrega</label>
-            <div class="seg" role="group" aria-label="Quem entrega">
-              <button type="button" data-tx="12" aria-pressed="false">Entregador da loja<br /><small>12% de comissão</small></button>
-              <button type="button" data-tx="23" aria-pressed="true">Entregador do app<br /><small>23% de comissão</small></button>
-            </div>
-            <label class="check"><input type="checkbox" id="online" checked /> Cliente paga pelo app (mais 3,2%)</label>
+          <p class="frase">de mais ou menos</p>
+          <div class="chips" id="ticket-medio" role="group" aria-label="Valor médio do pedido">
+            <button type="button" data-v="30" aria-pressed="false">R$ 30</button>
+            <button type="button" data-v="50" aria-pressed="true">R$ 50</button>
+            <button type="button" data-v="80" aria-pressed="false">R$ 80</button>
+            <button type="button" data-v="120" aria-pressed="false">R$ 120</button>
           </div>
+          <p class="frase">cada um. Quem entrega é</p>
+          <div class="chips" id="quem" role="group" aria-label="Quem entrega">
+            <button type="button" data-tx="12" aria-pressed="true">o meu motoboy</button>
+            <button type="button" data-tx="23" aria-pressed="false">o entregador do app</button>
+          </div>
+          <label class="check"><input type="checkbox" id="online" checked /> e o cliente paga pelo app</label>
         </div>
 
         <div class="card calc-out rv-s" style="--d:.1s" aria-live="polite">
           <div class="glow" aria-hidden="true"></div>
-          <div>
-            <p class="out-label">Por mês, fica com o app</p>
-            <p class="out-num" id="outMes">R$ 7.860</p>
+          <div class="resp">
+            <p class="out-label" id="r1a">De cada pedido de R$ 50,</p>
+            <p class="out-num"><span id="r1">R$ 7,60</span> <small>ficam com o app.</small></p>
           </div>
-          <div class="out-row">
-            <div><strong id="outAno">R$ 94.320</strong><span>em 12 meses</span></div>
-            <div><strong id="outPed">R$ 26,20</strong><span>de cada pedido de R$ 100</span></div>
+          <div class="resp">
+            <div class="tickets" id="tickets" aria-hidden="true"></div>
+            <p class="t-leg"><span class="lg-voce"></span> seu <span class="lg-app"></span> do app</p>
+            <p class="fala-out" id="r2">É como se <b>2 dos seus 10 pedidos</b> de hoje fossem de graça.</p>
           </div>
-          <p class="payback" id="outPay">A comissão de <b>9 dias</b> já paga o Delivery Completo inteiro.</p>
-          <p class="note">Faixa de comissão (12% com entregador da loja, 23% com entregador do app) e taxa de pagamento online de 3,2% publicadas pelo maior app de delivery do país, 2026. A comissão só deixa de existir no pedido que vem pelo seu site. Delivery Completo: R$ 2.300 uma vez, mais R$ 79,90 por mês de sustentação técnica.</p>
+          <p class="fala-out" id="r3">Em 30 dias, são <b>46 pedidos</b> que você prepara, entrega e não recebe.</p>
+          <p class="payback" id="r4"></p>
+          <p class="note">Comissão de 12% com entregador da loja e 23% com entregador do app, mais 3,2% de pagamento online: valores publicados pelo maior app de delivery do país, 2026. A conta supõe que esses pedidos viessem pelo seu site. Delivery Completo: R$ 2.300 uma vez, mais R$ 79,90 por mês de sustentação técnica.</p>
         </div>
       </div>
     </div>
@@ -1091,41 +1117,51 @@ footer a:hover { color: var(--white); }
   }
   if (!calma) setInterval(function () { if (!document.hidden && window.scrollY < innerHeight * 1.2) novoPedido(); }, 3200);
 
-  /* conta da comissão */
-  var fat = document.getElementById("fat"), fatTxt = document.getElementById("fatTxt"), online = document.getElementById("online");
-  var botoes = document.querySelectorAll(".seg button"), taxa = 23;
-  var outMes = document.getElementById("outMes"), outAno = document.getElementById("outAno");
-  var outPed = document.getElementById("outPed"), outPay = document.getElementById("outPay");
-  var DELIVERY = 2300;
+  /* conta da comissão, em pedidos e não em faturamento */
   function preencher(r) { r.style.setProperty("--fill", (r.value - r.min) / (r.max - r.min) * 100 + "%"); }
-  function anima(el, para, dec) {
-    var de = Number(el.dataset.v || 0), t0 = performance.now(), dur = calma ? 0 : 600;
-    el.dataset.v = para;
-    function passo(t) {
-      var k = dur ? Math.min(1, (t - t0) / dur) : 1, e = 1 - Math.pow(1 - k, 3);
-      el.textContent = reais(de + (para - de) * e, dec);
-      if (k < 1) requestAnimationFrame(passo);
+  var nPed = document.getElementById("nPed"), online = document.getElementById("online");
+  var tickets = document.getElementById("tickets"), DELIVERY = 2300;
+  var est = { n: 10, v: 50, tx: 12 };
+  function plural(n, um, varios) { return n + " " + (n === 1 ? um : varios); }
+  function conta(mudouN) {
+    var pct = (est.tx + (online.checked ? 3.2 : 0)) / 100;
+    var porPedido = est.v * pct, porDia = porPedido * est.n;
+    var gratisDia = est.n * pct, gratisMes = Math.round(gratisDia * 30);
+    var dias = Math.ceil(DELIVERY / porDia);
+    nPed.textContent = est.n;
+    if (mudouN && !calma) { nPed.classList.remove("pulse"); void nPed.offsetWidth; nPed.classList.add("pulse"); }
+    document.getElementById("r1a").textContent = "De cada pedido de " + reais(est.v) + ",";
+    document.getElementById("r1").textContent = reais(porPedido, 2);
+    var cheios = Math.floor(gratisDia), resto = gratisDia - cheios, html = "";
+    for (var k = 0; k < est.n; k++) {
+      var cls = k < cheios ? "app" : (k === cheios && resto > .05 ? "meio" : "");
+      html += '<i class="' + cls + '" style="--k:' + k + (cls === "meio" ? ";--f:" + Math.round(resto * 100) + "%" : "") + '"></i>';
     }
-    requestAnimationFrame(passo);
+    tickets.innerHTML = html;
+    var g = gratisDia < 1 ? "quase 1" : (resto >= .5 ? "quase " + Math.ceil(gratisDia) : (resto > .05 ? "mais de " + cheios : String(cheios)));
+    document.getElementById("r2").innerHTML = "É como se <b>" + g + " dos seus " + est.n + " pedidos</b> de hoje fossem de graça para o app.";
+    document.getElementById("r3").innerHTML = "Em 30 dias, são <b>" + plural(gratisMes, "pedido", "pedidos") + "</b> que você prepara, entrega e não recebe.";
+    document.getElementById("r4").innerHTML = dias <= 45
+      ? "O que vai para o app em <b>" + plural(dias, "dia", "dias") + "</b> já pagaria o seu delivery próprio. Depois disso, quem pede pelo seu site paga só para você."
+      : "O que vai para o app em <b>" + plural(Math.round(dias / 30), "mês", "meses") + "</b> já pagaria o seu delivery próprio. Depois disso, quem pede pelo seu site paga só para você.";
   }
-  function conta() {
-    var v = Number(fat.value), pct = taxa + (online.checked ? 3.2 : 0);
-    var mes = v * pct / 100, dias = Math.max(1, Math.ceil(DELIVERY / (mes / 30)));
-    fatTxt.textContent = reais(v);
-    preencher(fat);
-    anima(outMes, mes); anima(outAno, mes * 12); anima(outPed, pct, 2);
-    outPay.innerHTML = dias <= 30
-      ? "A comissão de <b>" + dias + (dias === 1 ? " dia" : " dias") + "</b> já paga o Delivery Completo inteiro."
-      : "Em <b>" + Math.ceil(dias / 30) + " meses</b>, a comissão já pagou o Delivery Completo inteiro.";
-  }
-  fat.addEventListener("input", conta);
-  online.addEventListener("change", conta);
-  botoes.forEach(function (b) {
+  document.querySelectorAll(".mm").forEach(function (b) {
     b.addEventListener("click", function () {
-      botoes.forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
-      taxa = Number(b.dataset.tx); conta();
+      est.n = Math.min(60, Math.max(1, est.n + Number(b.dataset.d))); conta(true);
     });
   });
+  function grupo(id, chave, attr) {
+    var bs = document.querySelectorAll("#" + id + " button");
+    bs.forEach(function (b) {
+      b.addEventListener("click", function () {
+        bs.forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
+        est[chave] = Number(b.dataset[attr]); conta();
+      });
+    });
+  }
+  grupo("ticket-medio", "v", "v");
+  grupo("quem", "tx", "tx");
+  online.addEventListener("change", function () { conta(); });
   conta();
 
   /* como funciona: troca a tela conforme o passo */
