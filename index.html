@@ -162,6 +162,7 @@ main, footer { position: relative; z-index: 1; }
 .btn:hover .arrow { transform: translateX(4px); }
 .btn.ghost { --bg: transparent; box-shadow: inset 0 0 0 1px var(--line), 0 0 0 0 transparent; color: var(--ink); }
 .btn.ghost:hover { box-shadow: inset 0 0 0 1px var(--accent-3); }
+.top .btn { gap: 0; }
 .btn.small { min-height: 42px; padding: 0 18px; font-size: 14px; }
 .btn.ring { background: var(--accent); }
 .btn.ring::after {
@@ -397,7 +398,19 @@ input[type=range]::-moz-range-thumb { width: 16px; height: 16px; background: var
 /* ---------- planos ---------- */
 .promo { display: inline-flex; align-items: center; gap: 14px; margin-bottom: 34px; padding: 10px 16px 10px 10px; border: 1px solid var(--line); font-size: 14px; color: var(--muted); }
 .promo span { padding: 6px 10px; background: var(--accent); color: var(--white); font-weight: 800; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
-.plans { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; align-items: stretch; }
+.plans { display: grid; grid-template-columns: 1.15fr 1fr; gap: 18px; align-items: stretch; }
+.plan.hot ul { grid-template-columns: 1fr 1fr; column-gap: 22px; }
+.outros { margin-top: clamp(50px, 7vw, 80px); display: grid; gap: 14px; }
+.mini { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center; padding: 24px 28px; border: 1px solid var(--line-2); background: rgba(255,255,255,.02); transition: border-color .4s, background .4s; }
+.mini:hover { border-color: var(--line); background: var(--paper-2); }
+.mini h3 { font-size: 26px; margin-bottom: 4px; }
+.mini p { color: var(--muted); font-size: 14px; }
+.mini .mini-itens { color: var(--soft); margin-top: 6px; }
+.mini-preco { display: grid; grid-template-columns: auto auto; gap: 2px 18px; align-items: center; justify-items: end; text-align: right; }
+.mini-preco s { color: var(--soft); font-size: 13px; }
+.mini-preco strong { font: 400 30px/1 var(--serif); grid-row: 2; }
+.mini-preco span { color: var(--muted); font-size: 13px; grid-row: 3; }
+.mini-preco .btn { grid-column: 2; grid-row: 1 / 4; }
 .plan { position: relative; display: flex; flex-direction: column; padding: 30px 24px; background: var(--paper-2); border: 1px solid var(--line); transition: transform .5s var(--ease), box-shadow .5s; isolation: isolate; }
 .plan:hover { transform: translateY(-8px); box-shadow: 0 40px 70px -40px rgba(177, 42, 67, .7); }
 .plan.hot { background: linear-gradient(180deg, #2e1119, var(--paper-2)); border-color: transparent; }
@@ -484,7 +497,6 @@ footer a:hover { color: var(--white); }
 
 /* ---------- celular e tablet ---------- */
 @media (max-width: 1080px) {
-  .plans { grid-template-columns: 1fr 1fr; }
   .nav { display: none; }
 }
 @media (max-width: 900px) {
@@ -496,6 +508,8 @@ footer a:hover { color: var(--white); }
   .panel { width: 64%; top: 40px; }
   .ticket { right: 4%; width: 176px; }
   .demos { grid-template-columns: 1fr; }
+  .plans { grid-template-columns: 1fr; }
+  .plan .for { min-height: 0; }
   .others { grid-template-columns: 1fr; }
   .flow { grid-template-columns: 1fr 1fr; row-gap: 40px; }
   .flow::before, .flow .fill { display: none; }
@@ -511,8 +525,9 @@ footer a:hover { color: var(--white); }
   .step { min-height: 64vh; align-content: start; padding-top: 40px; }
 }
 @media (max-width: 600px) {
-  .plans { grid-template-columns: 1fr; }
-  .plan .for { min-height: 0; }
+  .plan.hot ul { grid-template-columns: 1fr; }
+  .mini { grid-template-columns: 1fr; }
+  .mini-preco { justify-items: start; text-align: left; }
   .flow { grid-template-columns: 1fr; }
   .scene { height: 500px; }
   .scene .phone { width: 190px; top: 50px; }
@@ -564,7 +579,7 @@ footer a:hover { color: var(--white); }
     <div class="hero-bg" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div class="grid-lines"></div></div>
     <div class="wrap hero-grid">
       <div>
-        <p class="kicker fade-up">Site e sistema de pedidos para comida</p>
+        <p class="kicker fade-up">Site e sistema de delivery próprio</p>
         <h1>
           <span class="line"><span>Venda pelo</span></span>
           <span class="line"><span>seu site.</span></span>
@@ -766,10 +781,6 @@ footer a:hover { color: var(--white); }
           <span class="glare"></span>
         </a>
       </div>
-      <div class="others">
-        <div class="other rv"><img src="img/site-gael.jpg" alt="Site do Gael Burger com o carrinho aberto" width="1200" height="917" loading="lazy" /><div><h3>Gael Burger</h3><p>Cardápio com categorias e carrinho, com o pedido pronto para enviar pelo WhatsApp.</p></div></div>
-        <div class="other rv" style="--d:.1s"><img src="img/site-lili.jpg" alt="Site da Lili do Cambuci com a cestinha aberta" width="1200" height="917" loading="lazy" /><div><h3>Lili do Cambuci</h3><p>Loja de produtos de cambuci com cestinha e compra pelo WhatsApp.</p></div></div>
-      </div>
     </div>
   </section>
 
@@ -802,45 +813,12 @@ footer a:hover { color: var(--white); }
       <div class="sec-head">
         <p class="kicker rv">Planos e preços</p>
         <h2 class="rv" style="--d:.08s">Preço aberto. <span class="accent-text">Sem letra miúda.</span></h2>
-        <p class="lede rv" style="--d:.16s">Site pronto, no ar e feito para celular. Você mesmo altera pelo painel. A sustentação técnica é obrigatória só no Delivery Completo, com 1 ano de fidelidade.</p>
+        <p class="lede rv" style="--d:.16s">Delivery próprio, no ar e feito para celular. Você mesmo altera pelo painel. A sustentação técnica é obrigatória só no Delivery Completo, com 1 ano de fidelidade.</p>
       </div>
       <p class="promo rv"><span>Até 50% off</span> Condição de lançamento, válida por tempo limitado.</p>
 
       <div class="plans">
-        <article class="plan rv">
-          <h3>Site Essencial</h3>
-          <p class="for">Profissional autônomo: corretor, advogado, personal, cabeleireiro</p>
-          <s>De R$ 1.300</s>
-          <p class="price"><small>R$</small><span class="count" data-to="650">650</span></p>
-          <p class="meta"><span>Pronto em 3 dias</span><span>ou até 12x no cartão</span></p>
-          <ul>
-            <li>Site completo de <b>uma página</b>, com seu nome, sua foto e seu registro</li>
-            <li><b>Botão de WhatsApp fixo</b>, sempre na tela</li>
-            <li>Galeria de fotos e seus <b>depoimentos de clientes</b></li>
-            <li><b>Aparecer no Google</b> quando pesquisarem seu nome</li>
-            <li>Endereço <b>.com.br grátis no primeiro ano</b></li>
-          </ul>
-          <a class="btn ghost" href="https://wa.me/5511971003058?text=Ol%C3%A1%2C%20quero%20o%20Site%20Essencial%20da%20Cria%20Site." target="_blank" rel="noreferrer">Quero este</a>
-        </article>
-
-        <article class="plan rv" style="--d:.08s">
-          <span class="pill">Mais escolhido</span>
-          <h3>Cardápio Digital</h3>
-          <p class="for">Restaurante, pizzaria, hamburgueria, lanchonete</p>
-          <s>De R$ 1.500</s>
-          <p class="price"><small>R$</small><span class="count" data-to="900">900</span></p>
-          <p class="meta"><span>Pronto em 4 dias</span><span>ou até 12x no cartão</span></p>
-          <ul>
-            <li>Tudo do Site Essencial</li>
-            <li><b>Cardápio digital completo</b>, com foto e preço de cada item</li>
-            <li><b>QR code para a mesa</b>: o cliente aponta o celular e vê o cardápio</li>
-            <li>Horário de funcionamento e <b>mapa de como chegar</b></li>
-            <li>Botões do <b>app de delivery</b> em destaque</li>
-          </ul>
-          <a class="btn ghost" href="https://wa.me/5511971003058?text=Ol%C3%A1%2C%20quero%20o%20Card%C3%A1pio%20Digital%20da%20Cria%20Site." target="_blank" rel="noreferrer">Quero este</a>
-        </article>
-
-        <article class="plan hot rv" style="--d:.16s">
+        <article class="plan hot rv">
           <span class="pill">Sem comissão</span>
           <h3>Delivery Completo</h3>
           <p class="for">Pizzaria, hamburgueria, açaí e restaurante que querem vender sem pagar comissão</p>
@@ -860,29 +838,23 @@ footer a:hover { color: var(--white); }
           </ul>
           <a class="btn ring" href="https://wa.me/5511971003058?text=Ol%C3%A1%2C%20quero%20o%20Delivery%20Completo%20da%20Cria%20Site." target="_blank" rel="noreferrer">Quero este <span class="arrow">→</span></a>
         </article>
-
-        <article class="plan rv" style="--d:.24s">
-          <h3>Site Completo</h3>
-          <p class="for">Empresa com catálogo, equipe ou mais de uma unidade</p>
-          <s>De R$ 7.500</s>
-          <p class="price"><small>R$</small><span class="count" data-to="5000">5.000</span></p>
-          <p class="meta"><span>Pronto em 7 dias</span><span>ou até 12x no cartão</span></p>
+        <article class="plan rv" style="--d:.1s">
+          <span class="pill">Para começar</span>
+          <h3>Cardápio Digital</h3>
+          <p class="for">Restaurante, pizzaria, hamburgueria, lanchonete</p>
+          <s>De R$ 1.500</s>
+          <p class="price"><small>R$</small><span class="count" data-to="900">900</span></p>
+          <p class="meta"><span>Pronto em 4 dias</span><span>ou até 12x no cartão</span></p>
           <ul>
             <li>Tudo do Site Essencial</li>
-            <li><b>Uma página para cada assunto</b>: início, serviços, equipe, sobre, unidades e contato</li>
-            <li><b>Catálogo</b> de produtos ou imóveis, com <b>busca e filtro</b> por tipo, preço e bairro</li>
-            <li><b>Página de cada item</b> com fotos, descrição e botão de WhatsApp que já chega com o nome do item</li>
-            <li><b>Cada unidade</b> com endereço, horário, telefone e mapa</li>
-            <li><b>Página da equipe</b> com foto, cargo e contato de cada pessoa</li>
-            <li><b>Pedido de orçamento</b> que chega no seu WhatsApp com nome, telefone e o que o cliente procura</li>
-            <li><b>Aparecer no Google</b> pelo serviço e pela cidade, não só pelo seu nome</li>
-            <li><b>Textos escritos por nós</b>, a partir de uma conversa com você</li>
-            <li><b>3 meses de alterações</b> inclusas</li>
+            <li><b>Cardápio digital completo</b>, com foto e preço de cada item</li>
+            <li><b>QR code para a mesa</b>: o cliente aponta o celular e vê o cardápio</li>
+            <li>Horário de funcionamento e <b>mapa de como chegar</b></li>
+            <li>Botões do <b>app de delivery</b> em destaque</li>
           </ul>
-          <a class="btn ghost" href="https://wa.me/5511971003058?text=Ol%C3%A1%2C%20quero%20o%20Site%20Completo%20da%20Cria%20Site." target="_blank" rel="noreferrer">Quero este</a>
+          <a class="btn ghost" href="https://wa.me/5511971003058?text=Ol%C3%A1%2C%20quero%20o%20Card%C3%A1pio%20Digital%20da%20Cria%20Site." target="_blank" rel="noreferrer">Quero este</a>
         </article>
       </div>
-
       <div class="sust rv">
         <div>
           <h3>Sustentação técnica</h3>
@@ -898,6 +870,17 @@ footer a:hover { color: var(--white); }
           <li>Sistema de pedidos e painel da loja <b>funcionando</b> no Delivery</li>
           <li><b>Suporte se algo parar de funcionar</b>, no horário da loja, inclusive fim de semana</li>
         </ul>
+      </div>
+      <div class="outros">
+        <p class="kicker rv">Também fazemos</p>
+        <article class="mini rv" style="--d:0s">
+          <div><h3>Site Essencial</h3><p>Profissional autônomo: corretor, advogado, personal, cabeleireiro</p><p class="mini-itens">Site completo de uma página, com seu nome, sua foto e seu registro, Botão de WhatsApp fixo, sempre na tela, Galeria de fotos e seus depoimentos de clientes.</p></div>
+          <div class="mini-preco"><s>De R$ 1.300</s><strong>R$ 650</strong><span>Pronto em 3 dias</span><a class="btn ghost small" href="https://wa.me/5511971003058?text=Ol%C3%A1%2C%20quero%20o%20Site%20Essencial%20da%20Cria%20Site." target="_blank" rel="noreferrer">Quero este</a></div>
+        </article>
+        <article class="mini rv" style="--d:.08s">
+          <div><h3>Site Completo</h3><p>Empresa com catálogo, equipe ou mais de uma unidade</p><p class="mini-itens">Tudo do Site Essencial, Uma página para cada assunto: início, serviços, equipe, sobre, unidades e contato, Catálogo de produtos ou imóveis, com busca e filtro por tipo, preço e bairro.</p></div>
+          <div class="mini-preco"><s>De R$ 7.500</s><strong>R$ 5.000</strong><span>Pronto em 7 dias</span><a class="btn ghost small" href="https://wa.me/5511971003058?text=Ol%C3%A1%2C%20quero%20o%20Site%20Completo%20da%20Cria%20Site." target="_blank" rel="noreferrer">Quero este</a></div>
+        </article>
       </div>
     </div>
   </section>
