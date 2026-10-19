@@ -1,3 +1,6 @@
 # A página de apuração é só do GitHub Pages; no site da CriaSite ela não abre
 /apuracao /  302
 /apuracao/* /  302
+# A vitrine virou a página inicial
+/cria-site-vitrine.html /  301
+/cria-site-vitrine /  301
