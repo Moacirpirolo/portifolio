@@ -401,6 +401,10 @@ input[type=range]::-moz-range-thumb { width: 16px; height: 16px; background: var
 .promo span { padding: 6px 10px; background: var(--accent); color: var(--white); font-weight: 800; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; }
 .plans { display: grid; grid-template-columns: 1.15fr 1fr; gap: 18px; align-items: stretch; }
 .plan.hot ul { grid-template-columns: 1fr 1fr; column-gap: 22px; }
+.plan.matriz { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.6fr); column-gap: 40px; align-items: start; }
+.plan.matriz .for { min-height: 0; }
+.plan.matriz .btn { margin-top: 24px; }
+.plan.matriz ul { grid-template-columns: 1fr 1fr; column-gap: 22px; margin: 0; }
 .outros { margin-top: clamp(50px, 7vw, 80px); display: grid; gap: 14px; }
 .mini { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: center; padding: 24px 28px; border: 1px solid var(--line-2); background: rgba(255,255,255,.02); transition: border-color .4s, background .4s; }
 .mini:hover { border-color: var(--line); background: var(--paper-2); }
@@ -511,6 +515,8 @@ footer a:hover { color: var(--white); }
   .demos { grid-template-columns: 1fr; }
   .plans { grid-template-columns: 1fr; }
   .plan .for { min-height: 0; }
+  .plan.matriz { grid-template-columns: 1fr; }
+  .plan.matriz ul { margin-top: 24px; }
   .others { grid-template-columns: 1fr; }
   .flow { grid-template-columns: 1fr 1fr; row-gap: 40px; }
   .flow::before, .flow .fill { display: none; }
@@ -526,7 +532,7 @@ footer a:hover { color: var(--white); }
   .step { min-height: 64vh; align-content: start; padding-top: 40px; }
 }
 @media (max-width: 600px) {
-  .plan.hot ul { grid-template-columns: 1fr; }
+  .plan.hot ul, .plan.matriz ul { grid-template-columns: 1fr; }
   .mini { grid-template-columns: 1fr; }
   .mini-preco { justify-items: start; text-align: left; }
   .flow { grid-template-columns: 1fr; }
@@ -814,7 +820,7 @@ footer a:hover { color: var(--white); }
       <div class="sec-head">
         <p class="kicker rv">Planos e preços</p>
         <h2 class="rv" style="--d:.08s">Preço aberto. <span class="accent-text">Sem letra miúda.</span></h2>
-        <p class="lede rv" style="--d:.16s">Delivery próprio, no ar e feito para celular. Você mesmo altera pelo painel. A sustentação técnica é obrigatória só no Delivery Completo, com 1 ano de fidelidade.</p>
+        <p class="lede rv" style="--d:.16s">Delivery próprio, no ar e feito para celular. Você mesmo altera pelo painel. A sustentação técnica é obrigatória no Delivery Completo e na Matriz, com 1 ano de fidelidade.</p>
       </div>
       <p class="promo rv"><span>Até 50% off</span> Condição de lançamento, válida por tempo limitado.</p>
 
@@ -855,11 +861,35 @@ footer a:hover { color: var(--white); }
           </ul>
           <a class="btn ghost" href="https://wa.me/5511971003058?text=Ol%C3%A1%2C%20quero%20o%20Card%C3%A1pio%20Digital%20da%20Cria%20Site." target="_blank" rel="noreferrer">Quero este</a>
         </article>
+        <article class="plan matriz rv" style="--d:.2s">
+          <span class="pill">Para redes e franquias</span>
+          <div>
+            <h3>Matriz</h3>
+            <p class="for">Para quem tem mais de uma loja, franquia ou rede própria, e quer controlar todas de um lugar só</p>
+            <s>De R$ 7.500</s>
+            <p class="price"><small>R$</small><span class="count" data-to="5000">5.000</span></p>
+            <p class="meta"><span>Até 3 filiais</span><span>implantação em até 30 dias</span></p>
+            <p class="split">Cada filial a mais: R$ 800</p>
+            <a class="btn ring" href="https://wa.me/5511971003058?text=Ol%C3%A1%2C%20quero%20o%20plano%20Matriz%20da%20Cria%20Site." target="_blank" rel="noreferrer">Quero este <span class="arrow">→</span></a>
+          </div>
+          <ul>
+            <li>Tudo do Delivery Completo <b>em cada filial</b></li>
+            <li><b>Um site para a rede</b>: o cliente informa o bairro e o pedido vai para a filial que atende</li>
+            <li><b>Cardápio central</b>: mudou o preço ou lançou um item, vale para todas as filiais</li>
+            <li><b>Resumo da noite no seu WhatsApp</b>: faturamento, pedidos, cancelamentos e caixa de cada filial</li>
+            <li><b>Painel da rede</b> com o dia, a semana e o mês de cada filial lado a lado</li>
+            <li><b>Ranking das filiais</b> por faturamento, ticket médio e cancelamentos</li>
+            <li><b>Caixa de todas as filiais</b>: fechamento e diferença de caixa na sua tela</li>
+            <li><b>Abertura e fechamento com foto</b>: você vê qual filial não cumpriu</li>
+            <li><b>Comunicados</b> para os gerentes, com confirmação de leitura</li>
+            <li><b>Acesso por cargo</b>: o dono vê tudo, o gerente vê a filial dele, o caixa só lança pedido</li>
+          </ul>
+        </article>
       </div>
       <div class="sust rv">
         <div>
           <h3>Sustentação técnica</h3>
-          <p class="lede" style="font-size:15px;margin-top:10px">A estrutura que mantém seu site no ar. Obrigatória no Delivery Completo, com 1 ano de fidelidade, e opcional nos demais planos.</p>
+          <p class="lede" style="font-size:15px;margin-top:10px">A estrutura que mantém seu site no ar. Obrigatória no Delivery Completo e na Matriz (uma por filial), com 1 ano de fidelidade, e opcional nos demais planos.</p>
           <p class="price">R$ 79,90 <small>/mês</small></p>
           <span class="gift">Primeiro mês grátis</span>
         </div>
@@ -877,10 +907,6 @@ footer a:hover { color: var(--white); }
         <article class="mini rv" style="--d:0s">
           <div><h3>Site Essencial</h3><p>Profissional autônomo: corretor, advogado, personal, cabeleireiro</p><p class="mini-itens">Site completo de uma página, com seu nome, sua foto e seu registro, Botão de WhatsApp fixo, sempre na tela, Galeria de fotos e seus depoimentos de clientes.</p></div>
           <div class="mini-preco"><s>De R$ 1.300</s><strong>R$ 650</strong><span>Pronto em 3 dias</span><a class="btn ghost small" href="https://wa.me/5511971003058?text=Ol%C3%A1%2C%20quero%20o%20Site%20Essencial%20da%20Cria%20Site." target="_blank" rel="noreferrer">Quero este</a></div>
-        </article>
-        <article class="mini rv" style="--d:.08s">
-          <div><h3>Site Completo</h3><p>Empresa com catálogo, equipe ou mais de uma unidade</p><p class="mini-itens">Tudo do Site Essencial, Uma página para cada assunto: início, serviços, equipe, sobre, unidades e contato, Catálogo de produtos ou imóveis, com busca e filtro por tipo, preço e bairro.</p></div>
-          <div class="mini-preco"><s>De R$ 7.500</s><strong>R$ 5.000</strong><span>Pronto em 7 dias</span><a class="btn ghost small" href="https://wa.me/5511971003058?text=Ol%C3%A1%2C%20quero%20o%20Site%20Completo%20da%20Cria%20Site." target="_blank" rel="noreferrer">Quero este</a></div>
         </article>
       </div>
     </div>
