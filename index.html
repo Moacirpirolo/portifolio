@@ -213,67 +213,29 @@ main, footer { position: relative; z-index: 1; }
 .trust li { display: inline-flex; align-items: center; gap: 9px; }
 .trust li::before { content: ""; width: 16px; height: 16px; flex: none; background: var(--accent-3); -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M6.2 11.6 2.6 8l1.1-1.1 2.5 2.5 6.1-6.1 1.1 1.1z'/></svg>") center/contain no-repeat; mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M6.2 11.6 2.6 8l1.1-1.1 2.5 2.5 6.1-6.1 1.1 1.1z'/></svg>") center/contain no-repeat; }
 
-/* cena do produto */
+/* cena do produto: o cliente pede, a loja recebe (vídeo real) */
 .scene { position: relative; height: 640px; perspective: 1400px; }
 .scene-inner { position: absolute; inset: 0; transform-style: preserve-3d; transition: transform .6s var(--ease); }
 .phone {
-  position: absolute; width: 270px; aspect-ratio: 390 / 844; border-radius: 40px; padding: 10px;
+  position: relative; width: 270px; aspect-ratio: 390 / 844; border-radius: 40px; padding: 10px;
   background: linear-gradient(145deg, #2d1219, #0b0506); box-shadow: 0 50px 90px -30px rgba(0,0,0,.9), 0 0 0 1px rgba(255,255,255,.07), inset 0 0 0 1px rgba(255,255,255,.05);
 }
-.phone::before { content: ""; position: absolute; top: 18px; left: 50%; width: 76px; height: 20px; margin-left: -38px; background: #000; border-radius: 20px; z-index: 2; }
 .phone .screen { width: 100%; height: 100%; border-radius: 31px; overflow: hidden; background: #0d0708; position: relative; }
-.phone .screen img { width: 100%; height: auto; }
-.phone .screen .scroller { animation: scrollshot 14s ease-in-out infinite; }
-@keyframes scrollshot { 0%, 15% { transform: translateY(0); } 50%, 65% { transform: translateY(-38%); } 100% { transform: translateY(0); } }
-.scene .phone { left: 4%; top: 30px; transform: translateZ(60px) rotateY(10deg) rotateX(4deg); animation: bob 7s ease-in-out infinite; }
+.dev-loja .screen { background: #0d0708 url("img/painel-real.jpg") top / cover no-repeat; }
+.phone .screen img, .phone .screen video { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.dev { position: absolute; margin: 0; }
+.dev-cli { left: 0; top: 70px; transform: translateZ(40px); animation: bob 8s ease-in-out infinite; }
+.dev-loja { right: 0; top: 0; transform: translateZ(110px); animation: bob 7s ease-in-out .9s infinite; }
+.dev-loja .phone { box-shadow: 0 60px 100px -30px rgba(0,0,0,.95), 0 0 0 1px rgba(226, 86, 111, .35), 0 0 60px -10px rgba(177, 42, 67, .45); }
 @keyframes bob { 50% { translate: 0 -14px; } }
-
-.panel {
-  position: absolute; right: 0; top: 70px; width: min(360px, 62%);
-  background: rgba(29, 12, 16, .86); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
-  border: 1px solid var(--line); padding: 18px; transform: translateZ(120px) rotateY(-8deg);
-  box-shadow: 0 40px 80px -30px rgba(0,0,0,.9); animation: bob 8s ease-in-out .8s infinite;
-}
-.panel-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding-bottom: 12px; border-bottom: 1px solid var(--line-2); }
-.panel-top strong { font-family: var(--serif); font-weight: 400; font-size: 22px; }
-.panel-top small { display: block; color: var(--muted); font-size: 12px; }
-.bell { width: 38px; height: 38px; display: grid; place-items: center; border: 1px solid var(--line); color: var(--accent-3); position: relative; }
-.bell svg { width: 18px; height: 18px; }
-.bell.ring svg { animation: ring .9s ease; }
-.bell.ring::after { content: ""; position: absolute; inset: -1px; border: 1px solid var(--accent-3); animation: ping .9s ease-out; }
-@keyframes ring { 0%, 100% { transform: rotate(0); } 15% { transform: rotate(18deg); } 30% { transform: rotate(-16deg); } 45% { transform: rotate(12deg); } 60% { transform: rotate(-8deg); } 75% { transform: rotate(4deg); } }
-@keyframes ping { to { transform: scale(1.7); opacity: 0; } }
-.orders { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; min-height: 252px; }
-.order { display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; padding: 11px 12px; background: rgba(255,255,255,.03); border-left: 2px solid var(--accent-2); font-size: 13px; }
-.order.new { animation: drop .7s var(--ease); background: rgba(177, 42, 67, .18); }
-@keyframes drop { from { opacity: 0; transform: translateY(-18px) scale(.97); } }
-.order b { font-size: 13px; }
-.order .tag { color: var(--accent-3); font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
-.order .desc { grid-column: 1 / -1; color: var(--muted); }
-.order .val { font-weight: 800; color: var(--white); }
-.fee { display: flex; justify-content: space-between; margin-top: 12px; padding-top: 12px; border-top: 1px dashed var(--line); font-size: 13px; color: var(--muted); }
-.fee b { color: #8fe3a8; }
-.ticket {
-  position: absolute; right: 13%; bottom: 0; width: 200px; padding: 16px 16px 22px; background: #fbf6ef; color: #1b1213;
-  font: 500 12px/1.5 ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; transform: translateZ(180px) rotate(-4deg);
-  box-shadow: 0 30px 60px -20px rgba(0,0,0,.8);
-  -webkit-mask: radial-gradient(6px at 50% 100%, transparent 98%, #000) 0 0 / 12px 100% repeat-x; mask: radial-gradient(6px at 50% 100%, transparent 98%, #000) 0 0 / 12px 100% repeat-x;
-}
-.ticket.print { animation: printout 1.2s var(--ease); }
-@keyframes printout { from { clip-path: inset(0 0 100% 0); transform: translateZ(180px) rotate(-4deg) translateY(-30px); } }
-.ticket strong { color: #1b1213; display: block; text-align: center; letter-spacing: .12em; }
-.ticket hr { border: 0; border-top: 1px dashed #b9a9a3; margin: 8px 0; }
-.ticket .row { display: flex; justify-content: space-between; gap: 8px; }
-.scene-cap { position: absolute; left: 4%; bottom: -6px; font-size: 12px; color: var(--soft); }
-.chip {
-  position: absolute; z-index: 3; display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px;
-  background: rgba(7, 4, 5, .85); border: 1px solid var(--line); font-size: 13px; font-weight: 700; white-space: nowrap;
-  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); transform: translateZ(200px);
-}
-.chip i { width: 8px; height: 8px; border-radius: 50%; background: #8fe3a8; box-shadow: 0 0 0 0 rgba(143, 227, 168, .6); animation: live 1.8s infinite; }
-@keyframes live { 70% { box-shadow: 0 0 0 10px rgba(143, 227, 168, 0); } 100% { box-shadow: 0 0 0 0 rgba(143, 227, 168, 0); } }
-.chip.c1 { left: 0; top: 0; animation: bob 6s ease-in-out infinite; }
-
+.dev-tag { position: absolute; z-index: 3; left: 50%; top: -18px; translate: -50% 0; display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; white-space: nowrap; background: rgba(7, 4, 5, .9); border: 1px solid var(--line); font-size: 13px; font-weight: 700; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+.dev-tag i { width: 8px; height: 8px; border-radius: 50%; background: #8fe3a8; animation: live 1.8s infinite; }
+@keyframes live { 0% { box-shadow: 0 0 0 0 rgba(143, 227, 168, .6); } 70% { box-shadow: 0 0 0 10px rgba(143, 227, 168, 0); } 100% { box-shadow: 0 0 0 0 rgba(143, 227, 168, 0); } }
+.flow-arrow { position: absolute; left: 50%; top: 46%; width: 70px; height: 2px; margin-left: -35px; background: linear-gradient(90deg, transparent, var(--accent-3)); transform: translateZ(80px); overflow: visible; }
+.flow-arrow::after { content: ""; position: absolute; right: -2px; top: -5px; border: 6px solid transparent; border-left: 9px solid var(--accent-3); }
+.flow-arrow::before { content: ""; position: absolute; top: -3px; left: 0; width: 8px; height: 8px; border-radius: 50%; background: #ffd2d9; box-shadow: 0 0 14px #e2566f; animation: corre 1.6s ease-in infinite; }
+@keyframes corre { from { left: 0; opacity: 0; } 20% { opacity: 1; } to { left: 62px; opacity: 0; } }
+.scene-cap { position: absolute; right: 0; bottom: -4px; width: 270px; text-align: center; font-size: 12px; color: var(--soft); }
 .scroll-cue { position: absolute; left: 50%; bottom: 26px; translate: -50% 0; width: 24px; height: 40px; border: 1px solid var(--line); border-radius: 14px; }
 .scroll-cue::after { content: ""; position: absolute; left: 50%; top: 8px; width: 4px; height: 8px; margin-left: -2px; border-radius: 2px; background: var(--accent-3); animation: cue 1.8s ease-in-out infinite; }
 @keyframes cue { 60% { transform: translateY(12px); opacity: 0; } 100% { opacity: 0; } }
@@ -521,6 +483,51 @@ footer a:hover { color: var(--white); }
 .wa::before { content: ""; position: absolute; inset: 0; border-radius: 50%; border: 2px solid var(--accent-3); animation: ping 2.4s ease-out infinite; }
 .wa svg { width: 28px; height: 28px; }
 
+
+/* lojas de teste e clientes em tela de celular */
+.como-testar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-bottom: 30px; counter-reset: ct; }
+.como-testar p { background: var(--paper-2); padding: 18px 20px; color: var(--muted); font-size: 15px; }
+.como-testar p::before { counter-increment: ct; content: counter(ct); display: inline-grid; place-items: center; width: 26px; height: 26px; margin-right: 10px; background: var(--accent); color: var(--white); font: 400 15px var(--serif); }
+.como-testar b { color: var(--white); }
+.demo .shot.fone-shot { aspect-ratio: auto; height: 420px; display: grid; place-items: end center; padding-top: 30px; background: radial-gradient(circle at 50% 100%, rgba(177, 42, 67, .35), transparent 70%), var(--black); }
+.demo .shot.fone-shot .phone { width: 230px; border-radius: 34px; padding: 8px; margin-bottom: -150px; transition: transform 1.2s var(--ease); }
+.demo .shot.fone-shot .phone .screen { border-radius: 27px; }
+.demo:hover .shot.fone-shot .phone { transform: translateY(-40px); }
+.demo:hover .shot img { transform: none; }
+.demo .acoes { display: grid; gap: 8px; margin-top: auto; padding-top: 16px; }
+.demo .acoes .btn { width: 100%; }
+.demo .senha { color: var(--soft); font-size: 13px; text-align: center; }
+.demo .senha b { color: var(--accent-3); letter-spacing: .1em; }
+.clientes { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.cliente { display: grid; gap: 16px; text-decoration: none; padding: 22px 18px 20px; border: 1px solid var(--line-2); background: rgba(255,255,255,.02); transition: border-color .4s, background .4s, transform .5s var(--ease); }
+.cliente:hover { border-color: var(--accent-2); background: var(--paper-2); transform: translateY(-6px); }
+.cliente .phone { width: 100%; max-width: 210px; margin: 0 auto; border-radius: 30px; padding: 7px; }
+.cliente .phone .screen { border-radius: 24px; }
+.cliente h3 { font-size: 24px; }
+.cliente .onde { color: var(--muted); font-size: 14px; }
+.cliente .ver { color: var(--white); font-weight: 700; font-size: 14px; display: inline-flex; gap: 8px; }
+.cliente .ver::after { content: "→"; transition: transform .35s var(--ease); }
+.cliente:hover .ver::after { transform: translateX(5px); }
+.equipe { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.pessoa { padding: 30px; border: 1px solid var(--line); background: var(--paper-2); }
+.pessoa .ini { display: grid; place-items: center; width: 64px; height: 64px; margin-bottom: 22px; background: var(--accent); color: var(--white); font: 400 26px var(--serif); position: relative; overflow: hidden; }
+.pessoa .ini::after { content: ""; position: absolute; inset: 0; background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,.3) 50%, transparent 70%); transform: translateX(-120%); animation: sweep 6s var(--ease) infinite; }
+.pessoa:nth-child(2) .ini::after { animation-delay: 2s; }
+.pessoa:nth-child(3) .ini::after { animation-delay: 4s; }
+.pessoa h3 { font-size: 30px; }
+.pessoa .papel { color: var(--accent-3); font-size: 12px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; margin: 6px 0 14px; }
+.pessoa p:last-child { color: var(--muted); font-size: 15px; }
+/* seção em bordô para dar ritmo */
+.sec-bordo { background: radial-gradient(900px circle at 85% 0%, rgba(226, 86, 111, .28), transparent 60%), linear-gradient(160deg, #5c1222, #3a0a15 70%); border-block: 1px solid rgba(255, 210, 217, .15); }
+.sec-bordo .kicker { color: #ffd2d9; }
+.sec-bordo .accent-text { background: none; -webkit-background-clip: border-box; background-clip: border-box; color: #ffd2d9; animation: none; }
+.sec-bordo .flow::before { background: rgba(255, 210, 217, .25); }
+.sec-bordo .flow li::before { background: #3a0a15; border-color: #ffd2d9; }
+.sec-bordo .flow p, .sec-bordo .promises p { color: #ecd3d5; }
+.sec-bordo .promises { background: rgba(255, 210, 217, .18); border-color: rgba(255, 210, 217, .18); }
+.sec-bordo .promises div { background: rgba(18, 9, 11, .55); }
+.sec-bordo .promises div:hover { background: rgba(18, 9, 11, .8); }
+
 /* ---------- celular e tablet ---------- */
 @media (max-width: 1080px) {
   .nav { display: none; }
@@ -529,11 +536,13 @@ footer a:hover { color: var(--white); }
   body { font-size: 16px; }
   .hero { padding-top: 110px; min-height: auto; }
   .hero-grid, .calc, .cmp, .faq, .sust { grid-template-columns: 1fr; }
-  .scene { height: 560px; max-width: 520px; width: 100%; margin: 40px auto 0; }
-  .scene .phone { width: 230px; left: 0; }
-  .panel { width: 64%; top: 40px; }
-  .ticket { right: 4%; width: 176px; }
+  .scene { height: 600px; max-width: 520px; width: 100%; margin: 50px auto 0; }
+  .grain, .spot { display: none; }
+  .blob { filter: blur(50px); animation: none; }
   .demos { grid-template-columns: 1fr; }
+  .como-testar { grid-template-columns: 1fr; }
+  .clientes { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .equipe { grid-template-columns: 1fr; }
   .plans { grid-template-columns: 1fr; }
   .plan .for { min-height: 0; }
   .plan.matriz { grid-template-columns: 1fr; }
@@ -554,28 +563,28 @@ footer a:hover { color: var(--white); }
 }
 @media (max-width: 600px) {
   .plan.hot ul, .plan.matriz ul { grid-template-columns: 1fr; }
+  .cliente { padding: 14px 10px; gap: 10px; }
+  .cliente h3 { font-size: 19px; }
+  .cliente .onde { font-size: 12px; }
   .preco-topo { display: grid; grid-template-columns: 1fr; }
   .out-num small { display: block; margin-top: 6px; font-size: 22px; }
   .tickets { gap: 4px; }
   .mini { grid-template-columns: 1fr; }
   .mini-preco { justify-items: start; text-align: left; }
   .flow { grid-template-columns: 1fr; }
-  .scene { height: 500px; }
-  .scene .phone { width: 190px; top: 50px; }
-  .panel { width: 72%; right: 0; top: 90px; padding: 14px; }
-  .orders { min-height: 210px; }
-  .order { font-size: 12px; padding: 9px 10px; }
-  .order:nth-child(n+4) { display: none; }
-  .ticket { width: 160px; right: 0; font-size: 11px; }
-  .chip.c1 { top: 0; }
+  .scene { height: 470px; }
+  .scene .phone { width: 168px; border-radius: 28px; padding: 7px; }
+  .scene .phone .screen { border-radius: 22px; }
+  .dev-cli { top: 60px; }
+  .scene-cap { width: 168px; bottom: 0; }
+  .flow-arrow { width: 40px; margin-left: -20px; }
+  @keyframes corre { from { left: 0; opacity: 0; } 20% { opacity: 1; } to { left: 32px; opacity: 0; } }
+  .dev-tag { font-size: 12px; padding: 7px 10px; }
   .other { grid-template-columns: 1fr; }
   .top .btn.small { padding: 0 14px; }
   .top .btn .long { display: none; }
   .hero-actions .btn { width: 100%; }
   details .a { padding-right: 0; }
-  .ticket { display: none; }
-  .fee { font-size: 12px; gap: 8px; }
-  .fee b { white-space: nowrap; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -595,6 +604,7 @@ footer a:hover { color: var(--white); }
     <nav class="nav" aria-label="Principal">
       <a href="#como-funciona">Como funciona</a>
       <a href="#lojas">Lojas de teste</a>
+      <a href="#clientes">Clientes</a>
       <a href="#planos">Planos</a>
       <a href="#duvidas">Dúvidas</a>
       <a href="#conta">Faça a conta</a>
@@ -631,31 +641,13 @@ footer a:hover { color: var(--white); }
         </ul>
       </div>
 
-      <div class="scene fade-up d2" aria-label="Ilustração: cardápio no celular do cliente e pedidos chegando no painel da loja">
+      <div class="scene fade-up d2" aria-label="O cliente pede pelo site no celular e o pedido chega no painel da loja">
         <div class="scene-inner" id="scene">
-          <span class="chip c1"><i></i> Loja aberta</span>
-          <div class="phone"><div class="screen"><div class="scroller"><img src="img/fone-forno-velho-cardapio.jpg" alt="Cardápio de uma loja modelo no celular" width="390" height="844" /></div></div></div>
-          <div class="panel" aria-hidden="true">
-            <div class="panel-top">
-              <div><strong>Pedidos</strong><small id="pHoje">Hoje: 3 pedidos</small></div>
-              <span class="bell" id="bell"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></span>
-            </div>
-            <ul class="orders" id="orders">
-              <li class="order"><span class="tag">Site · Entrega</span><span class="val">R$ 64,00</span><span class="desc">Pizza grande, calabresa e mussarela</span></li>
-              <li class="order"><span class="tag">Mesa 4</span><span class="val">R$ 38,50</span><span class="desc">Pizza broto e refrigerante</span></li>
-              <li class="order"><span class="tag">Balcão</span><span class="val">R$ 52,00</span><span class="desc">Pizza grande, portuguesa</span></li>
-            </ul>
-            <div class="fee"><span>Comissão sobre os pedidos</span><b>R$ 0,00</b></div>
-          </div>
-          <div class="ticket" id="ticket" aria-hidden="true">
-            <strong>COMANDA</strong>
-            <hr />
-            <div id="tBody"><div class="row"><span>1x Pizza grande</span><span>64,00</span></div><div>Calabresa e mussarela</div></div>
-            <hr />
-            <div class="row"><span>Entrega</span><span id="tTipo">Site</span></div>
-          </div>
+          <figure class="dev dev-cli"><span class="dev-tag">O cliente pede</span><div class="phone"><div class="screen"><img src="img/demo-churrascaria.jpg" alt="Site de uma loja de teste no celular do cliente" width="390" height="844" /></div></div></figure>
+          <span class="flow-arrow" aria-hidden="true"></span>
+          <figure class="dev dev-loja"><span class="dev-tag"><i></i> A loja recebe</span><div class="phone"><div class="screen"><video id="vPainel" poster="img/painel-real.jpg" autoplay muted loop playsinline preload="auto" width="540" height="1168" aria-label="Gravação do painel da loja recebendo dois pedidos"><source src="img/painel-real.webm" type="video/webm" /><source src="img/painel-real.mp4" type="video/mp4" /></video></div></div></figure>
         </div>
-        <p class="scene-cap">Ilustração do painel da loja</p>
+        <p class="scene-cap">Gravação real do painel de uma loja de teste</p>
       </div>
     </div>
     <span class="scroll-cue" aria-hidden="true"></span>
@@ -749,26 +741,82 @@ footer a:hover { color: var(--white); }
       <div class="sec-head">
         <p class="kicker rv">Lojas de teste</p>
         <h2 class="rv" style="--d:.08s">Não acredite na gente. <span class="accent-text">Faça um pedido.</span></h2>
-        <p class="lede rv" style="--d:.16s">Três lojas de demonstração, com o mesmo sistema que vai para a sua. Entre como cliente, monte o pedido e veja como funciona.</p>
+        <p class="lede rv" style="--d:.16s">Três lojas de demonstração, com o mesmo sistema que vai para a sua. Faça o pedido como cliente e veja ele chegar do lado da loja.</p>
+      </div>
+      <div class="como-testar rv">
+        <p>Faça um pedido <b>como cliente</b></p>
+        <p>Abra o <b>painel da loja</b> com a senha <b>1234</b></p>
+        <p>Veja o seu <b>pedido chegar</b></p>
       </div>
       <div class="demos">
-        <a class="demo tilt rv" href="https://hamburgueria.criasite.site/" target="_blank" rel="noreferrer">
+        <article class="demo tilt rv" style="--d:0s">
           <span class="badge-demo">Loja de demonstração</span>
-          <div class="shot"><img src="img/site-casa-brasa.jpg" alt="Site da hamburgueria Casa Brasa" width="1200" height="917" loading="lazy" /></div>
-          <div class="body"><span class="tipo">Hamburgueria</span><h3>Casa Brasa</h3><p>O cliente escolhe o ponto da carne e os adicionais, pede pelo site ou pela mesa, e o pedido cai no painel da loja.</p><span class="go">Fazer um pedido de teste</span></div>
+          <div class="shot fone-shot"><div class="phone"><div class="screen"><img src="img/demo-hamburgueria.jpg" alt="Site da loja de teste Casa Brasa no celular" width="390" height="844" loading="lazy" /></div></div></div>
+          <div class="body"><span class="tipo">Hamburgueria</span><h3>Casa Brasa</h3><p>O cliente escolhe o ponto da carne e os adicionais, pede pelo site ou pela mesa.</p>
+            <div class="acoes">
+              <a class="btn" href="https://hamburgueria.criasite.site/" target="_blank" rel="noreferrer">Fazer um pedido de teste</a>
+              <a class="btn ghost" href="https://hamburgueria.criasite.site/painel.html" target="_blank" rel="noreferrer">Abrir o painel da loja</a>
+              <p class="senha">Senha do painel: <b>1234</b></p>
+            </div>
+          </div>
           <span class="glare"></span>
+        </article>
+        <article class="demo tilt rv" style="--d:.1s">
+          <span class="badge-demo">Loja de demonstração</span>
+          <div class="shot fone-shot"><div class="phone"><div class="screen"><img src="img/demo-acai.jpg" alt="Site da loja de teste Frutto Açaí no celular" width="390" height="844" loading="lazy" /></div></div></div>
+          <div class="body"><span class="tipo">Açaiteria</span><h3>Frutto Açaí</h3><p>O cliente monta o copo com tamanho e complementos e vê o total na hora.</p>
+            <div class="acoes">
+              <a class="btn" href="https://acai.criasite.site/" target="_blank" rel="noreferrer">Fazer um pedido de teste</a>
+              <a class="btn ghost" href="https://acai.criasite.site/painel.html" target="_blank" rel="noreferrer">Abrir o painel da loja</a>
+              <p class="senha">Senha do painel: <b>1234</b></p>
+            </div>
+          </div>
+          <span class="glare"></span>
+        </article>
+        <article class="demo tilt rv" style="--d:.2s">
+          <span class="badge-demo">Loja de demonstração</span>
+          <div class="shot fone-shot"><div class="phone"><div class="screen"><img src="img/demo-churrascaria.jpg" alt="Site da loja de teste Estância Serrana no celular" width="390" height="844" loading="lazy" /></div></div></div>
+          <div class="body"><span class="tipo">Churrascaria</span><h3>Estância Serrana</h3><p>Reserva de mesa para o rodízio, pedido pela mesa com QR code e churrasco para levar.</p>
+            <div class="acoes">
+              <a class="btn" href="https://churrascaria.criasite.site/" target="_blank" rel="noreferrer">Fazer um pedido de teste</a>
+              <a class="btn ghost" href="https://churrascaria.criasite.site/painel.html" target="_blank" rel="noreferrer">Abrir o painel da loja</a>
+              <p class="senha">Senha do painel: <b>1234</b></p>
+            </div>
+          </div>
+          <span class="glare"></span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLIENTES -->
+  <section class="sec" id="clientes" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker rv">Quem já vende com a gente</p>
+        <h2 class="rv" style="--d:.08s">Lojas de verdade, <span class="accent-text">no ar.</span></h2>
+        <p class="lede rv" style="--d:.16s">Clique e veja o site de cada uma do jeito que os clientes delas veem.</p>
+      </div>
+      <div class="clientes">
+        <a class="cliente rv" style="--d:0.00s" href="https://pizzariavitoriadelivery.com.br/" target="_blank" rel="noreferrer">
+          <div class="phone"><div class="screen"><img src="img/cli-vitoria.jpg" alt="Site da Pizzaria Vitória no celular" width="390" height="844" loading="lazy" /></div></div>
+          <div><h3>Pizzaria Vitória</h3><p class="onde">Pizzaria · Ribeirão Pires</p></div>
+          <span class="ver">Ver o site</span>
         </a>
-        <a class="demo tilt rv" style="--d:.1s" href="https://acai.criasite.site/" target="_blank" rel="noreferrer">
-          <span class="badge-demo">Loja de demonstração</span>
-          <div class="shot"><img src="img/site-frutto-acai.jpg" alt="Site da açaiteria Frutto Açaí" width="1200" height="917" loading="lazy" /></div>
-          <div class="body"><span class="tipo">Açaiteria</span><h3>Frutto Açaí</h3><p>O cliente monta o copo com tamanho e complementos, vê o total na hora e acompanha o pedido.</p><span class="go">Fazer um pedido de teste</span></div>
-          <span class="glare"></span>
+        <a class="cliente rv" style="--d:0.08s" href="https://pizzariasanfranciscorp.com.br/" target="_blank" rel="noreferrer">
+          <div class="phone"><div class="screen"><img src="img/cli-sanfrancisco.jpg" alt="Site da Pizzaria San Francisco no celular" width="390" height="844" loading="lazy" /></div></div>
+          <div><h3>Pizzaria San Francisco</h3><p class="onde">Pizzaria · Ribeirão Pires</p></div>
+          <span class="ver">Ver o site</span>
         </a>
-        <a class="demo tilt rv" style="--d:.2s" href="https://churrascaria.criasite.site/" target="_blank" rel="noreferrer">
-          <span class="badge-demo">Loja de demonstração</span>
-          <div class="shot"><img src="img/site-estancia-serrana.jpg" alt="Site da churrascaria Estância Serrana" width="1200" height="917" loading="lazy" /></div>
-          <div class="body"><span class="tipo">Churrascaria</span><h3>Estância Serrana</h3><p>Reserva de mesa para o rodízio, pedido pela mesa com QR code e churrasco para levar com taxa de entrega calculada.</p><span class="go">Fazer um pedido de teste</span></div>
-          <span class="glare"></span>
+        <a class="cliente rv" style="--d:0.16s" href="https://reiburgao.com.br/" target="_blank" rel="noreferrer">
+          <div class="phone"><div class="screen"><img src="img/cli-reiburgao.jpg" alt="Site da Rei Burgão no celular" width="390" height="844" loading="lazy" /></div></div>
+          <div><h3>Rei Burgão</h3><p class="onde">Lanchonete · Suzano</p></div>
+          <span class="ver">Ver o site</span>
+        </a>
+        <a class="cliente rv" style="--d:0.24s" href="https://duoreiapotato.com.br/" target="_blank" rel="noreferrer">
+          <div class="phone"><div class="screen"><img src="img/cli-duoreia.jpg" alt="Site da Du'Oreia Potato no celular" width="390" height="844" loading="lazy" /></div></div>
+          <div><h3>Du'Oreia Potato</h3><p class="onde">Batataria · Suzano</p></div>
+          <span class="ver">Ver o site</span>
         </a>
       </div>
     </div>
@@ -788,7 +836,6 @@ footer a:hover { color: var(--white); }
           <span class="pill">Sem comissão</span>
           <h3>Delivery Completo</h3>
           <p class="for">Pizzaria, hamburgueria, açaí e restaurante que querem vender sem pagar comissão</p>
-          <s>De R$ 3.600</s>
           <p class="price"><small>R$</small><span class="count" data-to="2300">2.300</span></p>
           <p class="meta"><span>Pronto em até 7 dias</span><span>ou até 12x no cartão</span></p>
           <p class="split">Site R$ 900 + sistema de pedidos R$ 1.400</p>
@@ -808,7 +855,6 @@ footer a:hover { color: var(--white); }
           <span class="pill">Para começar</span>
           <h3>Cardápio Digital</h3>
           <p class="for">Restaurante, pizzaria, hamburgueria, lanchonete</p>
-          <s>De R$ 1.500</s>
           <p class="price"><small>R$</small><span class="count" data-to="900">900</span></p>
           <p class="meta"><span>Pronto em 4 dias</span><span>ou até 12x no cartão</span></p>
           <ul>
@@ -825,7 +871,6 @@ footer a:hover { color: var(--white); }
           <div>
             <h3>Matriz</h3>
             <p class="for">Para quem tem mais de uma loja, franquia ou rede própria, e quer controlar todas de um lugar só</p>
-            <s>De R$ 7.500</s>
             <p class="price"><small>R$</small><span class="count" data-to="5000">5.000</span></p>
             <p class="meta"><span>Até 3 filiais</span><span>implantação em até 30 dias</span></p>
             <p class="split">Cada filial a mais: R$ 800</p>
@@ -865,7 +910,7 @@ footer a:hover { color: var(--white); }
         <p class="kicker rv">Também fazemos</p>
         <article class="mini rv" style="--d:0s">
           <div><h3>Site Essencial</h3><p>Profissional autônomo: corretor, advogado, personal, cabeleireiro</p><p class="mini-itens">Site completo de uma página, com seu nome, sua foto e seu registro, Botão de WhatsApp fixo, sempre na tela, Galeria de fotos e seus depoimentos de clientes.</p></div>
-          <div class="mini-preco"><s>De R$ 1.300</s><strong>R$ 650</strong><span>Pronto em 3 dias</span><a class="btn ghost small" href="https://wa.me/5511971003058?text=Ol%C3%A1%2C%20quero%20o%20Site%20Essencial%20da%20Cria%20Site." target="_blank" rel="noreferrer">Quero este</a></div>
+          <div class="mini-preco"><strong>R$ 650</strong><span>Pronto em 3 dias</span><a class="btn ghost small" href="https://wa.me/5511971003058?text=Ol%C3%A1%2C%20quero%20o%20Site%20Essencial%20da%20Cria%20Site." target="_blank" rel="noreferrer">Quero este</a></div>
         </article>
       </div>
     </div>
@@ -894,8 +939,24 @@ footer a:hover { color: var(--white); }
     </div>
   </section>
 
+  <!-- QUEM FAZ -->
+  <section class="sec" id="quem-faz">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker rv">Quem faz</p>
+        <h2 class="rv" style="--d:.08s">Gente de verdade <span class="accent-text">do outro lado.</span></h2>
+        <p class="lede rv" style="--d:.16s">Sem robô e sem central de atendimento. Você sabe com quem está falando.</p>
+      </div>
+      <div class="equipe">
+        <article class="pessoa rv"><span class="ini">Ma</span><h3>Matheus</h3><p class="papel">Atendimento e implantação</p><p>Vai até a sua loja, entende como ela funciona, monta o cardápio com você e continua do seu lado depois que o site entra no ar.</p></article>
+        <article class="pessoa rv" style="--d:.08s"><span class="ini">Mo</span><h3>Moacir</h3><p class="papel">Tecnologia</p><p>Monta o sistema, acompanha o site 24 horas e resolve quando algo para. Há 10 anos cuidando de sistemas de empresas grandes.</p></article>
+        <article class="pessoa rv" style="--d:.16s"><span class="ini">Is</span><h3>Isa</h3><p class="papel">Contrato e financeiro</p><p>Cuida do contrato, das cobranças e de tudo que precisa ficar por escrito.</p></article>
+      </div>
+    </div>
+  </section>
+
   <!-- COMO CONTRATAR -->
-  <section class="sec" id="contratar">
+  <section class="sec sec-bordo" id="contratar">
     <div class="wrap">
       <div class="sec-head">
         <p class="kicker rv">Como contratar</p>
@@ -903,13 +964,13 @@ footer a:hover { color: var(--white); }
       </div>
       <ol class="flow rv" style="padding:0;margin:0">
         <span class="fill" aria-hidden="true"></span>
-        <li><h3>Conversa</h3><p>Pelo WhatsApp, com quem vai montar o seu site. Você conta como a loja funciona e manda cardápio, fotos e logo.</p></li>
+        <li><h3>Conversa</h3><p>Pelo WhatsApp ou na sua loja. Você conta como a loja funciona e manda cardápio, fotos e logo.</p></li>
         <li><h3>50% para começar</h3><p>Pix ou cartão em até 12x. O prazo começa a contar a partir daqui.</p></li>
         <li><h3>Você aprova</h3><p>Em até 7 dias o site está pronto para você navegar, testar e pedir ajustes.</p></li>
         <li><h3>No ar</h3><p>Aprovou, paga os outros 50% e o site entra no ar, com o seu endereço.</p></li>
       </ol>
       <div class="promises">
-        <div class="rv"><h3>Feito por pessoas</h3><p>Quem atende é quem monta o site. Sem robô e sem central de atendimento.</p></div>
+        <div class="rv"><h3>Feito por pessoas</h3><p>Gente de verdade do começo ao fim, no WhatsApp da Cria Site.</p></div>
         <div class="rv" style="--d:.08s"><h3>O site é seu</h3><p>Endereço próprio, registrado em nome da sua empresa. Se cancelar a sustentação, o site continua seu.</p></div>
         <div class="rv" style="--d:.16s"><h3>Tudo por escrito</h3><p>Preço, prazo, fidelidade e o que acontece se cancelar estão no contrato, antes de você pagar.</p></div>
       </div>
@@ -917,7 +978,7 @@ footer a:hover { color: var(--white); }
   </section>
 
   <!-- DÚVIDAS -->
-  <section class="sec" id="duvidas" style="padding-top:0">
+  <section class="sec" id="duvidas">
     <div class="wrap faq">
       <div class="sec-head">
         <p class="kicker rv">Dúvidas</p>
@@ -1014,6 +1075,8 @@ footer a:hover { color: var(--white); }
       <a href="#planos">Planos</a>
       <a href="#duvidas">Dúvidas</a>
       <a href="https://www.instagram.com/_criasite/" target="_blank" rel="noreferrer">Instagram</a>
+      <a href="privacidade.html">Privacidade</a>
+      <a href="termos.html">Termos de uso</a>
       <a href="https://portal.criasite.site/" rel="nofollow">Área do cliente</a>
     </nav>
     <span>© <span id="ano">2026</span> Cria Site · CNPJ 31.058.582/0001-90</span>
@@ -1094,36 +1157,16 @@ footer a:hover { color: var(--white); }
     });
   }
 
-  /* pedidos chegando no painel */
-  var lista = document.getElementById("orders"), bell = document.getElementById("bell");
-  var hoje = document.getElementById("pHoje"), ticket = document.getElementById("ticket");
-  var tBody = document.getElementById("tBody"), tTipo = document.getElementById("tTipo");
-  var pedidos = [
-    ["Site · Entrega", "R$ 71,00", "Pizza grande, frango com catupiry", "1x Pizza grande", "71,00", "Frango com catupiry", "Site"],
-    ["Mesa 2", "R$ 46,90", "Açaí 700 ml com granola e banana", "1x Açaí 700 ml", "46,90", "Granola e banana", "Mesa 2"],
-    ["Site · Retirada", "R$ 58,00", "2 hambúrgueres e batata", "2x Hambúrguer", "58,00", "Ponto da carne: ao ponto", "Retirada"],
-    ["Balcão", "R$ 36,00", "Pizza broto, margherita", "1x Pizza broto", "36,00", "Margherita", "Balcão"],
-    ["Site · Entrega", "R$ 92,00", "Pizza grande e refrigerante 2 litros", "1x Pizza grande", "78,00", "Meia calabresa, meia quatro queijos", "Site"]
-  ];
-  var i = 0, total = 3;
-  function novoPedido() {
-    var p = pedidos[i++ % pedidos.length];
-    var li = document.createElement("li");
-    li.className = "order new";
-    li.innerHTML = '<span class="tag"></span><span class="val"></span><span class="desc"></span>';
-    li.children[0].textContent = p[0]; li.children[1].textContent = p[1]; li.children[2].textContent = p[2];
-    lista.insertBefore(li, lista.firstChild);
-    while (lista.children.length > 4) lista.removeChild(lista.lastChild);
-    setTimeout(function () { li.classList.remove("new"); }, 1600);
-    total++;
-    hoje.textContent = "Hoje: " + total + " pedidos";
-    bell.classList.remove("ring"); void bell.offsetWidth; bell.classList.add("ring");
-    tBody.innerHTML = '<div class="row"><span></span><span></span></div><div></div>';
-    tBody.children[0].children[0].textContent = p[3]; tBody.children[0].children[1].textContent = p[4];
-    tBody.children[1].textContent = p[5]; tTipo.textContent = p[6];
-    ticket.classList.remove("print"); void ticket.offsetWidth; ticket.classList.add("print");
+  /* vídeo do painel: parado para quem pede menos movimento e fora da tela */
+  var vid = document.getElementById("vPainel");
+  if (vid) {
+    if (calma) { vid.removeAttribute("autoplay"); vid.pause(); vid.controls = true; }
+    else if ("IntersectionObserver" in window) {
+      new IntersectionObserver(function (es) {
+        es[0].isIntersecting ? vid.play().catch(function () {}) : vid.pause();
+      }).observe(vid);
+    }
   }
-  if (!calma) setInterval(function () { if (!document.hidden && window.scrollY < innerHeight * 1.2) novoPedido(); }, 3200);
 
   /* conta da comissão, em pedidos e não em faturamento */
   function preencher(r) { r.style.setProperty("--fill", (r.value - r.min) / (r.max - r.min) * 100 + "%"); }
